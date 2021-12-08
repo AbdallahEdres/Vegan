@@ -11,3 +11,17 @@ C:\Users\DoDa\Desktop\Myclinic\MyClinic\MyClinic\obj\Debug\Vegan.csproj.CopyComp
 C:\Users\DoDa\Desktop\Myclinic\MyClinic\MyClinic\obj\Debug\MyClinic.exe
 C:\Users\DoDa\Desktop\Myclinic\MyClinic\MyClinic\obj\Debug\MyClinic.pdb
 C:\Users\DoDa\Desktop\Myclinic\MyClinic\MyClinic\obj\Debug\MyClinic.main_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\bin\Debug\MyClinic.exe.config
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\bin\Debug\MyClinic.exe
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\bin\Debug\MyClinic.pdb
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\bin\Debug\Guna.UI2.dll
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.doctors_contr.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.Form1.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.main_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.Properties.Resources.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.GenerateResource.cache
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.CoreCompileInputs.cache
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.CopyComplete
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.exe
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.pdb
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.AssemblyReference.cache

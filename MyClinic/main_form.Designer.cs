@@ -40,6 +40,7 @@ namespace MyClinic
             this.exam_but = new Guna.UI2.WinForms.Guna2Button();
             this.patient_but = new Guna.UI2.WinForms.Guna2Button();
             this.home_but = new Guna.UI2.WinForms.Guna2Button();
+            this.doctors_contr1 = new MyClinic.doctors_contr();
             this.back_panel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,6 +51,7 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.back_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.back_panel.Controls.Add(this.doctors_contr1);
             this.back_panel.Controls.Add(this.guna2Panel1);
             this.back_panel.Location = new System.Drawing.Point(0, 0);
             this.back_panel.MaximumSize = new System.Drawing.Size(1920, 1080);
@@ -286,6 +288,16 @@ namespace MyClinic
             this.home_but.TextOffset = new System.Drawing.Point(-15, 32);
             this.home_but.Click += new System.EventHandler(this.home_but_Click);
             // 
+            // doctors_contr1
+            // 
+            this.doctors_contr1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.doctors_contr1.Location = new System.Drawing.Point(3, 121);
+            this.doctors_contr1.Name = "doctors_contr1";
+            this.doctors_contr1.Size = new System.Drawing.Size(1265, 565);
+            this.doctors_contr1.TabIndex = 1;
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -313,5 +325,6 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2Button scedual_but;
         private Guna.UI2.WinForms.Guna2Button sessions_but;
         private Guna.UI2.WinForms.Guna2Button exam_but;
+        private doctors_contr doctors_contr1;
     }
 }
