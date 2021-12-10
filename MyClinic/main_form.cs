@@ -34,9 +34,12 @@ namespace MyClinic
 
         #endregion
 
+        
+        #region buttons 
         public main_form()
         {
             InitializeComponent();
+
         }
 
         private void reports_but_Click(object sender, EventArgs e)
@@ -83,5 +86,8 @@ namespace MyClinic
         {
             Application.OpenForms[0].Show();
         }
+        #endregion
+
+       
     }
 }
