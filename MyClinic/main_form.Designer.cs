@@ -31,7 +31,9 @@ namespace MyClinic
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.back_panel = new System.Windows.Forms.Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.patient_cont1 = new MyClinic.patient_cont();
+            this.doctors_contr1 = new MyClinic.doctors_contr();
+            this.top_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.reports_but = new Guna.UI2.WinForms.Guna2Button();
             this.attendance_but = new Guna.UI2.WinForms.Guna2Button();
             this.doctors_but = new Guna.UI2.WinForms.Guna2Button();
@@ -40,9 +42,9 @@ namespace MyClinic
             this.exam_but = new Guna.UI2.WinForms.Guna2Button();
             this.patient_but = new Guna.UI2.WinForms.Guna2Button();
             this.home_but = new Guna.UI2.WinForms.Guna2Button();
-            this.doctors_contr1 = new MyClinic.doctors_contr();
+            this.attendance_cont1 = new MyClinic.attendance_cont();
             this.back_panel.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
+            this.top_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // back_panel
@@ -50,35 +52,53 @@ namespace MyClinic
             this.back_panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.back_panel.AutoScroll = true;
             this.back_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.back_panel.Controls.Add(this.attendance_cont1);
+            this.back_panel.Controls.Add(this.patient_cont1);
             this.back_panel.Controls.Add(this.doctors_contr1);
-            this.back_panel.Controls.Add(this.guna2Panel1);
-            this.back_panel.Location = new System.Drawing.Point(0, 0);
+            this.back_panel.Location = new System.Drawing.Point(0, 117);
             this.back_panel.MaximumSize = new System.Drawing.Size(1920, 1080);
             this.back_panel.Name = "back_panel";
-            this.back_panel.Size = new System.Drawing.Size(1265, 682);
+            this.back_panel.Size = new System.Drawing.Size(1265, 564);
             this.back_panel.TabIndex = 0;
             // 
-            // guna2Panel1
+            // patient_cont1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel1.BorderRadius = 20;
-            this.guna2Panel1.Controls.Add(this.reports_but);
-            this.guna2Panel1.Controls.Add(this.attendance_but);
-            this.guna2Panel1.Controls.Add(this.doctors_but);
-            this.guna2Panel1.Controls.Add(this.scedual_but);
-            this.guna2Panel1.Controls.Add(this.sessions_but);
-            this.guna2Panel1.Controls.Add(this.exam_but);
-            this.guna2Panel1.Controls.Add(this.patient_but);
-            this.guna2Panel1.Controls.Add(this.home_but);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.guna2Panel1.Font = new System.Drawing.Font("Tajawal", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1265, 117);
-            this.guna2Panel1.TabIndex = 0;
+            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
+            this.patient_cont1.Name = "patient_cont1";
+            this.patient_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.patient_cont1.TabIndex = 2;
+            // 
+            // doctors_contr1
+            // 
+            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
+            this.doctors_contr1.Name = "doctors_contr1";
+            this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
+            this.doctors_contr1.TabIndex = 1;
+            // 
+            // top_panel
+            // 
+            this.top_panel.BackColor = System.Drawing.Color.Transparent;
+            this.top_panel.BorderRadius = 20;
+            this.top_panel.Controls.Add(this.reports_but);
+            this.top_panel.Controls.Add(this.attendance_but);
+            this.top_panel.Controls.Add(this.doctors_but);
+            this.top_panel.Controls.Add(this.scedual_but);
+            this.top_panel.Controls.Add(this.sessions_but);
+            this.top_panel.Controls.Add(this.exam_but);
+            this.top_panel.Controls.Add(this.patient_but);
+            this.top_panel.Controls.Add(this.home_but);
+            this.top_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.top_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.top_panel.Font = new System.Drawing.Font("Tajawal", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.top_panel.Location = new System.Drawing.Point(0, 0);
+            this.top_panel.Name = "top_panel";
+            this.top_panel.ShadowDecoration.Parent = this.top_panel;
+            this.top_panel.Size = new System.Drawing.Size(1264, 117);
+            this.top_panel.TabIndex = 0;
             // 
             // reports_but
             // 
@@ -288,27 +308,27 @@ namespace MyClinic
             this.home_but.TextOffset = new System.Drawing.Point(-15, 32);
             this.home_but.Click += new System.EventHandler(this.home_but_Click);
             // 
-            // doctors_contr1
+            // attendance_cont1
             // 
-            this.doctors_contr1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.doctors_contr1.Location = new System.Drawing.Point(3, 121);
-            this.doctors_contr1.Name = "doctors_contr1";
-            this.doctors_contr1.Size = new System.Drawing.Size(1265, 565);
-            this.doctors_contr1.TabIndex = 1;
+            this.attendance_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.attendance_cont1.Location = new System.Drawing.Point(0, 0);
+            this.attendance_cont1.Name = "attendance_cont1";
+            this.attendance_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.attendance_cont1.TabIndex = 3;
             // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.top_panel);
             this.Controls.Add(this.back_panel);
             this.Name = "main_form";
             this.Text = "main_form";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_form_FormClosed);
             this.back_panel.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
+            this.top_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -316,7 +336,7 @@ namespace MyClinic
         #endregion
 
         private System.Windows.Forms.Panel back_panel;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel top_panel;
         private Guna.UI2.WinForms.Guna2Button home_but;
         private Guna.UI2.WinForms.Guna2Button patient_but;
         private Guna.UI2.WinForms.Guna2Button reports_but;
@@ -326,5 +346,7 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2Button sessions_but;
         private Guna.UI2.WinForms.Guna2Button exam_but;
         private doctors_contr doctors_contr1;
+        private patient_cont patient_cont1;
+        private attendance_cont attendance_cont1;
     }
 }

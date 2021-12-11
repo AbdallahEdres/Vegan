@@ -32,6 +32,13 @@ namespace MyClinic
             button.Checked = true;
         }
 
+        void hid_controlers()
+        {
+            doctors_contr1.Hide();
+            patient_cont1.Hide();
+            attendance_cont1.Hide();
+        }
+
         #endregion
 
         
@@ -39,6 +46,7 @@ namespace MyClinic
         public main_form()
         {
             InitializeComponent();
+            hid_controlers();
 
         }
 
@@ -50,6 +58,8 @@ namespace MyClinic
         private void attendance_but_Click(object sender, EventArgs e)
         {
             butt_select(attendance_but);
+            hid_controlers();
+            attendance_cont1.Show();
         }
 
         private void scedual_but_Click(object sender, EventArgs e)
@@ -60,6 +70,8 @@ namespace MyClinic
         private void doctors_but_Click(object sender, EventArgs e)
         {
             butt_select(doctors_but);
+            hid_controlers();
+            doctors_contr1.Show();
         }
 
         private void sessions_but_Click(object sender, EventArgs e)
@@ -75,6 +87,8 @@ namespace MyClinic
         private void patient_but_Click(object sender, EventArgs e)
         {
             butt_select(patient_but);
+            hid_controlers();
+            patient_cont1.Show();
         }
 
         private void home_but_Click(object sender, EventArgs e)

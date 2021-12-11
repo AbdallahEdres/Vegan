@@ -63,6 +63,12 @@
     <Compile Include="attendance_cont.Designer.cs">
       <DependentUpon>attendance_cont.cs</DependentUpon>
     </Compile>
+    <Compile Include="patient_cont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="patient_cont.Designer.cs">
+      <DependentUpon>patient_cont.cs</DependentUpon>
+    </Compile>
     <Compile Include="doctors_contr.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="attendance_cont.resx">
       <DependentUpon>attendance_cont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patient_cont.resx">
+      <DependentUpon>patient_cont.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="doctors_contr.resx">
       <DependentUpon>doctors_contr.cs</DependentUpon>

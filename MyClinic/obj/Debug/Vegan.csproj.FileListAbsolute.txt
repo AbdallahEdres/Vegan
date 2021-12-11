@@ -24,7 +24,7 @@ C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.CoreCompile
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.CopyComplete
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.exe
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.pdb
-C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.AssemblyReference.cache
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.add_dr_form.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_dr_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.patient_cont.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.attendance_cont.resources

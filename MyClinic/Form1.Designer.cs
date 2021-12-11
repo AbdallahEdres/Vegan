@@ -55,10 +55,10 @@ namespace MyClinic
             // exit_but
             // 
             this.exit_but.BackColor = System.Drawing.Color.Transparent;
-            this.exit_but.BorderRadius = 20;
+            this.exit_but.BorderRadius = 25;
             this.exit_but.CheckedState.Parent = this.exit_but;
             this.exit_but.CustomImages.Parent = this.exit_but;
-            this.exit_but.FillColor = System.Drawing.Color.Transparent;
+            this.exit_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.exit_but.Font = new System.Drawing.Font("Tajawal", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.exit_but.HoverState.Parent = this.exit_but;
