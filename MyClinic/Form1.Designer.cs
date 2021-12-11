@@ -40,7 +40,7 @@ namespace MyClinic
             this.start_but.BorderRadius = 20;
             this.start_but.CheckedState.Parent = this.start_but;
             this.start_but.CustomImages.Parent = this.start_but;
-            this.start_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.start_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.start_but.Font = new System.Drawing.Font("Tajawal", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_but.ForeColor = System.Drawing.Color.White;
             this.start_but.HoverState.Parent = this.start_but;
@@ -60,7 +60,7 @@ namespace MyClinic
             this.exit_but.CustomImages.Parent = this.exit_but;
             this.exit_but.FillColor = System.Drawing.Color.Transparent;
             this.exit_but.Font = new System.Drawing.Font("Tajawal", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.exit_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.exit_but.HoverState.Parent = this.exit_but;
             this.exit_but.Location = new System.Drawing.Point(313, 568);
             this.exit_but.Name = "exit_but";

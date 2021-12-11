@@ -28,20 +28,25 @@ namespace MyClinic
         // panel list creation
 
         Guna2ShadowPanel day;
-        Guna2DataGridView create_grid(System.Data.DataTable dt)
+/*        Guna2DataGridView day_grid;
+*/        System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4;
+        System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5;
+        System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6;
+        // method that create data grid veiw with patients and time of sessions
+        void create_grid(Guna2DataGridView day_grid)
         {
-           
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            Guna2DataGridView day_grid = new Guna2DataGridView();
-            day_grid.AllowUserToAddRows = false;
+            
+             dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+             dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+             dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+/*            day_grid = new Guna2DataGridView();
+*/            day_grid.AllowUserToAddRows = false;
             day_grid.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(203, 229, 78);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             day_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             day_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             day_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -50,19 +55,19 @@ namespace MyClinic
             day_grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             day_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(203, 229, 78);
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(203, 229, 78);
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             day_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             day_grid.ColumnHeadersHeight = 30;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(203, 229, 78);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             day_grid.DefaultCellStyle = dataGridViewCellStyle6;
@@ -78,12 +83,12 @@ namespace MyClinic
             day_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             day_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
             day_grid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            day_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
-            day_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            day_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(93, 110, 30);
+            day_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(93, 110, 30);
             day_grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             day_grid.ThemeStyle.BackColor = System.Drawing.Color.White;
             day_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            day_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            day_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             day_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             day_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             day_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
@@ -93,20 +98,22 @@ namespace MyClinic
             day_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             day_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             day_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            day_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            day_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(93, 110, 30);
             day_grid.ThemeStyle.RowsStyle.Height = 22;
-            day_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            day_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(93, 110, 30);
             day_grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            day_grid.DataSource = dt;
-            return day_grid;
+            day_grid.DataSource = dt2;
+
         }
+
+        // method that create a label woth the day name
         System.Windows.Forms.Label create_day_lable(int i)
         {
             string[] dayname = { "السبت", "الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس" };
             System.Windows.Forms.Label day_name = new System.Windows.Forms.Label();
             day_name.Text = dayname[i];
             day_name.AutoSize = true;
-            day_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            day_name.ForeColor = System.Drawing.Color.FromArgb(250,250,250);
             day_name.Location = new System.Drawing.Point(87, 11);
             day_name.Name = "day_name";
             day_name.Size = new System.Drawing.Size(117, 47);
@@ -114,6 +121,8 @@ namespace MyClinic
             
             return day_name;
         }
+
+        // method that create panel with the grid veiw and the label created before
         public Guna2ShadowPanel[] creat_days()
         {
             Guna2ShadowPanel[] days = new Guna2ShadowPanel[num_days];
@@ -124,9 +133,11 @@ namespace MyClinic
                 day.Height = 330;
                 day.Width = 285;
                 day.Radius = 25;
-                day.FillColor = System.Drawing.Color.FromArgb(200,139, 195, 74);
+                day.FillColor = System.Drawing.Color.FromArgb(93, 110, 30);
                 day.Controls.Add(create_day_lable(i));
-                day.Controls.Add(create_grid(dt2));
+                Guna2DataGridView g = new Guna2DataGridView();
+                create_grid(g);
+                day.Controls.Add(g);
                 days[i] = day;
 
             }

@@ -39,5 +39,57 @@ namespace MyClinic
         {
 
         }
+
+        private void add_dr_but_Click(object sender, EventArgs e)
+        {
+            add_dr_form add_form = new add_dr_form();
+            add_form.ShowDialog();
+        }
+
+        private void edit_but_Click(object sender, EventArgs e)
+        {
+            edit_dr_form edit_form = new edit_dr_form();
+            edit_form.ShowDialog();
+        }
+
+        private void dr_list_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void start_date_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void end_date_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

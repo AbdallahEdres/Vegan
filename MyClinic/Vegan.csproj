@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_dr_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_dr_form.Designer.cs">
+      <DependentUpon>add_dr_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="attendance_cont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="attendance_cont.Designer.cs">
+      <DependentUpon>attendance_cont.cs</DependentUpon>
+    </Compile>
     <Compile Include="doctors_contr.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,6 +70,12 @@
       <DependentUpon>doctors_contr.cs</DependentUpon>
     </Compile>
     <Compile Include="dr_scedual_factory.cs" />
+    <Compile Include="edit_dr_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_dr_form.Designer.cs">
+      <DependentUpon>edit_dr_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,8 +90,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add_dr_form.resx">
+      <DependentUpon>add_dr_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendance_cont.resx">
+      <DependentUpon>attendance_cont.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="doctors_contr.resx">
       <DependentUpon>doctors_contr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_dr_form.resx">
+      <DependentUpon>edit_dr_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

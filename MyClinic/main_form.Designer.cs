@@ -72,7 +72,7 @@ namespace MyClinic
             this.guna2Panel1.Controls.Add(this.patient_but);
             this.guna2Panel1.Controls.Add(this.home_but);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.guna2Panel1.Font = new System.Drawing.Font("Tajawal", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -91,7 +91,7 @@ namespace MyClinic
             this.reports_but.CustomImages.Parent = this.reports_but;
             this.reports_but.FillColor = System.Drawing.Color.White;
             this.reports_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reports_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.reports_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.reports_but.HoverState.Parent = this.reports_but;
             this.reports_but.Image = ((System.Drawing.Image)(resources.GetObject("reports_but.Image")));
             this.reports_but.ImageOffset = new System.Drawing.Point(20, -15);
@@ -117,7 +117,7 @@ namespace MyClinic
             this.attendance_but.CustomImages.Parent = this.attendance_but;
             this.attendance_but.FillColor = System.Drawing.Color.White;
             this.attendance_but.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.attendance_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.attendance_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.attendance_but.HoverState.Parent = this.attendance_but;
             this.attendance_but.Image = ((System.Drawing.Image)(resources.GetObject("attendance_but.Image")));
             this.attendance_but.ImageOffset = new System.Drawing.Point(0, -5);
@@ -143,7 +143,7 @@ namespace MyClinic
             this.doctors_but.CustomImages.Parent = this.doctors_but;
             this.doctors_but.FillColor = System.Drawing.Color.White;
             this.doctors_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doctors_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.doctors_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.doctors_but.HoverState.Parent = this.doctors_but;
             this.doctors_but.Image = ((System.Drawing.Image)(resources.GetObject("doctors_but.Image")));
             this.doctors_but.ImageOffset = new System.Drawing.Point(23, -15);
@@ -169,7 +169,7 @@ namespace MyClinic
             this.scedual_but.CustomImages.Parent = this.scedual_but;
             this.scedual_but.FillColor = System.Drawing.Color.White;
             this.scedual_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scedual_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.scedual_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.scedual_but.HoverState.Parent = this.scedual_but;
             this.scedual_but.Image = ((System.Drawing.Image)(resources.GetObject("scedual_but.Image")));
             this.scedual_but.ImageOffset = new System.Drawing.Point(22, -10);
@@ -195,7 +195,7 @@ namespace MyClinic
             this.sessions_but.CustomImages.Parent = this.sessions_but;
             this.sessions_but.FillColor = System.Drawing.Color.White;
             this.sessions_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessions_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.sessions_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.sessions_but.HoverState.Parent = this.sessions_but;
             this.sessions_but.Image = ((System.Drawing.Image)(resources.GetObject("sessions_but.Image")));
             this.sessions_but.ImageOffset = new System.Drawing.Point(29, -15);
@@ -221,7 +221,7 @@ namespace MyClinic
             this.exam_but.CustomImages.Parent = this.exam_but;
             this.exam_but.FillColor = System.Drawing.Color.White;
             this.exam_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exam_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.exam_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.exam_but.HoverState.Parent = this.exam_but;
             this.exam_but.Image = ((System.Drawing.Image)(resources.GetObject("exam_but.Image")));
             this.exam_but.ImageOffset = new System.Drawing.Point(24, -15);
@@ -247,7 +247,7 @@ namespace MyClinic
             this.patient_but.CustomImages.Parent = this.patient_but;
             this.patient_but.FillColor = System.Drawing.Color.White;
             this.patient_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patient_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.patient_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.patient_but.HoverState.Parent = this.patient_but;
             this.patient_but.Image = ((System.Drawing.Image)(resources.GetObject("patient_but.Image")));
             this.patient_but.ImageOffset = new System.Drawing.Point(24, -15);
@@ -273,7 +273,7 @@ namespace MyClinic
             this.home_but.CustomImages.Parent = this.home_but;
             this.home_but.FillColor = System.Drawing.Color.White;
             this.home_but.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.home_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(131)))), ((int)(((byte)(60)))));
+            this.home_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.home_but.HoverState.Parent = this.home_but;
             this.home_but.Image = ((System.Drawing.Image)(resources.GetObject("home_but.Image")));
             this.home_but.ImageOffset = new System.Drawing.Point(17, -15);
