@@ -16,5 +16,17 @@ namespace MyClinic
         {
             InitializeComponent();
         }
+
+        private void add_dr_but_Click(object sender, EventArgs e)
+        {
+            add_patient_form add_Patient = new add_patient_form();
+            add_Patient.ShowDialog();
+        }
+
+        private void edit_but_Click(object sender, EventArgs e)
+        {
+            edit_patient_form edit_Patient = new edit_patient_form();
+            edit_Patient.ShowDialog();
+        }
     }
 }

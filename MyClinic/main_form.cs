@@ -37,6 +37,7 @@ namespace MyClinic
             doctors_contr1.Hide();
             patient_cont1.Hide();
             attendance_cont1.Hide();
+            exam_cont1.Hide();
         }
 
         #endregion
@@ -82,6 +83,8 @@ namespace MyClinic
         private void exam_but_Click(object sender, EventArgs e)
         {
             butt_select(exam_but);
+            hid_controlers();
+            exam_cont1.Show();
         }
 
         private void patient_but_Click(object sender, EventArgs e)
@@ -100,8 +103,12 @@ namespace MyClinic
         {
             Application.OpenForms[0].Show();
         }
+
         #endregion
 
-       
+        private void exam_cont1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
