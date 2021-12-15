@@ -44,6 +44,7 @@ namespace MyClinic
             this.attendance_cont1 = new MyClinic.attendance_cont();
             this.patient_cont1 = new MyClinic.patient_cont();
             this.doctors_contr1 = new MyClinic.doctors_contr();
+            this.sessions_cont1 = new MyClinic.sessions_cont();
             this.back_panel.SuspendLayout();
             this.top_panel.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +56,7 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Right)));
             this.back_panel.AutoScroll = true;
             this.back_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.back_panel.Controls.Add(this.sessions_cont1);
             this.back_panel.Controls.Add(this.exam_cont1);
             this.back_panel.Controls.Add(this.attendance_cont1);
             this.back_panel.Controls.Add(this.patient_cont1);
@@ -327,6 +329,15 @@ namespace MyClinic
             this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
             this.doctors_contr1.TabIndex = 1;
             // 
+            // sessions_cont1
+            // 
+            this.sessions_cont1.AutoScroll = true;
+            this.sessions_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sessions_cont1.Location = new System.Drawing.Point(0, 0);
+            this.sessions_cont1.Name = "sessions_cont1";
+            this.sessions_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.sessions_cont1.TabIndex = 5;
+            // 
             // main_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,5 +371,6 @@ namespace MyClinic
         private patient_cont patient_cont1;
         private attendance_cont attendance_cont1;
         private exam_cont exam_cont1;
+        private sessions_cont sessions_cont1;
     }
 }

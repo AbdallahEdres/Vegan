@@ -28,8 +28,10 @@ C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.add_dr_form.res
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_dr_form.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.patient_cont.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.attendance_cont.resources
-C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.AssemblyReference.cache
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.add_patient_form.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_patient_form.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.exam_cont.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.add_exam_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.sessions_cont.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.AssemblyReference.cache
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.new_session_form.resources
