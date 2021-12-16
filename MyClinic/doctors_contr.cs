@@ -12,46 +12,65 @@ namespace MyClinic
 {
     public partial class doctors_contr : UserControl
     {
-        DataTable d = new DataTable();
 
         dr_scedual_factory sec;
+        dr_model_class dr_Model = new dr_model_class();
+
+        // var declearation
+        string name = "", phone = "", speciality = "",days="";
+        int id = -1;
+        // method to fill dr_info
+        void fill_dr_info()
+        {
+            name_val_label.Text = name;
+            phone_val_label.Text = phone;
+            days_val_label.Text = days ;
+            speciality_val_label.Text = speciality;
+        }
+        // method to fill dr_list 
+        void fill_dr_list()
+        {
+            dr_list_grid.DataSource = dr_Model.get_dr_list();
+            dr_list_grid.Columns[0].Visible = false;
+            dr_list_grid.Columns[1].HeaderText = "الإسم";
+            dr_list_grid.Columns[2].HeaderText = "الهاتف";
+
+        }
+
+        private void dr_list_grid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                id = Convert.ToInt32(dr_list_grid.Rows[e.RowIndex].Cells[0].Value);
+                dr_Model.get_dr_info(id, ref name, ref phone, ref days, ref speciality);
+                fill_dr_info();
+            }
+           
+        }
+
         public doctors_contr()
         {
             InitializeComponent();
-            d.Columns.Add("الساعه");
-            d.Columns.Add("الحاله");
-
-
-
-            string[] names = { "محمد احمد", "محمد احمد", "محمد احمد", "محمد احمد", "محمد احمد", "محمد احمد", "محمد احمد" };
-            int[] ti = { 3, 4, 5, 6, 7, 8, 9 };
-            sec = new dr_scedual_factory(1, 6, d);
-            for (int i = 0; i < ti.Length; i++)
-            {
-                d.Rows.Add(ti[i], names[i]);
-            }
-            flowLayoutPanel1.Controls.AddRange(sec.creat_days());
-
-
+            fill_dr_list();
+            fill_dr_info();
         }
 
-        private void guna2ShadowPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
 
         private void add_dr_but_Click(object sender, EventArgs e)
         {
             add_dr_form add_form = new add_dr_form();
             add_form.ShowDialog();
+            fill_dr_list();
         }
 
         private void edit_but_Click(object sender, EventArgs e)
         {
-            edit_dr_form edit_form = new edit_dr_form();
+            edit_dr_form edit_form = new edit_dr_form(id);
             edit_form.ShowDialog();
+            fill_dr_list();
         }
 
-       
+      
     }
 }

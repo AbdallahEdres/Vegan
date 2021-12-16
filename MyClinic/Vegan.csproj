@@ -75,6 +75,8 @@
     <Compile Include="attendance_cont.Designer.cs">
       <DependentUpon>attendance_cont.cs</DependentUpon>
     </Compile>
+    <Compile Include="conniction_class.cs" />
+    <Compile Include="dr_model_class.cs" />
     <Compile Include="edit_patient_form.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -47,7 +47,7 @@ namespace MyClinic
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tajawal ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.label1.Location = new System.Drawing.Point(166, 19);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -61,7 +61,7 @@ namespace MyClinic
             this.add_dr_but.BorderRadius = 25;
             this.add_dr_but.CheckedState.Parent = this.add_dr_but;
             this.add_dr_but.CustomImages.Parent = this.add_dr_but;
-            this.add_dr_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.add_dr_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.add_dr_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_dr_but.ForeColor = System.Drawing.Color.White;
             this.add_dr_but.HoverState.Parent = this.add_dr_but;
@@ -72,12 +72,13 @@ namespace MyClinic
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
             this.add_dr_but.TabIndex = 27;
             this.add_dr_but.Text = "حفظ";
+            this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 
             // speciality_label
             // 
             this.speciality_label.AutoSize = true;
             this.speciality_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.speciality_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.speciality_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.speciality_label.Location = new System.Drawing.Point(479, 374);
             this.speciality_label.Name = "speciality_label";
             this.speciality_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -89,7 +90,7 @@ namespace MyClinic
             // 
             this.group_label.AutoSize = true;
             this.group_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.group_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.group_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.group_label.Location = new System.Drawing.Point(479, 295);
             this.group_label.Name = "group_label";
             this.group_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -101,7 +102,7 @@ namespace MyClinic
             // 
             this.phone_label.AutoSize = true;
             this.phone_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.phone_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.phone_label.Location = new System.Drawing.Point(479, 216);
             this.phone_label.Name = "phone_label";
             this.phone_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -113,7 +114,7 @@ namespace MyClinic
             // 
             this.name_label.AutoSize = true;
             this.name_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.name_label.Location = new System.Drawing.Point(479, 137);
             this.name_label.Name = "name_label";
             this.name_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -123,7 +124,7 @@ namespace MyClinic
             // 
             // phone_txt
             // 
-            this.phone_txt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.phone_txt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.phone_txt.BorderRadius = 15;
             this.phone_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.phone_txt.DefaultText = "";
@@ -135,7 +136,7 @@ namespace MyClinic
             this.phone_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_txt.FocusedState.Parent = this.phone_txt;
             this.phone_txt.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.phone_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.phone_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_txt.HoverState.Parent = this.phone_txt;
             this.phone_txt.Location = new System.Drawing.Point(72, 213);
@@ -152,14 +153,14 @@ namespace MyClinic
             // group_combo
             // 
             this.group_combo.BackColor = System.Drawing.Color.Transparent;
-            this.group_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.group_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.group_combo.BorderRadius = 15;
             this.group_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.group_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.group_combo.FocusedColor = System.Drawing.Color.Empty;
             this.group_combo.FocusedState.Parent = this.group_combo;
             this.group_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.group_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.group_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.group_combo.FormattingEnabled = true;
             this.group_combo.HoverState.Parent = this.group_combo;
             this.group_combo.ItemHeight = 30;
@@ -174,14 +175,14 @@ namespace MyClinic
             // spciality_combo
             // 
             this.spciality_combo.BackColor = System.Drawing.Color.Transparent;
-            this.spciality_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.spciality_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.spciality_combo.BorderRadius = 15;
             this.spciality_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.spciality_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.spciality_combo.FocusedColor = System.Drawing.Color.Empty;
             this.spciality_combo.FocusedState.Parent = this.spciality_combo;
             this.spciality_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.spciality_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.spciality_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.spciality_combo.FormattingEnabled = true;
             this.spciality_combo.HoverState.Parent = this.spciality_combo;
             this.spciality_combo.ItemHeight = 30;
@@ -195,7 +196,7 @@ namespace MyClinic
             // 
             // name_txt
             // 
-            this.name_txt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.name_txt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.name_txt.BorderRadius = 15;
             this.name_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.name_txt.DefaultText = "";
@@ -207,7 +208,7 @@ namespace MyClinic
             this.name_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_txt.FocusedState.Parent = this.name_txt;
             this.name_txt.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.name_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.name_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_txt.HoverState.Parent = this.name_txt;
             this.name_txt.Location = new System.Drawing.Point(72, 134);
@@ -229,7 +230,7 @@ namespace MyClinic
             this.cansel_but.CustomImages.Parent = this.cansel_but;
             this.cansel_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
             this.cansel_but.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(142)))), ((int)(((byte)(60)))));
+            this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.cansel_but.HoverState.Parent = this.cansel_but;
             this.cansel_but.ImageSize = new System.Drawing.Size(30, 30);
             this.cansel_but.Location = new System.Drawing.Point(131, 513);

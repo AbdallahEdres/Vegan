@@ -173,7 +173,6 @@ namespace MyClinic
             this.name_label.Size = new System.Drawing.Size(81, 31);
             this.name_label.TabIndex = 12;
             this.name_label.Text = "الإسم :";
-            this.name_label.Click += new System.EventHandler(this.name_label_Click);
             // 
             // phone_label
             // 
@@ -228,6 +227,7 @@ namespace MyClinic
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
             this.add_dr_but.TabIndex = 16;
             this.add_dr_but.Text = "إضافة";
+            this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 
             // label1
             // 
