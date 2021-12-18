@@ -15,7 +15,7 @@ namespace MyClinic
         //implement dr_model 
         dr_model_class dr_Model = new dr_model_class();
         // fill  combo boxes method 
-        string[]speciality = { "تغذية", "علاج طبيعي" };
+        string[] speciality = { "تغذية", "علاج طبيعي" };
 
         void fill_combo()
         {

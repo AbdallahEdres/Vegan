@@ -37,6 +37,15 @@ namespace MyClinic
 
         }
 
+        
+        public doctors_contr()
+        {
+            InitializeComponent();
+            fill_dr_list();
+            fill_dr_info();
+        }
+
+
         private void dr_list_grid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex > -1)
@@ -45,17 +54,8 @@ namespace MyClinic
                 dr_Model.get_dr_info(id, ref name, ref phone, ref days, ref speciality);
                 fill_dr_info();
             }
-           
-        }
 
-        public doctors_contr()
-        {
-            InitializeComponent();
-            fill_dr_list();
-            fill_dr_info();
         }
-
-     
 
         private void add_dr_but_Click(object sender, EventArgs e)
         {

@@ -187,6 +187,7 @@ namespace MyClinic
             this.done_but.Size = new System.Drawing.Size(102, 55);
             this.done_but.TabIndex = 44;
             this.done_but.Text = "تم";
+            this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
             // type_label
             // 

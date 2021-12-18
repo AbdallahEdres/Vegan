@@ -77,6 +77,7 @@ namespace MyClinic
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
             this.add_dr_but.TabIndex = 27;
             this.add_dr_but.Text = "إضافة";
+            this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 
             // type_label
             // 
@@ -262,7 +263,6 @@ namespace MyClinic
             this.adress_txt.ShadowDecoration.Parent = this.adress_txt;
             this.adress_txt.Size = new System.Drawing.Size(282, 36);
             this.adress_txt.TabIndex = 29;
-            this.adress_txt.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
             // age_num
             // 
@@ -288,7 +288,6 @@ namespace MyClinic
             this.age_num.TabIndex = 33;
             this.age_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.age_num.UpDownButtonForeColor = System.Drawing.Color.Black;
-            this.age_num.ValueChanged += new System.EventHandler(this.age_num_ValueChanged);
             // 
             // pay_label
             // 

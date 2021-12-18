@@ -29,5 +29,16 @@ namespace MyClinic
             Main.Show();
 
         }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                start_but.PerformClick();
+            }else if (e.KeyCode == Keys.Escape)
+            {
+                exit_but.PerformClick();
+            }
+        }
     }
 }
