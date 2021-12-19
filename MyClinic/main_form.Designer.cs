@@ -31,6 +31,10 @@ namespace MyClinic
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.back_panel = new System.Windows.Forms.Panel();
+            this.sessions_cont1 = new MyClinic.sessions_cont();
+            this.attendance_cont1 = new MyClinic.attendance_cont();
+            this.patient_cont1 = new MyClinic.patient_cont();
+            this.doctors_contr1 = new MyClinic.doctors_contr();
             this.top_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.reports_but = new Guna.UI2.WinForms.Guna2Button();
             this.attendance_but = new Guna.UI2.WinForms.Guna2Button();
@@ -41,10 +45,6 @@ namespace MyClinic
             this.patient_but = new Guna.UI2.WinForms.Guna2Button();
             this.home_but = new Guna.UI2.WinForms.Guna2Button();
             this.exam_cont1 = new MyClinic.exam_cont();
-            this.attendance_cont1 = new MyClinic.attendance_cont();
-            this.patient_cont1 = new MyClinic.patient_cont();
-            this.doctors_contr1 = new MyClinic.doctors_contr();
-            this.sessions_cont1 = new MyClinic.sessions_cont();
             this.back_panel.SuspendLayout();
             this.top_panel.SuspendLayout();
             this.SuspendLayout();
@@ -56,8 +56,8 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Right)));
             this.back_panel.AutoScroll = true;
             this.back_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.back_panel.Controls.Add(this.sessions_cont1);
             this.back_panel.Controls.Add(this.exam_cont1);
+            this.back_panel.Controls.Add(this.sessions_cont1);
             this.back_panel.Controls.Add(this.attendance_cont1);
             this.back_panel.Controls.Add(this.patient_cont1);
             this.back_panel.Controls.Add(this.doctors_contr1);
@@ -66,6 +66,39 @@ namespace MyClinic
             this.back_panel.Name = "back_panel";
             this.back_panel.Size = new System.Drawing.Size(1265, 564);
             this.back_panel.TabIndex = 0;
+            // 
+            // sessions_cont1
+            // 
+            this.sessions_cont1.AutoScroll = true;
+            this.sessions_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sessions_cont1.Location = new System.Drawing.Point(0, 0);
+            this.sessions_cont1.Name = "sessions_cont1";
+            this.sessions_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.sessions_cont1.TabIndex = 5;
+            // 
+            // attendance_cont1
+            // 
+            this.attendance_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.attendance_cont1.Location = new System.Drawing.Point(0, 0);
+            this.attendance_cont1.Name = "attendance_cont1";
+            this.attendance_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.attendance_cont1.TabIndex = 3;
+            // 
+            // patient_cont1
+            // 
+            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
+            this.patient_cont1.Name = "patient_cont1";
+            this.patient_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.patient_cont1.TabIndex = 2;
+            // 
+            // doctors_contr1
+            // 
+            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
+            this.doctors_contr1.Name = "doctors_contr1";
+            this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
+            this.doctors_contr1.TabIndex = 1;
             // 
             // top_panel
             // 
@@ -302,40 +335,7 @@ namespace MyClinic
             this.exam_cont1.Location = new System.Drawing.Point(0, 0);
             this.exam_cont1.Name = "exam_cont1";
             this.exam_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.exam_cont1.TabIndex = 4;
-            // 
-            // attendance_cont1
-            // 
-            this.attendance_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.attendance_cont1.Location = new System.Drawing.Point(0, 0);
-            this.attendance_cont1.Name = "attendance_cont1";
-            this.attendance_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.attendance_cont1.TabIndex = 3;
-            // 
-            // patient_cont1
-            // 
-            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
-            this.patient_cont1.Name = "patient_cont1";
-            this.patient_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.patient_cont1.TabIndex = 2;
-            // 
-            // doctors_contr1
-            // 
-            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
-            this.doctors_contr1.Name = "doctors_contr1";
-            this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
-            this.doctors_contr1.TabIndex = 1;
-            // 
-            // sessions_cont1
-            // 
-            this.sessions_cont1.AutoScroll = true;
-            this.sessions_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sessions_cont1.Location = new System.Drawing.Point(0, 0);
-            this.sessions_cont1.Name = "sessions_cont1";
-            this.sessions_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.sessions_cont1.TabIndex = 5;
+            this.exam_cont1.TabIndex = 6;
             // 
             // main_form
             // 
@@ -369,7 +369,7 @@ namespace MyClinic
         private doctors_contr doctors_contr1;
         private patient_cont patient_cont1;
         private attendance_cont attendance_cont1;
-        private exam_cont exam_cont1;
         private sessions_cont sessions_cont1;
+        private exam_cont exam_cont1;
     }
 }

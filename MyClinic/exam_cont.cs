@@ -17,7 +17,7 @@ namespace MyClinic
         exam_model_class exam_Model = new exam_model_class();
 
         // var declearation
-
+        int selected_row_index = -1;
         // method to define the filter condetion
         string define_cond()
         {
@@ -78,6 +78,7 @@ namespace MyClinic
             add_exam_form add_Exam = new add_exam_form();
             add_Exam.ShowDialog();
             fill_exam_list();
+             
         }
 
         private void search_txt_TextChanged(object sender, EventArgs e)
@@ -115,6 +116,59 @@ namespace MyClinic
                 fill_exam_list();
             }
 
+        }
+
+        private void exam_grid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex==2&& e.RowIndex > -1)
+            {
+                string old_date = exam_grid.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string time = exam_grid.Rows[e.RowIndex].Cells[3].Value.ToString();
+                DialogResult d = MessageBox.Show("هل تريد تغير تاريخ الكشف؟", "تحذير! ", MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
+                {
+                    edit_date_form edit_Date = new edit_date_form(old_date,time);
+                    edit_Date.ShowDialog();
+                    fill_exam_list();
+                }
+            }else if (e.ColumnIndex == 3 && e.RowIndex > -1)
+            {
+                string old_date = exam_grid.Rows[e.RowIndex].Cells[2].Value.ToString();
+                string time = exam_grid.Rows[e.RowIndex].Cells[3].Value.ToString();
+                DialogResult d = MessageBox.Show("هل تريد تغير موعد الكشف؟", "تحذير! ", MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
+                {
+                    edit_time_form edit_Time = new edit_time_form(time, old_date);
+                    edit_Time.ShowDialog();
+                    fill_exam_list();
+                }
+            }
+        }
+
+        private void delete_but_Click(object sender, EventArgs e)
+        {
+            if (selected_row_index > -1)
+            {
+                string date = Convert.ToString(exam_grid.Rows[selected_row_index].Cells[2].Value);
+                string time = exam_grid.Rows[selected_row_index].Cells[3].Value.ToString();
+                selected_row_index = -1;
+                DialogResult d = MessageBox.Show("هل انت متاكد من حذف الموعد؟","رسالة تاكيد ",MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
+                {
+                    exam_Model.delete_exam(date, time);
+                    fill_exam_list();
+                }
+            }
+            else
+            {
+                MessageBox.Show("لم يتم اختيار موعد");
+            }
+          
+        }
+
+        private void exam_grid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selected_row_index = e.RowIndex;
         }
     }
 }

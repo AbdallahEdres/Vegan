@@ -59,7 +59,7 @@ namespace MyClinic
             this.exam_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -81,7 +81,7 @@ namespace MyClinic
             this.exam_grid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.exam_grid.RowHeadersVisible = false;
             this.exam_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.exam_grid.Size = new System.Drawing.Size(800, 375);
+            this.exam_grid.Size = new System.Drawing.Size(871, 375);
             this.exam_grid.TabIndex = 19;
             this.exam_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.exam_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
@@ -93,7 +93,7 @@ namespace MyClinic
             this.exam_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.exam_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.exam_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.exam_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exam_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exam_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.exam_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.exam_grid.ThemeStyle.HeaderStyle.Height = 50;
@@ -110,7 +110,7 @@ namespace MyClinic
             // 
             this.search_pic.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.search_pic.Image = ((System.Drawing.Image)(resources.GetObject("search_pic.Image")));
-            this.search_pic.Location = new System.Drawing.Point(167, 24);
+            this.search_pic.Location = new System.Drawing.Point(202, 24);
             this.search_pic.Name = "search_pic";
             this.search_pic.Size = new System.Drawing.Size(50, 29);
             this.search_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,7 +134,7 @@ namespace MyClinic
             this.search_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.search_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.search_txt.HoverState.Parent = this.search_txt;
-            this.search_txt.Location = new System.Drawing.Point(229, 20);
+            this.search_txt.Location = new System.Drawing.Point(264, 20);
             this.search_txt.Margin = new System.Windows.Forms.Padding(8, 11, 8, 11);
             this.search_txt.Name = "search_txt";
             this.search_txt.PasswordChar = '\0';
@@ -149,7 +149,7 @@ namespace MyClinic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(871, 450);
             this.Controls.Add(this.search_pic);
             this.Controls.Add(this.search_txt);
             this.Controls.Add(this.exam_grid);

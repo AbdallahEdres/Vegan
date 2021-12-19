@@ -73,5 +73,30 @@ namespace MyClinic
             cn.Close();
             return stat;
         }
+        // method to edit exam date 
+        public void edit_date(string new_date,string old_date , string time)
+        {
+            cn.Open();
+            cmd = new SqlCommand("update exam set sess_date = '"+new_date+ "' where sess_date='" +old_date + "' and sess_time='" + time + "'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
+        //method to edit time 
+        public void edit_time(string new_time, string old_date, string time)
+        {
+            cn.Open();
+            cmd = new SqlCommand("update exam set sess_time = '" + new_time + "' where sess_date='" + old_date + "' and sess_time='" + time + "'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
+        // method to delete an appointment
+        public void delete_exam( string old_date, string time)
+        {
+            cn.Open();
+            cmd = new SqlCommand("delete from exam where sess_date='" + old_date + "' and sess_time='" + time + "'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+
+        }
     }
 }

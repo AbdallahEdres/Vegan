@@ -34,6 +34,7 @@ namespace MyClinic
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(exam_cont));
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.delete_but = new Guna.UI2.WinForms.Guna2Button();
             this.prev_exam_but = new Guna.UI2.WinForms.Guna2Button();
             this.exam_grid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.add_dr_but = new Guna.UI2.WinForms.Guna2Button();
@@ -54,6 +55,7 @@ namespace MyClinic
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.delete_but);
             this.guna2ShadowPanel1.Controls.Add(this.prev_exam_but);
             this.guna2ShadowPanel1.Controls.Add(this.exam_grid);
             this.guna2ShadowPanel1.Controls.Add(this.add_dr_but);
@@ -78,9 +80,28 @@ namespace MyClinic
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(1265, 565);
             this.guna2ShadowPanel1.TabIndex = 3;
             // 
+            // delete_but
+            // 
+            this.delete_but.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.delete_but.BorderRadius = 25;
+            this.delete_but.CheckedState.Parent = this.delete_but;
+            this.delete_but.CustomImages.Parent = this.delete_but;
+            this.delete_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.delete_but.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_but.ForeColor = System.Drawing.Color.White;
+            this.delete_but.HoverState.Parent = this.delete_but;
+            this.delete_but.ImageSize = new System.Drawing.Size(30, 30);
+            this.delete_but.Location = new System.Drawing.Point(818, 62);
+            this.delete_but.Name = "delete_but";
+            this.delete_but.ShadowDecoration.Parent = this.delete_but;
+            this.delete_but.Size = new System.Drawing.Size(135, 108);
+            this.delete_but.TabIndex = 20;
+            this.delete_but.Text = "حذف موعد";
+            this.delete_but.Click += new System.EventHandler(this.delete_but_Click);
+            // 
             // prev_exam_but
             // 
-            this.prev_exam_but.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.prev_exam_but.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.prev_exam_but.BorderRadius = 25;
             this.prev_exam_but.CheckedState.Parent = this.prev_exam_but;
             this.prev_exam_but.CustomImages.Parent = this.prev_exam_but;
@@ -89,10 +110,10 @@ namespace MyClinic
             this.prev_exam_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.prev_exam_but.HoverState.Parent = this.prev_exam_but;
             this.prev_exam_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.prev_exam_but.Location = new System.Drawing.Point(897, 59);
+            this.prev_exam_but.Location = new System.Drawing.Point(959, 59);
             this.prev_exam_but.Name = "prev_exam_but";
             this.prev_exam_but.ShadowDecoration.Parent = this.prev_exam_but;
-            this.prev_exam_but.Size = new System.Drawing.Size(147, 121);
+            this.prev_exam_but.Size = new System.Drawing.Size(135, 108);
             this.prev_exam_but.TabIndex = 19;
             this.prev_exam_but.Text = "الكشوفات السابقة";
             this.prev_exam_but.Click += new System.EventHandler(this.prev_exam_but_Click);
@@ -110,14 +131,14 @@ namespace MyClinic
             this.exam_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.exam_grid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.exam_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.exam_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.exam_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.exam_grid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.exam_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.exam_grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.exam_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -151,7 +172,7 @@ namespace MyClinic
             this.exam_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.exam_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.exam_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.exam_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exam_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exam_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.exam_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.exam_grid.ThemeStyle.HeaderStyle.Height = 50;
@@ -163,11 +184,13 @@ namespace MyClinic
             this.exam_grid.ThemeStyle.RowsStyle.Height = 22;
             this.exam_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.exam_grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.exam_grid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.exam_grid_CellClick);
             this.exam_grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.exam_grid_CellContentClick);
+            this.exam_grid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.exam_grid_CellDoubleClick);
             // 
             // add_dr_but
             // 
-            this.add_dr_but.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.add_dr_but.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.add_dr_but.BorderRadius = 25;
             this.add_dr_but.CheckedState.Parent = this.add_dr_but;
             this.add_dr_but.CustomImages.Parent = this.add_dr_but;
@@ -178,11 +201,11 @@ namespace MyClinic
             this.add_dr_but.Image = ((System.Drawing.Image)(resources.GetObject("add_dr_but.Image")));
             this.add_dr_but.ImageOffset = new System.Drawing.Point(33, 28);
             this.add_dr_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.add_dr_but.Location = new System.Drawing.Point(1088, 59);
+            this.add_dr_but.Location = new System.Drawing.Point(1100, 59);
             this.add_dr_but.Name = "add_dr_but";
             this.add_dr_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
-            this.add_dr_but.Size = new System.Drawing.Size(147, 121);
+            this.add_dr_but.Size = new System.Drawing.Size(135, 108);
             this.add_dr_but.TabIndex = 17;
             this.add_dr_but.Text = "كشف جديد";
             this.add_dr_but.TextOffset = new System.Drawing.Point(-7, -10);
@@ -206,7 +229,7 @@ namespace MyClinic
             this.today_label.AutoSize = true;
             this.today_label.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.today_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.today_label.Location = new System.Drawing.Point(756, 134);
+            this.today_label.Location = new System.Drawing.Point(717, 134);
             this.today_label.Name = "today_label";
             this.today_label.Size = new System.Drawing.Size(67, 36);
             this.today_label.TabIndex = 12;
@@ -222,7 +245,7 @@ namespace MyClinic
             this.days_switch.CheckedState.InnerBorderRadius = 10;
             this.days_switch.CheckedState.InnerColor = System.Drawing.Color.White;
             this.days_switch.CheckedState.Parent = this.days_switch;
-            this.days_switch.Location = new System.Drawing.Point(636, 141);
+            this.days_switch.Location = new System.Drawing.Point(616, 141);
             this.days_switch.Name = "days_switch";
             this.days_switch.ShadowDecoration.Parent = this.days_switch;
             this.days_switch.Size = new System.Drawing.Size(85, 29);
@@ -293,7 +316,7 @@ namespace MyClinic
             this.all_radio.CheckedState.InnerOffset = -4;
             this.all_radio.Font = new System.Drawing.Font("Tajawal Medium", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.all_radio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.all_radio.Location = new System.Drawing.Point(723, 69);
+            this.all_radio.Location = new System.Drawing.Point(703, 69);
             this.all_radio.Name = "all_radio";
             this.all_radio.Size = new System.Drawing.Size(81, 37);
             this.all_radio.TabIndex = 8;
@@ -385,5 +408,6 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2Button add_dr_but;
         private Guna.UI2.WinForms.Guna2DataGridView exam_grid;
         private Guna.UI2.WinForms.Guna2Button prev_exam_but;
+        private Guna.UI2.WinForms.Guna2Button delete_but;
     }
 }

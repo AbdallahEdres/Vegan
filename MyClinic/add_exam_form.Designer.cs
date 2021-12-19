@@ -598,6 +598,7 @@ namespace MyClinic
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "add_exam_form";
             this.Opacity = 0.95D;
+            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "add_exam_form";

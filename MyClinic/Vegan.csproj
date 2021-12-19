@@ -77,6 +77,18 @@
     </Compile>
     <Compile Include="conniction_class.cs" />
     <Compile Include="dr_model_class.cs" />
+    <Compile Include="edit date form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit date form.Designer.cs">
+      <DependentUpon>edit date form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit time form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit time form.Designer.cs">
+      <DependentUpon>edit time form.cs</DependentUpon>
+    </Compile>
     <Compile Include="edit_patient_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="attendance_cont.resx">
       <DependentUpon>attendance_cont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit date form.resx">
+      <DependentUpon>edit date form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit time form.resx">
+      <DependentUpon>edit time form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="edit_patient_form.resx">
       <DependentUpon>edit_patient_form.cs</DependentUpon>

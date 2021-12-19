@@ -33,6 +33,7 @@ namespace MyClinic
         {
             type_combo.Items.AddRange(type);
             am_pm_combo.SelectedIndex = 0;
+            type_combo.SelectedIndex = 0;
             
         }
             // method to add new examination
