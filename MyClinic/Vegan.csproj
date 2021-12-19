@@ -89,6 +89,7 @@
     <Compile Include="exam_cont.Designer.cs">
       <DependentUpon>exam_cont.cs</DependentUpon>
     </Compile>
+    <Compile Include="exam_model_class.cs" />
     <Compile Include="new_session_form.cs">
       <SubType>Form</SubType>
     </Compile>

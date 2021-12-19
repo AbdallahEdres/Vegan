@@ -196,6 +196,7 @@ namespace MyClinic
             this.search_txt.ShadowDecoration.Parent = this.search_txt;
             this.search_txt.Size = new System.Drawing.Size(278, 36);
             this.search_txt.TabIndex = 4;
+            this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
             // 
             // edit_but
             // 

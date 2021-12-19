@@ -44,10 +44,15 @@ namespace MyClinic
            
         }
 
+        private void search_txt_TextChanged(object sender, EventArgs e)
+        {
+            fill_patietns_list();
+        }
+
         // method to fill patients list
         void fill_patietns_list()
         {
-            ptnt_list_grid.DataSource = ptnt_Model.get_ptnt_list();
+            ptnt_list_grid.DataSource = ptnt_Model.get_ptnt_list(search_txt.Text);
             ptnt_list_grid.Columns[0].Visible = false;
             ptnt_list_grid.Columns[1].HeaderText = "الإسم";
             ptnt_list_grid.Columns[2].HeaderText = "الهاتف";

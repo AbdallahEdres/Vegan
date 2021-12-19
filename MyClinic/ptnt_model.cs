@@ -28,10 +28,10 @@ namespace MyClinic
             cn.Close();
         }
          // method to get patients list 
-        public DataTable get_ptnt_list()
+        public DataTable get_ptnt_list(string search)
         {
             patients_list = new DataTable();
-            cmd = new SqlCommand("select ptnt_id , ptnt_name ,ptnt_phone from ptnt_info",cn);
+            cmd = new SqlCommand("select ptnt_id , ptnt_name ,ptnt_phone from ptnt_info where ptnt_name like N'" + search + "%' or ptnt_phone like N'" + search + "%'", cn);
             da = new SqlDataAdapter(cmd);
             da.Fill(patients_list);
             return patients_list;

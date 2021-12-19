@@ -33,5 +33,4 @@ C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_patient_fo
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.exam_cont.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.add_exam_form.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.sessions_cont.resources
-C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.AssemblyReference.cache
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.new_session_form.resources

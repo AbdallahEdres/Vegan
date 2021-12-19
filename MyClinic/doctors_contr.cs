@@ -13,8 +13,8 @@ namespace MyClinic
     public partial class doctors_contr : UserControl
     {
 
-        dr_scedual_factory sec;
-        dr_model_class dr_Model = new dr_model_class();
+/*        dr_scedual_factory sec;
+*/        dr_model_class dr_Model = new dr_model_class();
 
         // var declearation
         string name = "", phone = "", speciality = "",days="";

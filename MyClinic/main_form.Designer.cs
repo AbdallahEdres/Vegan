@@ -303,7 +303,6 @@ namespace MyClinic
             this.exam_cont1.Name = "exam_cont1";
             this.exam_cont1.Size = new System.Drawing.Size(1265, 564);
             this.exam_cont1.TabIndex = 4;
-            this.exam_cont1.Load += new System.EventHandler(this.exam_cont1_Load);
             // 
             // attendance_cont1
             // 

@@ -109,9 +109,6 @@ namespace MyClinic
 
         #endregion
 
-        private void exam_cont1_Load(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }
