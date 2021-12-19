@@ -32,6 +32,7 @@ namespace MyClinic
         void fill_combo()
         {
             type_combo.Items.AddRange(type);
+            am_pm_combo.SelectedIndex = 0;
             
         }
             // method to add new examination
@@ -56,7 +57,16 @@ namespace MyClinic
                 hr = "0" + hr;
             }
             time = hr + ":" + min + ":00";
-            exam_Model.add_exam(ptnt_id, exam_date.Value, time, Convert.ToInt32(pay_num.Value), type[type_combo.SelectedIndex]);
+            if(exam_Model.check_date_time(exam_date.Value.ToString("yyyy-MM-dd"), time))
+            {
+                exam_Model.add_exam(ptnt_id, exam_date.Value, time, Convert.ToInt32(pay_num.Value), type[type_combo.SelectedIndex]);
+                MessageBox.Show("تم!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("الموعد محجوز مسبقاً");
+            }
         }
 
         public add_exam_form()
@@ -78,8 +88,7 @@ namespace MyClinic
             if (ptnt_id > 0)
             {
                 add_exam();
-                MessageBox.Show("تم!");
-                this.Close();
+                
             }
             else
             {

@@ -40,7 +40,7 @@ namespace MyClinic
         // method to fill examinations list 
         void fill_exam_list()
         {
-            exam_grid.DataSource = exam_Model.get_exam(search_txt.Text, define_cond());
+            exam_grid.DataSource = exam_Model.get_exam(search_txt.Text, define_cond(),0);
             exam_grid.Columns[0].HeaderText = "الإسم";
             exam_grid.Columns[0].ReadOnly = true;
 
@@ -93,6 +93,28 @@ namespace MyClinic
         private void nutrition_radio_CheckedChanged(object sender, EventArgs e)
         {
             fill_exam_list();
+        }
+
+        private void prev_exam_but_Click(object sender, EventArgs e)
+        {
+            prev_exam_form prev_Exam_Form = new prev_exam_form();
+            prev_Exam_Form.ShowDialog();
+        }
+
+       
+
+        private void exam_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1 && e.ColumnIndex == 6)
+            {
+                DialogResult dialogResult = MessageBox.Show("في حالة التعديل لا يمكن العوده , هل انت متاكد؟", "هل تريد تعديل الحالة؟", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    exam_Model.edit_stat(exam_grid.Rows[e.RowIndex].Cells[2].Value.ToString(), exam_grid.Rows[e.RowIndex].Cells[3].Value.ToString());
+                }
+                fill_exam_list();
+            }
+
         }
     }
 }

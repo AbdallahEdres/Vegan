@@ -16,6 +16,7 @@ namespace MyClinic
         SqlConnection cn = conniction_class.cn;
         SqlCommand cmd;
         SqlDataAdapter da;
+        SqlDataReader dr;
 
         // car declearation
         DataTable patients_list;
@@ -42,13 +43,35 @@ namespace MyClinic
         }
 
         // method to get examinations
-        public DataTable get_exam(string search,string cond)
+        public DataTable get_exam(string search,string cond,int stat)
         {
             exam_list = new DataTable();
-            cmd = new SqlCommand("select * from exam_veiw where( ptnt_name like N'"+search+"%' or ptnt_phone like N'"+search+"%')"+cond+" and stat=0", cn);
+            cmd = new SqlCommand("select * from exam_veiw where( ptnt_name like N'"+search+"%' or ptnt_phone like N'"+search+"%')"+cond+" and stat="+stat+"", cn);
             da = new SqlDataAdapter(cmd);
             da.Fill(exam_list);
             return exam_list;
+        }
+        // method to update exaination status 
+        public void edit_stat(string date , string time)
+        {
+            cn.Open();
+            cmd = new SqlCommand("update exam set stat=1 where sess_date ='"+date+"' and sess_time='"+time+"'",cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
+        // method to check if this appointment is free 
+        public bool check_date_time(string date, string time)
+        {
+            bool stat = true;
+            cn.Open();
+            cmd = new SqlCommand("select * from exam where sess_date='"+date+"' and sess_time='"+time+"'", cn);
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                stat = false;
+            }
+            cn.Close();
+            return stat;
         }
     }
 }
