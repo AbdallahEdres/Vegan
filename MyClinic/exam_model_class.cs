@@ -18,7 +18,7 @@ namespace MyClinic
         SqlDataAdapter da;
         SqlDataReader dr;
 
-        // car declearation
+        // var declearation
         DataTable patients_list;
         DataTable exam_list;
 
@@ -51,7 +51,7 @@ namespace MyClinic
             da.Fill(exam_list);
             return exam_list;
         }
-        // method to update exaination status 
+        // method to update examination status 
         public void edit_stat(string date , string time)
         {
             cn.Open();

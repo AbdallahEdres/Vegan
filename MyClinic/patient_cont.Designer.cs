@@ -447,7 +447,7 @@ namespace MyClinic
             this.type_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.type_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.type_label.Location = new System.Drawing.Point(216, 217);
+            this.type_label.Location = new System.Drawing.Point(237, 134);
             this.type_label.Name = "type_label";
             this.type_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_label.Size = new System.Drawing.Size(129, 31);
@@ -459,7 +459,7 @@ namespace MyClinic
             this.type_val_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.type_val_label.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type_val_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.type_val_label.Location = new System.Drawing.Point(37, 220);
+            this.type_val_label.Location = new System.Drawing.Point(49, 135);
             this.type_val_label.Name = "type_val_label";
             this.type_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_val_label.Size = new System.Drawing.Size(173, 29);
@@ -471,7 +471,7 @@ namespace MyClinic
             this.age_val_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.age_val_label.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_val_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.age_val_label.Location = new System.Drawing.Point(94, 178);
+            this.age_val_label.Location = new System.Drawing.Point(106, 88);
             this.age_val_label.Name = "age_val_label";
             this.age_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.age_val_label.Size = new System.Drawing.Size(114, 29);
@@ -483,7 +483,7 @@ namespace MyClinic
             this.address_val_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.address_val_label.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.address_val_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.address_val_label.Location = new System.Drawing.Point(3, 87);
+            this.address_val_label.Location = new System.Drawing.Point(15, 181);
             this.address_val_label.Name = "address_val_label";
             this.address_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.address_val_label.Size = new System.Drawing.Size(216, 73);
@@ -495,7 +495,7 @@ namespace MyClinic
             this.phone_val_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.phone_val_label.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_val_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.phone_val_label.Location = new System.Drawing.Point(388, 131);
+            this.phone_val_label.Location = new System.Drawing.Point(388, 135);
             this.phone_val_label.Name = "phone_val_label";
             this.phone_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone_val_label.Size = new System.Drawing.Size(258, 29);
@@ -519,7 +519,7 @@ namespace MyClinic
             this.age_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.age_label.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.age_label.Location = new System.Drawing.Point(225, 168);
+            this.age_label.Location = new System.Drawing.Point(237, 79);
             this.age_label.Name = "age_label";
             this.age_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.age_label.Size = new System.Drawing.Size(97, 40);
@@ -531,7 +531,7 @@ namespace MyClinic
             this.adress_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.adress_label.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adress_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.adress_label.Location = new System.Drawing.Point(225, 79);
+            this.adress_label.Location = new System.Drawing.Point(237, 175);
             this.adress_label.Name = "adress_label";
             this.adress_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.adress_label.Size = new System.Drawing.Size(118, 40);

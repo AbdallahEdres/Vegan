@@ -37,8 +37,7 @@ namespace MyClinic
         {
             if (e.RowIndex > -1)
             {
-                patient_id = Convert.ToInt32(ptnt_list_grid.Rows[e.RowIndex].Cells[0].Value
-                    );
+                patient_id = Convert.ToInt32(ptnt_list_grid.Rows[e.RowIndex].Cells[0].Value );
                 get_details();
             }
            

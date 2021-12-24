@@ -154,6 +154,7 @@
     <Compile Include="sessions_cont.Designer.cs">
       <DependentUpon>sessions_cont.cs</DependentUpon>
     </Compile>
+    <Compile Include="sess_model_class.cs" />
     <EmbeddedResource Include="add_dr_form.resx">
       <DependentUpon>add_dr_form.cs</DependentUpon>
     </EmbeddedResource>

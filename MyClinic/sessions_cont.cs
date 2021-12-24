@@ -12,9 +12,20 @@ namespace MyClinic
 {
     public partial class sessions_cont : UserControl
     {
+        //sessions model implment
+        sess_model_class sess_Model =new sess_model_class();
+        //method to fill patients list 
+        void fill_ptnt_list()
+        {
+            ptnt_list_grid.DataSource = sess_Model.get_ptnt_list(search_txt.Text);
+            ptnt_list_grid.Columns[0].Visible = false;
+            ptnt_list_grid.Columns[1].HeaderText = "الإسم";
+            ptnt_list_grid.Columns[2].HeaderText = "الهاتف";
+        }
         public sessions_cont()
         {
             InitializeComponent();
+            fill_ptnt_list();
         }
 
         private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
