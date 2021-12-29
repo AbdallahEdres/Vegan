@@ -13,15 +13,16 @@ namespace MyClinic
     public partial class doctors_contr : UserControl
     {
 
-/*        dr_scedual_factory sec;
-*/        dr_model_class dr_Model = new dr_model_class();
+        dr_scedual_factory sced = new dr_scedual_factory();
+        dr_model_class dr_Model = new dr_model_class();
 
         // var declearation
         string name = "", phone = "", speciality = "",days="";
-        int id = -1;
+        int id = 1;
         // method to fill dr_info
         void fill_dr_info()
         {
+            dr_Model.get_dr_info(id, ref name, ref phone, ref days, ref speciality);
             name_val_label.Text = name;
             phone_val_label.Text = phone;
             days_val_label.Text = days ;
@@ -36,6 +37,20 @@ namespace MyClinic
             dr_list_grid.Columns[2].HeaderText = "الهاتف";
 
         }
+        // method to fill flow layout
+        void fill_folow()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.AddRange(sced.creat_days(id, start_date_bic.Value, end_date_bic.Value).ToArray());
+            if (flowLayoutPanel1.Controls.Count > 0)
+            {
+                no_appoint_label.Visible = false;
+            }
+            else
+            {
+                no_appoint_label.Visible = true;
+            }
+        }
 
         
         public doctors_contr()
@@ -43,16 +58,27 @@ namespace MyClinic
             InitializeComponent();
             fill_dr_list();
             fill_dr_info();
+            start_date_bic.Value = DateTime.Today;
+            end_date_bic.Value = start_date_bic.Value.AddDays(7);
+            start_date_bic.MinDate = DateTime.Today;
+            end_date_bic.MinDate = start_date_bic.Value;
+            fill_folow();
         }
 
+        private void start_date_bic_ValueChanged(object sender, EventArgs e)
+        {
+            end_date_bic.MinDate = start_date_bic.Value;
+            fill_folow();
+
+        }
 
         private void dr_list_grid_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (e.RowIndex > -1)
             {
                 id = Convert.ToInt32(dr_list_grid.Rows[e.RowIndex].Cells[0].Value);
-                dr_Model.get_dr_info(id, ref name, ref phone, ref days, ref speciality);
                 fill_dr_info();
+                fill_folow();
             }
 
         }

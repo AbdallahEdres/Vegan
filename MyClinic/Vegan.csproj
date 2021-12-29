@@ -95,6 +95,12 @@
     <Compile Include="edit_patient_form.Designer.cs">
       <DependentUpon>edit_patient_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="edit_session_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_session_form.Designer.cs">
+      <DependentUpon>edit_session_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="exam_cont.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,13 @@
       <DependentUpon>exam_cont.cs</DependentUpon>
     </Compile>
     <Compile Include="exam_model_class.cs" />
+    <Compile Include="month_sced_cont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="month_sced_cont.Designer.cs">
+      <DependentUpon>month_sced_cont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="month_sced_model_class.cs" />
     <Compile Include="new_session_form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +168,12 @@
       <DependentUpon>sessions_cont.cs</DependentUpon>
     </Compile>
     <Compile Include="sess_model_class.cs" />
+    <Compile Include="sess_pay_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sess_pay_form.Designer.cs">
+      <DependentUpon>sess_pay_form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="add_dr_form.resx">
       <DependentUpon>add_dr_form.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,8 +195,14 @@
     <EmbeddedResource Include="edit_patient_form.resx">
       <DependentUpon>edit_patient_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="edit_session_form.resx">
+      <DependentUpon>edit_session_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="exam_cont.resx">
       <DependentUpon>exam_cont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="month_sced_cont.resx">
+      <DependentUpon>month_sced_cont.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="new_session_form.resx">
       <DependentUpon>new_session_form.cs</DependentUpon>
@@ -211,6 +236,9 @@
     </Compile>
     <EmbeddedResource Include="sessions_cont.resx">
       <DependentUpon>sessions_cont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sess_pay_form.resx">
+      <DependentUpon>sess_pay_form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

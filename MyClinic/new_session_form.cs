@@ -17,6 +17,7 @@ namespace MyClinic
 
         //var declearation
         List<List<string>> dr_details = new List<List<string>>();
+        int ptnt_id;
         // method to fill combo boxes 
         void fill_combo()
         {
@@ -78,11 +79,12 @@ namespace MyClinic
         // method to insert sessions in data base 
         int insert_sessions()
         {
-           return sess_Model.set_sessions(1,Convert.ToInt32( dr_details[0][dr_combo.SelectedIndex]), start_date_bick.Value, time_combo.SelectedItem.ToString(),Convert.ToInt32(pay_val_num.Value) , pay_combo.SelectedIndex, Convert.ToInt32(sessions_num.Value), Convert.ToInt32(wekly_sess_combo.SelectedItem));
+           return sess_Model.set_sessions(ptnt_id,Convert.ToInt32( dr_details[0][dr_combo.SelectedIndex]), start_date_bick.Value, time_combo.SelectedItem.ToString(),Convert.ToInt32(pay_val_num.Value) , pay_combo.SelectedIndex, Convert.ToInt32(sessions_num.Value), Convert.ToInt32(wekly_sess_combo.SelectedItem));
         }
-        public new_session_form()
+        public new_session_form(int _ptnt_id)
         {
             InitializeComponent();
+            ptnt_id = _ptnt_id;
             fill_combo();
         }
 

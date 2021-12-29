@@ -183,5 +183,47 @@ namespace MyClinic
             cn.Close();
             return stat;
         }
+        //method to get patients list of comming sessions
+        public DataTable get_comming(int ptnt_id)
+        {
+            DataTable comming = new DataTable();
+            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= "+ptnt_id+" and stat=0", cn);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(comming);
+            return comming;
+        }
+        // method to edit sessions 
+        public void edit_sess(DateTime old_date ,string old_time ,int dr_id,DateTime new_date,string new_time)
+        {
+            cn.Open();
+            cmd =new SqlCommand("update sessions_details set sess_date='"+new_date.ToString("yyyy-MM-dd")+"' , sess_time ='0"+new_time+":00:00' , dr_id ="+dr_id+" where sess_date='"+old_date.ToString("yyyy-MM-dd")+"' and sess_time ='0"+old_time+":00:00'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
+        //method to change session status
+        public void change_stat(string date ,string time, int ptnt_id)
+        {
+            cn.Open();
+            cmd = new SqlCommand("update sessions_details set stat=1 where ptnt_id=" + ptnt_id + " and sess_date='" + date + "' and sess_time ='" + time + "'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
+        //method to get previous sessions 
+        public DataTable get_prev(int ptnt_id)
+        {
+            DataTable comming = new DataTable();
+            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= " + ptnt_id + " and stat=1", cn);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(comming);
+            return comming;
+        }
+        //method to edit payment for session
+        public void set_pay(int pay, string date, string time, int ptnt_id)
+        {
+            cn.Open();
+            cmd = new SqlCommand("update sessions_details set payment="+pay+" where ptnt_id=" + ptnt_id + " and sess_date='" + date + "' and sess_time ='" + time + "'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
+        }
     }
 }

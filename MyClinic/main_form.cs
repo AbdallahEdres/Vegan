@@ -39,6 +39,7 @@ namespace MyClinic
             attendance_cont1.Hide();
             exam_cont1.Hide();
             sessions_cont1.Hide();
+            month_sced_cont1.Hide();
         }
 
         #endregion
@@ -67,6 +68,8 @@ namespace MyClinic
         private void scedual_but_Click(object sender, EventArgs e)
         {
             butt_select(scedual_but);
+            hid_controlers();
+            month_sced_cont1.Show();
         }
 
         private void doctors_but_Click(object sender, EventArgs e)

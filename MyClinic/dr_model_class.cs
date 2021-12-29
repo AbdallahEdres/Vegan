@@ -69,6 +69,31 @@ namespace MyClinic
             }
             cn.Close();
         }
-
+        //method to get doctor's daily scedual
+        public DataTable get_sced(DateTime date ,int dr_id)
+        {
+            DataTable day_sced = new DataTable();
+            cmd = new SqlCommand("select ptnt_name ,sess_time from scedual_veiw where sess_date='"+date.ToString("yyyy-MM-dd")+"' and dr_id ="+dr_id+"", cn);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(day_sced);
+            day_sced.Columns[0].ColumnName = "الإسم";
+            day_sced.Columns[1].ColumnName = "الساعة";
+            return day_sced;
+        }
+        // method to get days with appointments in range 
+        public List<DateTime> get_days(int dr_id, DateTime start,DateTime end)
+        {
+            List<DateTime> days = new List<DateTime>();
+            cn.Open();
+            cmd = new SqlCommand("select DISTINCT sess_date from sessions_details where sess_date BETWEEN '"+start.ToString("yyyy-MM-dd")+"' AND '"+end.ToString("yyyy-MM-dd")+"' AND dr_id="+dr_id+" and stat=0;", cn);
+            dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                days.Add(Convert.ToDateTime(dr[0]));
+            }
+            dr.Close();
+            cn.Close();
+            return days;
+        }
     }
 }

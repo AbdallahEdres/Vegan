@@ -30,17 +30,17 @@ namespace MyClinic
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(doctors_contr));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dr_list_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.edit_but = new Guna.UI2.WinForms.Guna2Button();
             this.add_dr_but = new Guna.UI2.WinForms.Guna2Button();
             this.dr_list_grid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dr_list_label = new System.Windows.Forms.Label();
             this.dr_details_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.end_date_bic = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.start_date_bic = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.end_date_label = new System.Windows.Forms.Label();
             this.start_date_label = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -53,6 +53,7 @@ namespace MyClinic
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.no_appoint_label = new System.Windows.Forms.Label();
             this.dr_list_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dr_list_grid)).BeginInit();
             this.dr_details_panel.SuspendLayout();
@@ -121,12 +122,12 @@ namespace MyClinic
             // 
             this.dr_list_grid.AllowUserToAddRows = false;
             this.dr_list_grid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dr_list_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
+            this.dr_list_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
             this.dr_list_grid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dr_list_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dr_list_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -134,23 +135,23 @@ namespace MyClinic
             this.dr_list_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dr_list_grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dr_list_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dr_list_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dr_list_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dr_list_grid.ColumnHeadersHeight = 50;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dr_list_grid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dr_list_grid.DefaultCellStyle = dataGridViewCellStyle21;
             this.dr_list_grid.EnableHeadersVisualStyles = false;
             this.dr_list_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dr_list_grid.Location = new System.Drawing.Point(21, 67);
@@ -201,8 +202,9 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dr_details_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.dr_details_panel.Controls.Add(this.guna2DateTimePicker2);
-            this.dr_details_panel.Controls.Add(this.guna2DateTimePicker1);
+            this.dr_details_panel.Controls.Add(this.no_appoint_label);
+            this.dr_details_panel.Controls.Add(this.end_date_bic);
+            this.dr_details_panel.Controls.Add(this.start_date_bic);
             this.dr_details_panel.Controls.Add(this.end_date_label);
             this.dr_details_panel.Controls.Add(this.start_date_label);
             this.dr_details_panel.Controls.Add(this.flowLayoutPanel1);
@@ -214,43 +216,45 @@ namespace MyClinic
             this.dr_details_panel.Size = new System.Drawing.Size(903, 559);
             this.dr_details_panel.TabIndex = 0;
             // 
-            // guna2DateTimePicker2
+            // end_date_bic
             // 
-            this.guna2DateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2DateTimePicker2.BorderRadius = 15;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(472, 233);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(262, 36);
-            this.guna2DateTimePicker2.TabIndex = 7;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2021, 12, 11, 15, 39, 0, 336);
+            this.end_date_bic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.end_date_bic.BorderRadius = 15;
+            this.end_date_bic.CheckedState.Parent = this.end_date_bic;
+            this.end_date_bic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.end_date_bic.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.end_date_bic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.end_date_bic.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.end_date_bic.HoverState.Parent = this.end_date_bic;
+            this.end_date_bic.Location = new System.Drawing.Point(39, 233);
+            this.end_date_bic.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.end_date_bic.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.end_date_bic.Name = "end_date_bic";
+            this.end_date_bic.ShadowDecoration.Parent = this.end_date_bic;
+            this.end_date_bic.Size = new System.Drawing.Size(282, 36);
+            this.end_date_bic.TabIndex = 7;
+            this.end_date_bic.Value = new System.DateTime(2021, 12, 11, 15, 39, 0, 336);
+            this.end_date_bic.ValueChanged += new System.EventHandler(this.start_date_bic_ValueChanged);
             // 
-            // guna2DateTimePicker1
+            // start_date_bic
             // 
-            this.guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2DateTimePicker1.BorderRadius = 15;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(59, 233);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(262, 36);
-            this.guna2DateTimePicker1.TabIndex = 6;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 12, 11, 15, 38, 58, 789);
+            this.start_date_bic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.start_date_bic.BorderRadius = 15;
+            this.start_date_bic.CheckedState.Parent = this.start_date_bic;
+            this.start_date_bic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.start_date_bic.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_date_bic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.start_date_bic.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.start_date_bic.HoverState.Parent = this.start_date_bic;
+            this.start_date_bic.Location = new System.Drawing.Point(471, 233);
+            this.start_date_bic.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.start_date_bic.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.start_date_bic.Name = "start_date_bic";
+            this.start_date_bic.ShadowDecoration.Parent = this.start_date_bic;
+            this.start_date_bic.Size = new System.Drawing.Size(282, 36);
+            this.start_date_bic.TabIndex = 6;
+            this.start_date_bic.Value = new System.DateTime(2021, 12, 11, 15, 38, 58, 789);
+            this.start_date_bic.ValueChanged += new System.EventHandler(this.start_date_bic_ValueChanged);
             // 
             // end_date_label
             // 
@@ -286,9 +290,10 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 293);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 283);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(897, 263);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(897, 273);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // guna2ShadowPanel1
@@ -416,6 +421,16 @@ namespace MyClinic
             this.label1.TabIndex = 0;
             this.label1.Text = "الإسم :";
             // 
+            // no_appoint_label
+            // 
+            this.no_appoint_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.no_appoint_label.AutoSize = true;
+            this.no_appoint_label.Location = new System.Drawing.Point(233, 283);
+            this.no_appoint_label.Name = "no_appoint_label";
+            this.no_appoint_label.Size = new System.Drawing.Size(428, 47);
+            this.no_appoint_label.TabIndex = 0;
+            this.no_appoint_label.Text = "لا يوجد جلسات في هذه الفتره";
+            // 
             // doctors_contr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,7 +471,8 @@ namespace MyClinic
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label end_date_label;
         private System.Windows.Forms.Label start_date_label;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker end_date_bic;
+        private Guna.UI2.WinForms.Guna2DateTimePicker start_date_bic;
+        private System.Windows.Forms.Label no_appoint_label;
     }
 }

@@ -38,3 +38,6 @@ C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.prev_exam_form.
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\Vegan.csproj.AssemblyReference.cache
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_date_form.resources
 C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_time_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.edit_session_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.sess_pay_form.resources
+C:\Users\DoDa\Desktop\Myclinic\Vegan\MyClinic\obj\Debug\MyClinic.month_sced_cont.resources
