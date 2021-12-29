@@ -24,7 +24,6 @@ namespace MyClinic
             doctors_but.Checked = false;
             scedual_but.Checked = false;
             reports_but.Checked = false;
-            attendance_but.Checked = false;
             sessions_but.Checked = false;
             exam_but.Checked = false;
 
@@ -40,6 +39,7 @@ namespace MyClinic
             exam_cont1.Hide();
             sessions_cont1.Hide();
             month_sced_cont1.Hide();
+            home_cont1.Hide();
         }
 
         #endregion
@@ -50,6 +50,8 @@ namespace MyClinic
         {
             InitializeComponent();
             hid_controlers();
+            home_cont1.Show();
+            butt_select(home_but);
 
         }
 
@@ -58,12 +60,6 @@ namespace MyClinic
             butt_select(reports_but);
         }
 
-        private void attendance_but_Click(object sender, EventArgs e)
-        {
-            butt_select(attendance_but);
-            hid_controlers();
-            attendance_cont1.Show();
-        }
 
         private void scedual_but_Click(object sender, EventArgs e)
         {
@@ -103,6 +99,8 @@ namespace MyClinic
         private void home_but_Click(object sender, EventArgs e)
         {
             butt_select(home_but);
+            hid_controlers();
+            home_cont1.Show();
         }
 
         private void main_form_FormClosed(object sender, FormClosedEventArgs e)

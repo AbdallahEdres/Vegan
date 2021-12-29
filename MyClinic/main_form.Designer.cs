@@ -31,21 +31,21 @@ namespace MyClinic
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main_form));
             this.back_panel = new System.Windows.Forms.Panel();
-            this.exam_cont1 = new MyClinic.exam_cont();
-            this.sessions_cont1 = new MyClinic.sessions_cont();
-            this.attendance_cont1 = new MyClinic.attendance_cont();
-            this.patient_cont1 = new MyClinic.patient_cont();
-            this.doctors_contr1 = new MyClinic.doctors_contr();
             this.top_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.reports_but = new Guna.UI2.WinForms.Guna2Button();
-            this.attendance_but = new Guna.UI2.WinForms.Guna2Button();
             this.doctors_but = new Guna.UI2.WinForms.Guna2Button();
             this.scedual_but = new Guna.UI2.WinForms.Guna2Button();
             this.sessions_but = new Guna.UI2.WinForms.Guna2Button();
             this.exam_but = new Guna.UI2.WinForms.Guna2Button();
             this.patient_but = new Guna.UI2.WinForms.Guna2Button();
             this.home_but = new Guna.UI2.WinForms.Guna2Button();
+            this.home_cont1 = new MyClinic.home_cont();
             this.month_sced_cont1 = new MyClinic.month_sced_cont();
+            this.exam_cont1 = new MyClinic.exam_cont();
+            this.sessions_cont1 = new MyClinic.sessions_cont();
+            this.attendance_cont1 = new MyClinic.attendance_cont();
+            this.patient_cont1 = new MyClinic.patient_cont();
+            this.doctors_contr1 = new MyClinic.doctors_contr();
             this.back_panel.SuspendLayout();
             this.top_panel.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +57,7 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Right)));
             this.back_panel.AutoScroll = true;
             this.back_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.back_panel.Controls.Add(this.home_cont1);
             this.back_panel.Controls.Add(this.month_sced_cont1);
             this.back_panel.Controls.Add(this.exam_cont1);
             this.back_panel.Controls.Add(this.sessions_cont1);
@@ -69,53 +70,11 @@ namespace MyClinic
             this.back_panel.Size = new System.Drawing.Size(1265, 564);
             this.back_panel.TabIndex = 0;
             // 
-            // exam_cont1
-            // 
-            this.exam_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exam_cont1.Location = new System.Drawing.Point(0, 0);
-            this.exam_cont1.Name = "exam_cont1";
-            this.exam_cont1.Size = new System.Drawing.Size(1265, 565);
-            this.exam_cont1.TabIndex = 6;
-            // 
-            // sessions_cont1
-            // 
-            this.sessions_cont1.AutoScroll = true;
-            this.sessions_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sessions_cont1.Location = new System.Drawing.Point(0, 0);
-            this.sessions_cont1.Name = "sessions_cont1";
-            this.sessions_cont1.Size = new System.Drawing.Size(1265, 565);
-            this.sessions_cont1.TabIndex = 5;
-            // 
-            // attendance_cont1
-            // 
-            this.attendance_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.attendance_cont1.Location = new System.Drawing.Point(0, 0);
-            this.attendance_cont1.Name = "attendance_cont1";
-            this.attendance_cont1.Size = new System.Drawing.Size(1265, 565);
-            this.attendance_cont1.TabIndex = 3;
-            // 
-            // patient_cont1
-            // 
-            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
-            this.patient_cont1.Name = "patient_cont1";
-            this.patient_cont1.Size = new System.Drawing.Size(1265, 565);
-            this.patient_cont1.TabIndex = 2;
-            // 
-            // doctors_contr1
-            // 
-            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
-            this.doctors_contr1.Name = "doctors_contr1";
-            this.doctors_contr1.Size = new System.Drawing.Size(1265, 565);
-            this.doctors_contr1.TabIndex = 1;
-            // 
             // top_panel
             // 
             this.top_panel.BackColor = System.Drawing.Color.Transparent;
             this.top_panel.BorderRadius = 20;
             this.top_panel.Controls.Add(this.reports_but);
-            this.top_panel.Controls.Add(this.attendance_but);
             this.top_panel.Controls.Add(this.doctors_but);
             this.top_panel.Controls.Add(this.scedual_but);
             this.top_panel.Controls.Add(this.sessions_but);
@@ -147,7 +106,7 @@ namespace MyClinic
             this.reports_but.Image = ((System.Drawing.Image)(resources.GetObject("reports_but.Image")));
             this.reports_but.ImageOffset = new System.Drawing.Point(20, -15);
             this.reports_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.reports_but.Location = new System.Drawing.Point(44, 4);
+            this.reports_but.Location = new System.Drawing.Point(113, 3);
             this.reports_but.Name = "reports_but";
             this.reports_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.reports_but.ShadowDecoration.Parent = this.reports_but;
@@ -156,32 +115,6 @@ namespace MyClinic
             this.reports_but.Text = "تقارير";
             this.reports_but.TextOffset = new System.Drawing.Point(-15, 32);
             this.reports_but.Click += new System.EventHandler(this.reports_but_Click);
-            // 
-            // attendance_but
-            // 
-            this.attendance_but.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.attendance_but.BorderColor = System.Drawing.Color.White;
-            this.attendance_but.BorderRadius = 50;
-            this.attendance_but.BorderThickness = 5;
-            this.attendance_but.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
-            this.attendance_but.CheckedState.Parent = this.attendance_but;
-            this.attendance_but.CustomImages.Parent = this.attendance_but;
-            this.attendance_but.FillColor = System.Drawing.Color.White;
-            this.attendance_but.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.attendance_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.attendance_but.HoverState.Parent = this.attendance_but;
-            this.attendance_but.Image = ((System.Drawing.Image)(resources.GetObject("attendance_but.Image")));
-            this.attendance_but.ImageOffset = new System.Drawing.Point(0, -5);
-            this.attendance_but.ImageSize = new System.Drawing.Size(40, 40);
-            this.attendance_but.Location = new System.Drawing.Point(193, 4);
-            this.attendance_but.Name = "attendance_but";
-            this.attendance_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.attendance_but.ShadowDecoration.Parent = this.attendance_but;
-            this.attendance_but.Size = new System.Drawing.Size(143, 111);
-            this.attendance_but.TabIndex = 6;
-            this.attendance_but.Text = "حضور / انصراف";
-            this.attendance_but.TextOffset = new System.Drawing.Point(0, 5);
-            this.attendance_but.Click += new System.EventHandler(this.attendance_but_Click);
             // 
             // doctors_but
             // 
@@ -199,7 +132,7 @@ namespace MyClinic
             this.doctors_but.Image = ((System.Drawing.Image)(resources.GetObject("doctors_but.Image")));
             this.doctors_but.ImageOffset = new System.Drawing.Point(23, -15);
             this.doctors_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.doctors_but.Location = new System.Drawing.Point(491, 4);
+            this.doctors_but.Location = new System.Drawing.Point(411, 4);
             this.doctors_but.Name = "doctors_but";
             this.doctors_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.doctors_but.ShadowDecoration.Parent = this.doctors_but;
@@ -225,7 +158,7 @@ namespace MyClinic
             this.scedual_but.Image = ((System.Drawing.Image)(resources.GetObject("scedual_but.Image")));
             this.scedual_but.ImageOffset = new System.Drawing.Point(22, -10);
             this.scedual_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.scedual_but.Location = new System.Drawing.Point(342, 4);
+            this.scedual_but.Location = new System.Drawing.Point(262, 4);
             this.scedual_but.Name = "scedual_but";
             this.scedual_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.scedual_but.ShadowDecoration.Parent = this.scedual_but;
@@ -251,7 +184,7 @@ namespace MyClinic
             this.sessions_but.Image = ((System.Drawing.Image)(resources.GetObject("sessions_but.Image")));
             this.sessions_but.ImageOffset = new System.Drawing.Point(29, -15);
             this.sessions_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.sessions_but.Location = new System.Drawing.Point(640, 4);
+            this.sessions_but.Location = new System.Drawing.Point(560, 4);
             this.sessions_but.Name = "sessions_but";
             this.sessions_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.sessions_but.ShadowDecoration.Parent = this.sessions_but;
@@ -277,7 +210,7 @@ namespace MyClinic
             this.exam_but.Image = ((System.Drawing.Image)(resources.GetObject("exam_but.Image")));
             this.exam_but.ImageOffset = new System.Drawing.Point(24, -15);
             this.exam_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.exam_but.Location = new System.Drawing.Point(789, 4);
+            this.exam_but.Location = new System.Drawing.Point(709, 4);
             this.exam_but.Name = "exam_but";
             this.exam_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.exam_but.ShadowDecoration.Parent = this.exam_but;
@@ -303,7 +236,7 @@ namespace MyClinic
             this.patient_but.Image = ((System.Drawing.Image)(resources.GetObject("patient_but.Image")));
             this.patient_but.ImageOffset = new System.Drawing.Point(24, -15);
             this.patient_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.patient_but.Location = new System.Drawing.Point(938, 4);
+            this.patient_but.Location = new System.Drawing.Point(858, 4);
             this.patient_but.Name = "patient_but";
             this.patient_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.patient_but.ShadowDecoration.Parent = this.patient_but;
@@ -329,7 +262,7 @@ namespace MyClinic
             this.home_but.Image = ((System.Drawing.Image)(resources.GetObject("home_but.Image")));
             this.home_but.ImageOffset = new System.Drawing.Point(17, -15);
             this.home_but.ImageSize = new System.Drawing.Size(60, 60);
-            this.home_but.Location = new System.Drawing.Point(1087, 4);
+            this.home_but.Location = new System.Drawing.Point(1007, 4);
             this.home_but.Name = "home_but";
             this.home_but.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.home_but.ShadowDecoration.Parent = this.home_but;
@@ -339,13 +272,63 @@ namespace MyClinic
             this.home_but.TextOffset = new System.Drawing.Point(-15, 32);
             this.home_but.Click += new System.EventHandler(this.home_but_Click);
             // 
+            // home_cont1
+            // 
+            this.home_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.home_cont1.Location = new System.Drawing.Point(0, 0);
+            this.home_cont1.Name = "home_cont1";
+            this.home_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.home_cont1.TabIndex = 8;
+            // 
             // month_sced_cont1
             // 
             this.month_sced_cont1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            this.month_sced_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.month_sced_cont1.Location = new System.Drawing.Point(0, 0);
             this.month_sced_cont1.Name = "month_sced_cont1";
-            this.month_sced_cont1.Size = new System.Drawing.Size(1265, 565);
+            this.month_sced_cont1.Size = new System.Drawing.Size(1265, 564);
             this.month_sced_cont1.TabIndex = 7;
+            // 
+            // exam_cont1
+            // 
+            this.exam_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.exam_cont1.Location = new System.Drawing.Point(0, 0);
+            this.exam_cont1.Name = "exam_cont1";
+            this.exam_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.exam_cont1.TabIndex = 6;
+            // 
+            // sessions_cont1
+            // 
+            this.sessions_cont1.AutoScroll = true;
+            this.sessions_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sessions_cont1.Location = new System.Drawing.Point(0, 0);
+            this.sessions_cont1.Name = "sessions_cont1";
+            this.sessions_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.sessions_cont1.TabIndex = 5;
+            // 
+            // attendance_cont1
+            // 
+            this.attendance_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.attendance_cont1.Location = new System.Drawing.Point(0, 0);
+            this.attendance_cont1.Name = "attendance_cont1";
+            this.attendance_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.attendance_cont1.TabIndex = 3;
+            // 
+            // patient_cont1
+            // 
+            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
+            this.patient_cont1.Name = "patient_cont1";
+            this.patient_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.patient_cont1.TabIndex = 2;
+            // 
+            // doctors_contr1
+            // 
+            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
+            this.doctors_contr1.Name = "doctors_contr1";
+            this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
+            this.doctors_contr1.TabIndex = 1;
             // 
             // main_form
             // 
@@ -371,7 +354,6 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2Button home_but;
         private Guna.UI2.WinForms.Guna2Button patient_but;
         private Guna.UI2.WinForms.Guna2Button reports_but;
-        private Guna.UI2.WinForms.Guna2Button attendance_but;
         private Guna.UI2.WinForms.Guna2Button doctors_but;
         private Guna.UI2.WinForms.Guna2Button scedual_but;
         private Guna.UI2.WinForms.Guna2Button sessions_but;
@@ -382,5 +364,6 @@ namespace MyClinic
         private sessions_cont sessions_cont1;
         private exam_cont exam_cont1;
         private month_sced_cont month_sced_cont1;
+        private home_cont home_cont1;
     }
 }

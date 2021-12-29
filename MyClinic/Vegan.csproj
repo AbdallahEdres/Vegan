@@ -108,6 +108,14 @@
       <DependentUpon>exam_cont.cs</DependentUpon>
     </Compile>
     <Compile Include="exam_model_class.cs" />
+    <Compile Include="home_cont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home_cont.Designer.cs">
+      <DependentUpon>home_cont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home_factory_class.cs" />
+    <Compile Include="home_model_class.cs" />
     <Compile Include="month_sced_cont.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -200,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="exam_cont.resx">
       <DependentUpon>exam_cont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home_cont.resx">
+      <DependentUpon>home_cont.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="month_sced_cont.resx">
       <DependentUpon>month_sced_cont.cs</DependentUpon>

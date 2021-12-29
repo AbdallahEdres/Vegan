@@ -14,7 +14,6 @@ namespace MyClinic
         SqlConnection cn = conniction_class.cn;
         SqlCommand cmd;
         SqlDataAdapter da;
-        SqlDataReader dr;
 
         // var declearation
 
