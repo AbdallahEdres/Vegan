@@ -169,6 +169,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ptnt_model.cs" />
+    <Compile Include="report model class.cs" />
+    <Compile Include="report_cont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report_cont.Designer.cs">
+      <DependentUpon>report_cont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_dr_factory_class.cs" />
     <Compile Include="sessions_cont.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -245,6 +253,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="report_cont.resx">
+      <DependentUpon>report_cont.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sessions_cont.resx">
       <DependentUpon>sessions_cont.cs</DependentUpon>
     </EmbeddedResource>

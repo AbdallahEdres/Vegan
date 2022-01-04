@@ -40,6 +40,7 @@ namespace MyClinic
             sessions_cont1.Hide();
             month_sced_cont1.Hide();
             home_cont1.Hide();
+            report_cont1.Hide();
         }
 
         #endregion
@@ -58,6 +59,9 @@ namespace MyClinic
         private void reports_but_Click(object sender, EventArgs e)
         {
             butt_select(reports_but);
+            hid_controlers();
+            report_cont1.Show();
+
         }
 
 
