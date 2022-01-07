@@ -16,13 +16,23 @@ namespace MyClinic
         sess_model_class sess_Model = new sess_model_class();
 
         //var declearation
-        List<List<string>> dr_details = new List<List<string>>();
+        List<List<string>> dr_details;
         int ptnt_id;
         // method to fill combo boxes 
         void fill_combo()
         {
-            dr_details = sess_Model.get_dr_list();
-            dr_combo.Items.AddRange(dr_details[1].ToArray());
+            dr_details =  new List<List<string>>();
+            dr_combo.Items.Clear();
+            if (get_group() != -1)
+            {
+                dr_details = sess_Model.get_dr_list(" and dr_group =" + get_group() + " or dr_group=2");
+                dr_combo.Items.AddRange(dr_details[1].ToArray());
+            }
+            else
+            {
+                MessageBox.Show("التاريخ يوافق يوم الجمعة");
+            }
+           
 
         }
         // method to fill dr_appoint grid 
@@ -79,12 +89,15 @@ namespace MyClinic
         // method to insert sessions in data base 
         int insert_sessions()
         {
-           return sess_Model.set_sessions(ptnt_id,Convert.ToInt32( dr_details[0][dr_combo.SelectedIndex]), start_date_bick.Value, time_combo.SelectedItem.ToString(),Convert.ToInt32(pay_val_num.Value) , pay_combo.SelectedIndex, Convert.ToInt32(sessions_num.Value), Convert.ToInt32(wekly_sess_combo.SelectedItem));
+           return sess_Model.set_sessions(ptnt_id,Convert.ToInt32( dr_details[0][dr_combo.SelectedIndex]), start_date_bick.Value, set_time(),Convert.ToInt32(pay_val_num.Value) , pay_combo.SelectedIndex, Convert.ToInt32(sessions_num.Value), Convert.ToInt32(wekly_sess_combo.SelectedItem));
         }
         public new_session_form(int _ptnt_id)
         {
             InitializeComponent();
             ptnt_id = _ptnt_id;
+            start_date_bick.Value = DateTime.Today;
+            start_date_bick.MinDate = DateTime.Today;
+            am_pm_combo.SelectedIndex = 0;
             fill_combo();
         }
 
@@ -93,24 +106,31 @@ namespace MyClinic
             this.Close();
         }
 
-        private void dr_combo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            fill_dr_appoints();
-        }
+
 
         private void done_but_Click(object sender, EventArgs e)
         {
-            if(insert_sessions() == -1)
+            if (check())
             {
-                MessageBox.Show("تم!");
-                this.Close();
-            }else if(insert_sessions() == 0)
-            {
-                MessageBox.Show("هذا الموعد مكتمل");
-            }else if(insert_sessions() == 1)
-            {
-                MessageBox.Show("الطبيب المختار مشغل في هذا الموعد");
+                if (insert_sessions() == -1)
+                {
+                    MessageBox.Show("تم!");
+                    this.Close();
+                }
+                else if (insert_sessions() == 0)
+                {
+                    MessageBox.Show("هذا الموعد مكتمل");
+                }
+                else if (insert_sessions() == 1)
+                {
+                    MessageBox.Show("الطبيب المختار مشغول في هذا الموعد");
+                }
             }
+            else
+            {
+                MessageBox.Show("برجاء اكمال البيانات");
+            }
+         
            
         }
 
@@ -121,6 +141,77 @@ namespace MyClinic
 
                 dr_appoints_grid.Rows[i].Cells[0].Value = convert_day_ar(Convert.ToDateTime(dr_appoints_grid.Rows[i].Cells[1].Value));
             }
+        }
+
+        //method to get doctor group 
+        int get_group()
+        {
+            int group = -1;
+            if(start_date_bick.Value.DayOfWeek==DayOfWeek.Monday|| start_date_bick.Value.DayOfWeek == DayOfWeek.Saturday|| start_date_bick.Value.DayOfWeek == DayOfWeek.Wednesday)
+            {
+                group = 0;
+            }else if (start_date_bick.Value.DayOfWeek == DayOfWeek.Sunday || start_date_bick.Value.DayOfWeek == DayOfWeek.Tuesday || start_date_bick.Value.DayOfWeek == DayOfWeek.Thursday)
+            {
+                group = 1;
+            }
+                return group;
+        }
+
+        private void start_date_bick_ValueChanged(object sender, EventArgs e)
+        {
+            fill_combo();
+        }
+
+        //method to check for empty fields
+        bool check()
+        {
+            bool stat = false;
+            if ( dr_combo.SelectedIndex < 0 || pay_combo.SelectedIndex < 0 || wekly_sess_combo.SelectedIndex < 0)
+            {
+                stat = false;
+            }
+            else
+            { 
+                stat = true; 
+            }
+            return stat;
+        }
+
+        private void pay_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (pay_combo.SelectedIndex == 0)
+            {
+                pay_val_num.Enabled = false;
+            }
+            else
+            {
+                pay_val_num.Enabled = true;
+                pay_val_num.Value = 240;
+                sessions_num.Value = 6;
+            }
+        }
+        //method to set the time
+        string set_time()
+        {
+            string time = "", hr = "", min = "";
+            if (min.Length == 1)
+            {
+                min = "0" + min;
+            }
+
+            hr = hr_num.Value.ToString();
+
+            if (hr.Length == 1)
+            {
+                hr = "0" + hr;
+            }
+            time = hr + ":" + "00" + " " + am_pm_combo.Items[am_pm_combo.SelectedIndex];
+            return time;
+        }
+
+        private void dr_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fill_dr_appoints();
         }
     }
 }

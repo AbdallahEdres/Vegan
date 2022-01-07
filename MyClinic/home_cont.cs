@@ -15,6 +15,16 @@ namespace MyClinic
         //implement of home model and home factory
         home_model_class home_Model = new home_model_class();
         home_factory_class home_Factory = new home_factory_class();
+       
+        public home_cont()
+        {
+            InitializeComponent();
+        }
+
+        private void home_cont_Load(object sender, EventArgs e)
+        {
+            refresh_home();
+        }
         // method to convert days to arabic
         string convert_day_ar(DateTime date)
         {
@@ -45,16 +55,24 @@ namespace MyClinic
             }
             return day;
         }
-        public home_cont()
+        // refresh method
+        public void refresh_home()
         {
-            InitializeComponent();
-        }
-
-        private void home_cont_Load(object sender, EventArgs e)
-        {
-            day_label.Text =  convert_day_ar(DateTime.Now)+" " + DateTime.Now.ToString("yyyy/MM/dd");
+            flowLayoutPanel1.Controls.Clear();
+            day_label.Text = convert_day_ar(DateTime.Now) + " " + DateTime.Now.ToString("yyyy/MM/dd");
             ptnt_count_label.Text = "عدد حالات اليوم :" + home_Model.get_count_ptnt();
             flowLayoutPanel1.Controls.AddRange(home_Factory.create_panels().ToArray());
+            if (flowLayoutPanel1.Controls.Count == 0)
+            {
+                no_sess_panel.BringToFront();
+
+            }
+            else
+            {
+                no_sess_panel.SendToBack();
+            }
         }
+
+       
     }
 }

@@ -45,19 +45,14 @@ namespace MyClinic
             {
                 min = "0" + min;
             }
-           
-            if (am_pm_combo.SelectedIndex == 0)
-            {
-                hr = (12 + hr_num.Value).ToString();
-            }else if (am_pm_combo.SelectedIndex == 1)
-            {
-                hr = hr_num.Value.ToString();
-            }
+
+            hr = hr_num.Value.ToString();
+
             if (hr.Length == 1)
             {
                 hr = "0" + hr;
             }
-            time = hr + ":" + min + ":00";
+            time = hr + ":" + min +" "+am_pm_combo.Items[am_pm_combo.SelectedIndex];
             if(exam_Model.check_date_time(exam_date.Value.ToString("yyyy-MM-dd"), time))
             {
                 exam_Model.add_exam(ptnt_id, exam_date.Value, time, Convert.ToInt32(pay_num.Value), type[type_combo.SelectedIndex]);
@@ -86,16 +81,19 @@ namespace MyClinic
 
         private void add_dr_but_Click(object sender, EventArgs e)
         {
-            if (ptnt_id > 0)
+            if (check())
             {
-                add_exam();
-                
+                if (ptnt_id > 0)
+                {
+                    add_exam();
+                }
+                else
+                {
+                    MessageBox.Show("اختر المريض");
+                }
+
             }
-            else
-            {
-                MessageBox.Show("اختر المريض");
-            }
-          
+
         }
 
         private void ptnt_list_grid_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -112,6 +110,16 @@ namespace MyClinic
         private void search_txt_TextChanged(object sender, EventArgs e)
         {
             fill_patietns_list();
+        }
+        //method to check empty fields
+        bool check()
+        {
+            bool stat = true;
+            if (name_txt.Text == "" || phone_txt.Text == "" || type_combo.SelectedIndex < 0 || am_pm_combo.SelectedIndex < 0)
+            {
+                stat = false;
+            }
+            return stat;
         }
     }
 }

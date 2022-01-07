@@ -1,7 +1,7 @@
 ﻿
 namespace MyClinic
 {
-    partial class sess_pay_form
+    partial class exam_pay_form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,62 @@ namespace MyClinic
         /// </summary>
         private void InitializeComponent()
         {
-            this.pay_num = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.pay_label = new System.Windows.Forms.Label();
             this.cansel_but = new Guna.UI2.WinForms.Guna2Button();
             this.done_but = new Guna.UI2.WinForms.Guna2Button();
+            this.pay_num = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pay_num)).BeginInit();
             this.SuspendLayout();
+            // 
+            // pay_label
+            // 
+            this.pay_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pay_label.AutoSize = true;
+            this.pay_label.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.pay_label.Location = new System.Drawing.Point(221, -2);
+            this.pay_label.Name = "pay_label";
+            this.pay_label.Size = new System.Drawing.Size(73, 36);
+            this.pay_label.TabIndex = 13;
+            this.pay_label.Text = "الدفع";
+            // 
+            // cansel_but
+            // 
+            this.cansel_but.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cansel_but.BorderRadius = 25;
+            this.cansel_but.CheckedState.Parent = this.cansel_but;
+            this.cansel_but.CustomImages.Parent = this.cansel_but;
+            this.cansel_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
+            this.cansel_but.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.cansel_but.HoverState.Parent = this.cansel_but;
+            this.cansel_but.ImageSize = new System.Drawing.Size(30, 30);
+            this.cansel_but.Location = new System.Drawing.Point(97, 122);
+            this.cansel_but.Name = "cansel_but";
+            this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
+            this.cansel_but.Size = new System.Drawing.Size(102, 55);
+            this.cansel_but.TabIndex = 51;
+            this.cansel_but.Text = "الغاء";
+            this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
+            // 
+            // done_but
+            // 
+            this.done_but.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.done_but.BorderRadius = 25;
+            this.done_but.CheckedState.Parent = this.done_but;
+            this.done_but.CustomImages.Parent = this.done_but;
+            this.done_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.done_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.done_but.ForeColor = System.Drawing.Color.White;
+            this.done_but.HoverState.Parent = this.done_but;
+            this.done_but.Location = new System.Drawing.Point(336, 122);
+            this.done_but.Name = "done_but";
+            this.done_but.ShadowDecoration.Parent = this.done_but;
+            this.done_but.Size = new System.Drawing.Size(102, 55);
+            this.done_but.TabIndex = 50;
+            this.done_but.Text = " تم";
+            this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
             // pay_num
             // 
@@ -53,94 +102,40 @@ namespace MyClinic
             this.pay_num.FocusedState.Parent = this.pay_num;
             this.pay_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_num.Location = new System.Drawing.Point(13, 58);
+            this.pay_num.Location = new System.Drawing.Point(33, 64);
             this.pay_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pay_num.Name = "pay_num";
             this.pay_num.ShadowDecoration.Parent = this.pay_num;
-            this.pay_num.Size = new System.Drawing.Size(261, 36);
-            this.pay_num.TabIndex = 45;
+            this.pay_num.Size = new System.Drawing.Size(234, 36);
+            this.pay_num.TabIndex = 49;
             this.pay_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.pay_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 
-            // pay_label
-            // 
-            this.pay_label.AutoSize = true;
-            this.pay_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_label.Location = new System.Drawing.Point(401, 58);
-            this.pay_label.Name = "pay_label";
-            this.pay_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_label.Size = new System.Drawing.Size(135, 31);
-            this.pay_label.TabIndex = 44;
-            this.pay_label.Text = "اضف المبلغ :";
-            // 
-            // cansel_but
-            // 
-            this.cansel_but.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.cansel_but.BorderRadius = 25;
-            this.cansel_but.CheckedState.Parent = this.cansel_but;
-            this.cansel_but.CustomImages.Parent = this.cansel_but;
-            this.cansel_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            this.cansel_but.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.cansel_but.HoverState.Parent = this.cansel_but;
-            this.cansel_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.cansel_but.Location = new System.Drawing.Point(159, 137);
-            this.cansel_but.Name = "cansel_but";
-            this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
-            this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 47;
-            this.cansel_but.Text = "الغاء";
-            this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
-            // 
-            // done_but
-            // 
-            this.done_but.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.done_but.BorderRadius = 25;
-            this.done_but.CheckedState.Parent = this.done_but;
-            this.done_but.CustomImages.Parent = this.done_but;
-            this.done_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.done_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.done_but.ForeColor = System.Drawing.Color.White;
-            this.done_but.HoverState.Parent = this.done_but;
-            this.done_but.Location = new System.Drawing.Point(314, 137);
-            this.done_but.Name = "done_but";
-            this.done_but.ShadowDecoration.Parent = this.done_but;
-            this.done_but.Size = new System.Drawing.Size(102, 55);
-            this.done_but.TabIndex = 46;
-            this.done_but.Text = " تم";
-            this.done_but.Click += new System.EventHandler(this.done_but_Click);
-            // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(235, -1);
+            this.label1.Location = new System.Drawing.Point(368, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 36);
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label1.Size = new System.Drawing.Size(135, 31);
             this.label1.TabIndex = 48;
-            this.label1.Text = "الدفع";
+            this.label1.Text = "اضف المبلغ :";
             // 
-            // sess_pay_form
+            // exam_pay_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 204);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(517, 189);
             this.Controls.Add(this.cansel_but);
             this.Controls.Add(this.done_but);
             this.Controls.Add(this.pay_num);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pay_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimizeBox = false;
-            this.Name = "sess_pay_form";
-            this.Opacity = 0.95D;
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "sess_pay_form";
+            this.Name = "exam_pay_form";
+            this.Text = "exam_pay_form";
             ((System.ComponentModel.ISupportInitialize)(this.pay_num)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,10 +144,10 @@ namespace MyClinic
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2NumericUpDown pay_num;
         private System.Windows.Forms.Label pay_label;
         private Guna.UI2.WinForms.Guna2Button cansel_but;
         private Guna.UI2.WinForms.Guna2Button done_but;
+        private Guna.UI2.WinForms.Guna2NumericUpDown pay_num;
         private System.Windows.Forms.Label label1;
     }
 }

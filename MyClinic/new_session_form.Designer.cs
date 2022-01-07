@@ -33,11 +33,8 @@ namespace MyClinic
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.new_sessions_label = new System.Windows.Forms.Label();
-            this.dr_combo = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dr_label = new System.Windows.Forms.Label();
             this.start_date_bick = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.start_Date_label = new System.Windows.Forms.Label();
-            this.time_combo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.time_label = new System.Windows.Forms.Label();
             this.done_but = new Guna.UI2.WinForms.Guna2Button();
             this.cansel_but = new Guna.UI2.WinForms.Guna2Button();
@@ -51,9 +48,15 @@ namespace MyClinic
             this.num_sess_wekly_label = new System.Windows.Forms.Label();
             this.pay_val_num = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.pay_val_label = new System.Windows.Forms.Label();
+            this.dr_label = new System.Windows.Forms.Label();
+            this.dr_combo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.hr_num = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.am_pm_combo = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.sessions_num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dr_appoints_grid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pay_val_num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hr_num)).BeginInit();
             this.SuspendLayout();
             // 
             // new_sessions_label
@@ -68,41 +71,6 @@ namespace MyClinic
             this.new_sessions_label.TabIndex = 29;
             this.new_sessions_label.Text = "تحديد الجلسات";
             // 
-            // dr_combo
-            // 
-            this.dr_combo.BackColor = System.Drawing.Color.Transparent;
-            this.dr_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
-            this.dr_combo.BorderRadius = 15;
-            this.dr_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.dr_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.dr_combo.FocusedColor = System.Drawing.Color.Empty;
-            this.dr_combo.FocusedState.Parent = this.dr_combo;
-            this.dr_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dr_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.dr_combo.FormattingEnabled = true;
-            this.dr_combo.HoverState.Parent = this.dr_combo;
-            this.dr_combo.ItemHeight = 30;
-            this.dr_combo.ItemsAppearance.Parent = this.dr_combo;
-            this.dr_combo.Location = new System.Drawing.Point(637, 76);
-            this.dr_combo.Name = "dr_combo";
-            this.dr_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dr_combo.ShadowDecoration.Parent = this.dr_combo;
-            this.dr_combo.Size = new System.Drawing.Size(282, 36);
-            this.dr_combo.TabIndex = 30;
-            this.dr_combo.SelectedIndexChanged += new System.EventHandler(this.dr_combo_SelectedIndexChanged);
-            // 
-            // dr_label
-            // 
-            this.dr_label.AutoSize = true;
-            this.dr_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dr_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.dr_label.Location = new System.Drawing.Point(1088, 79);
-            this.dr_label.Name = "dr_label";
-            this.dr_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dr_label.Size = new System.Drawing.Size(131, 31);
-            this.dr_label.TabIndex = 32;
-            this.dr_label.Text = "اختر الطبيب :";
-            // 
             // start_date_bick
             // 
             this.start_date_bick.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -113,7 +81,7 @@ namespace MyClinic
             this.start_date_bick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.start_date_bick.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.start_date_bick.HoverState.Parent = this.start_date_bick;
-            this.start_date_bick.Location = new System.Drawing.Point(637, 214);
+            this.start_date_bick.Location = new System.Drawing.Point(637, 74);
             this.start_date_bick.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.start_date_bick.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.start_date_bick.Name = "start_date_bick";
@@ -121,49 +89,19 @@ namespace MyClinic
             this.start_date_bick.Size = new System.Drawing.Size(282, 36);
             this.start_date_bick.TabIndex = 34;
             this.start_date_bick.Value = new System.DateTime(2021, 12, 11, 15, 39, 0, 336);
+            this.start_date_bick.ValueChanged += new System.EventHandler(this.start_date_bick_ValueChanged);
             // 
             // start_Date_label
             // 
             this.start_Date_label.AutoSize = true;
             this.start_Date_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_Date_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.start_Date_label.Location = new System.Drawing.Point(1088, 217);
+            this.start_Date_label.Location = new System.Drawing.Point(1088, 77);
             this.start_Date_label.Name = "start_Date_label";
             this.start_Date_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.start_Date_label.Size = new System.Drawing.Size(113, 31);
             this.start_Date_label.TabIndex = 35;
             this.start_Date_label.Text = "تاريخ البدأ :";
-            // 
-            // time_combo
-            // 
-            this.time_combo.BackColor = System.Drawing.Color.Transparent;
-            this.time_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
-            this.time_combo.BorderRadius = 15;
-            this.time_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.time_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.time_combo.FocusedColor = System.Drawing.Color.Empty;
-            this.time_combo.FocusedState.Parent = this.time_combo;
-            this.time_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.time_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.time_combo.FormattingEnabled = true;
-            this.time_combo.HoverState.Parent = this.time_combo;
-            this.time_combo.ItemHeight = 30;
-            this.time_combo.Items.AddRange(new object[] {
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"});
-            this.time_combo.ItemsAppearance.Parent = this.time_combo;
-            this.time_combo.Location = new System.Drawing.Point(637, 145);
-            this.time_combo.Name = "time_combo";
-            this.time_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.time_combo.ShadowDecoration.Parent = this.time_combo;
-            this.time_combo.Size = new System.Drawing.Size(282, 36);
-            this.time_combo.TabIndex = 31;
             // 
             // time_label
             // 
@@ -383,6 +321,7 @@ namespace MyClinic
             this.pay_combo.ShadowDecoration.Parent = this.pay_combo;
             this.pay_combo.Size = new System.Drawing.Size(282, 36);
             this.pay_combo.TabIndex = 61;
+            this.pay_combo.SelectedIndexChanged += new System.EventHandler(this.pay_combo_SelectedIndexChanged);
             // 
             // wekly_sess_combo
             // 
@@ -473,11 +412,128 @@ namespace MyClinic
             this.pay_val_label.TabIndex = 64;
             this.pay_val_label.Text = "المبلغ المدفوع :";
             // 
+            // dr_label
+            // 
+            this.dr_label.AutoSize = true;
+            this.dr_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dr_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.dr_label.Location = new System.Drawing.Point(1087, 217);
+            this.dr_label.Name = "dr_label";
+            this.dr_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dr_label.Size = new System.Drawing.Size(131, 31);
+            this.dr_label.TabIndex = 67;
+            this.dr_label.Text = "اختر الطبيب :";
+            // 
+            // dr_combo
+            // 
+            this.dr_combo.BackColor = System.Drawing.Color.Transparent;
+            this.dr_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.dr_combo.BorderRadius = 15;
+            this.dr_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.dr_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dr_combo.FocusedColor = System.Drawing.Color.Empty;
+            this.dr_combo.FocusedState.Parent = this.dr_combo;
+            this.dr_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dr_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.dr_combo.FormattingEnabled = true;
+            this.dr_combo.HoverState.Parent = this.dr_combo;
+            this.dr_combo.ItemHeight = 30;
+            this.dr_combo.ItemsAppearance.Parent = this.dr_combo;
+            this.dr_combo.Location = new System.Drawing.Point(636, 214);
+            this.dr_combo.Name = "dr_combo";
+            this.dr_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dr_combo.ShadowDecoration.Parent = this.dr_combo;
+            this.dr_combo.Size = new System.Drawing.Size(282, 36);
+            this.dr_combo.TabIndex = 66;
+            this.dr_combo.SelectedIndexChanged += new System.EventHandler(this.dr_combo_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.label2.Location = new System.Drawing.Point(750, 151);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(60, 24);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "ساعه :";
+            // 
+            // hr_num
+            // 
+            this.hr_num.BackColor = System.Drawing.Color.Transparent;
+            this.hr_num.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.hr_num.BorderRadius = 15;
+            this.hr_num.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.hr_num.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.hr_num.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.hr_num.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.hr_num.DisabledState.Parent = this.hr_num;
+            this.hr_num.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.hr_num.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.hr_num.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hr_num.FocusedState.Parent = this.hr_num;
+            this.hr_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hr_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.hr_num.Location = new System.Drawing.Point(635, 145);
+            this.hr_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hr_num.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.hr_num.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.hr_num.Name = "hr_num";
+            this.hr_num.ShadowDecoration.Parent = this.hr_num;
+            this.hr_num.Size = new System.Drawing.Size(76, 36);
+            this.hr_num.TabIndex = 69;
+            this.hr_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.hr_num.UpDownButtonForeColor = System.Drawing.Color.Black;
+            this.hr_num.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // am_pm_combo
+            // 
+            this.am_pm_combo.BackColor = System.Drawing.Color.Transparent;
+            this.am_pm_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
+            this.am_pm_combo.BorderRadius = 15;
+            this.am_pm_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.am_pm_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.am_pm_combo.FocusedColor = System.Drawing.Color.Empty;
+            this.am_pm_combo.FocusedState.Parent = this.am_pm_combo;
+            this.am_pm_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.am_pm_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            this.am_pm_combo.FormattingEnabled = true;
+            this.am_pm_combo.HoverState.Parent = this.am_pm_combo;
+            this.am_pm_combo.ItemHeight = 30;
+            this.am_pm_combo.Items.AddRange(new object[] {
+            "PM",
+            "AM"});
+            this.am_pm_combo.ItemsAppearance.Parent = this.am_pm_combo;
+            this.am_pm_combo.Location = new System.Drawing.Point(848, 145);
+            this.am_pm_combo.Name = "am_pm_combo";
+            this.am_pm_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.am_pm_combo.ShadowDecoration.Parent = this.am_pm_combo;
+            this.am_pm_combo.Size = new System.Drawing.Size(71, 36);
+            this.am_pm_combo.TabIndex = 68;
+            // 
             // new_session_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 645);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.hr_num);
+            this.Controls.Add(this.am_pm_combo);
+            this.Controls.Add(this.dr_label);
+            this.Controls.Add(this.dr_combo);
             this.Controls.Add(this.pay_val_num);
             this.Controls.Add(this.pay_val_label);
             this.Controls.Add(this.wekly_sess_combo);
@@ -493,9 +549,6 @@ namespace MyClinic
             this.Controls.Add(this.start_Date_label);
             this.Controls.Add(this.start_date_bick);
             this.Controls.Add(this.time_label);
-            this.Controls.Add(this.dr_label);
-            this.Controls.Add(this.time_combo);
-            this.Controls.Add(this.dr_combo);
             this.Controls.Add(this.new_sessions_label);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "new_session_form";
@@ -506,6 +559,7 @@ namespace MyClinic
             ((System.ComponentModel.ISupportInitialize)(this.sessions_num)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dr_appoints_grid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pay_val_num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hr_num)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -514,11 +568,8 @@ namespace MyClinic
         #endregion
 
         private System.Windows.Forms.Label new_sessions_label;
-        private Guna.UI2.WinForms.Guna2ComboBox dr_combo;
-        private System.Windows.Forms.Label dr_label;
         private Guna.UI2.WinForms.Guna2DateTimePicker start_date_bick;
         private System.Windows.Forms.Label start_Date_label;
-        private Guna.UI2.WinForms.Guna2ComboBox time_combo;
         private System.Windows.Forms.Label time_label;
         private Guna.UI2.WinForms.Guna2Button done_but;
         private Guna.UI2.WinForms.Guna2Button cansel_but;
@@ -532,5 +583,10 @@ namespace MyClinic
         private System.Windows.Forms.Label num_sess_wekly_label;
         private Guna.UI2.WinForms.Guna2NumericUpDown pay_val_num;
         private System.Windows.Forms.Label pay_val_label;
+        private System.Windows.Forms.Label dr_label;
+        private Guna.UI2.WinForms.Guna2ComboBox dr_combo;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2NumericUpDown hr_num;
+        private Guna.UI2.WinForms.Guna2ComboBox am_pm_combo;
     }
 }

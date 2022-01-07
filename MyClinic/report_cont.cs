@@ -22,25 +22,33 @@ namespace MyClinic
             InitializeComponent();
             month_combo.SelectedIndex = DateTime.Now.Month-1;
             year_num.Value = DateTime.Now.Year;
-            fill_general();
-            fill_detais_panel();
-            fill_dr_layout();
+            refresh_report();
         }
 
+       
+        private void year_num_ValueChanged(object sender, EventArgs e)
+        {
+            refresh_report();
+        }
+
+        private void month_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refresh_report();
+        }
         //method to fill general panel
         void fill_general()
         {
             date = new DateTime(Convert.ToInt32(year_num.Value), month_combo.SelectedIndex + 1, 1);
-            m_income_value.Text = report_Model.get_total_money(date) +" $";
+            m_income_value.Text = report_Model.get_total_money(date) + " $";
             m_ptnt_num_value.Text = report_Model.get_num_ptnt(date);
-            
+
         }
         // method to fill details panel
         void fill_detais_panel()
         {
             date = new DateTime(Convert.ToInt32(year_num.Value), month_combo.SelectedIndex + 1, 1);
             sess_num_val.Text = report_Model.get_sess_num(date);
-            sess_income_val.Text = report_Model.get_sess_incom(date)+" $";
+            sess_income_val.Text = report_Model.get_sess_incom(date) + " $";
             nut_income_val.Text = report_Model.get_nut_incom(date) + " $";
             phys_income_val.Text = report_Model.get_phys_incom(date) + " $";
             phys_num_val.Text = report_Model.get_phys_num(date);
@@ -53,21 +61,13 @@ namespace MyClinic
             flowLayoutPanel2.Controls.Clear();
             flowLayoutPanel2.Controls.AddRange(dr_Factory_Class.creat_dr_reports(date).ToArray());
         }
-        private void year_num_ValueChanged(object sender, EventArgs e)
+        // refresh method 
+        public void refresh_report()
         {
+
             fill_general();
             fill_detais_panel();
             fill_dr_layout();
-
         }
-
-        private void month_combo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            fill_general();
-            fill_detais_panel();
-            fill_dr_layout();
-
-        }
-
     }
 }
