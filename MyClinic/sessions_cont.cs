@@ -35,8 +35,8 @@ namespace MyClinic
         {
             if (selected_ptnt_id != -1)
             {
-                new_session_form new_Session = new new_session_form(selected_ptnt_id);
-                new_Session.ShowDialog();
+                add_sessions_form add_Sessions = new add_sessions_form(selected_ptnt_id);
+                add_Sessions.ShowDialog();
                 fill_comming();
                 selected_ptnt_id = -1;
             }
