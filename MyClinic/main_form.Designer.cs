@@ -39,13 +39,13 @@ namespace MyClinic
             this.exam_but = new Guna.UI2.WinForms.Guna2Button();
             this.patient_but = new Guna.UI2.WinForms.Guna2Button();
             this.home_but = new Guna.UI2.WinForms.Guna2Button();
+            this.doctors_contr1 = new MyClinic.doctors_contr();
+            this.exam_cont1 = new MyClinic.exam_cont();
             this.home_cont1 = new MyClinic.home_cont();
             this.month_sced_cont1 = new MyClinic.month_sced_cont();
-            this.exam_cont1 = new MyClinic.exam_cont();
-            this.sessions_cont1 = new MyClinic.sessions_cont();
-            this.attendance_cont1 = new MyClinic.attendance_cont();
             this.patient_cont1 = new MyClinic.patient_cont();
-            this.doctors_contr1 = new MyClinic.doctors_contr();
+            this.report_cont1 = new MyClinic.report_cont();
+            this.sessions_cont1 = new MyClinic.sessions_cont();
             this.back_panel.SuspendLayout();
             this.top_panel.SuspendLayout();
             this.SuspendLayout();
@@ -57,12 +57,12 @@ namespace MyClinic
             | System.Windows.Forms.AnchorStyles.Right)));
             this.back_panel.AutoScroll = true;
             this.back_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.back_panel.Controls.Add(this.home_cont1);
-            this.back_panel.Controls.Add(this.month_sced_cont1);
-            this.back_panel.Controls.Add(this.exam_cont1);
             this.back_panel.Controls.Add(this.sessions_cont1);
-            this.back_panel.Controls.Add(this.attendance_cont1);
+            this.back_panel.Controls.Add(this.report_cont1);
             this.back_panel.Controls.Add(this.patient_cont1);
+            this.back_panel.Controls.Add(this.month_sced_cont1);
+            this.back_panel.Controls.Add(this.home_cont1);
+            this.back_panel.Controls.Add(this.exam_cont1);
             this.back_panel.Controls.Add(this.doctors_contr1);
             this.back_panel.Location = new System.Drawing.Point(0, 117);
             this.back_panel.MaximumSize = new System.Drawing.Size(1920, 1080);
@@ -272,13 +272,29 @@ namespace MyClinic
             this.home_but.TextOffset = new System.Drawing.Point(-15, 32);
             this.home_but.Click += new System.EventHandler(this.home_but_Click);
             // 
+            // doctors_contr1
+            // 
+            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
+            this.doctors_contr1.Name = "doctors_contr1";
+            this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
+            this.doctors_contr1.TabIndex = 0;
+            // 
+            // exam_cont1
+            // 
+            this.exam_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.exam_cont1.Location = new System.Drawing.Point(0, 0);
+            this.exam_cont1.Name = "exam_cont1";
+            this.exam_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.exam_cont1.TabIndex = 1;
+            // 
             // home_cont1
             // 
             this.home_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.home_cont1.Location = new System.Drawing.Point(0, 0);
             this.home_cont1.Name = "home_cont1";
             this.home_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.home_cont1.TabIndex = 8;
+            this.home_cont1.TabIndex = 2;
             // 
             // month_sced_cont1
             // 
@@ -287,15 +303,23 @@ namespace MyClinic
             this.month_sced_cont1.Location = new System.Drawing.Point(0, 0);
             this.month_sced_cont1.Name = "month_sced_cont1";
             this.month_sced_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.month_sced_cont1.TabIndex = 7;
+            this.month_sced_cont1.TabIndex = 3;
             // 
-            // exam_cont1
+            // patient_cont1
             // 
-            this.exam_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exam_cont1.Location = new System.Drawing.Point(0, 0);
-            this.exam_cont1.Name = "exam_cont1";
-            this.exam_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.exam_cont1.TabIndex = 6;
+            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
+            this.patient_cont1.Name = "patient_cont1";
+            this.patient_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.patient_cont1.TabIndex = 4;
+            // 
+            // report_cont1
+            // 
+            this.report_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.report_cont1.Location = new System.Drawing.Point(0, 0);
+            this.report_cont1.Name = "report_cont1";
+            this.report_cont1.Size = new System.Drawing.Size(1265, 564);
+            this.report_cont1.TabIndex = 5;
             // 
             // sessions_cont1
             // 
@@ -304,31 +328,7 @@ namespace MyClinic
             this.sessions_cont1.Location = new System.Drawing.Point(0, 0);
             this.sessions_cont1.Name = "sessions_cont1";
             this.sessions_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.sessions_cont1.TabIndex = 5;
-            // 
-            // attendance_cont1
-            // 
-            this.attendance_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.attendance_cont1.Location = new System.Drawing.Point(0, 0);
-            this.attendance_cont1.Name = "attendance_cont1";
-            this.attendance_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.attendance_cont1.TabIndex = 3;
-            // 
-            // patient_cont1
-            // 
-            this.patient_cont1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patient_cont1.Location = new System.Drawing.Point(0, 0);
-            this.patient_cont1.Name = "patient_cont1";
-            this.patient_cont1.Size = new System.Drawing.Size(1265, 564);
-            this.patient_cont1.TabIndex = 2;
-            // 
-            // doctors_contr1
-            // 
-            this.doctors_contr1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.doctors_contr1.Location = new System.Drawing.Point(0, 0);
-            this.doctors_contr1.Name = "doctors_contr1";
-            this.doctors_contr1.Size = new System.Drawing.Size(1265, 564);
-            this.doctors_contr1.TabIndex = 1;
+            this.sessions_cont1.TabIndex = 6;
             // 
             // main_form
             // 
@@ -358,12 +358,12 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2Button scedual_but;
         private Guna.UI2.WinForms.Guna2Button sessions_but;
         private Guna.UI2.WinForms.Guna2Button exam_but;
-        private doctors_contr doctors_contr1;
-        private patient_cont patient_cont1;
-        private attendance_cont attendance_cont1;
         private sessions_cont sessions_cont1;
-        private exam_cont exam_cont1;
+        private report_cont report_cont1;
+        private patient_cont patient_cont1;
         private month_sced_cont month_sced_cont1;
         private home_cont home_cont1;
+        private exam_cont exam_cont1;
+        private doctors_contr doctors_contr1;
     }
 }

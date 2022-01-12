@@ -22,7 +22,7 @@ namespace MyClinic
         // method to fill combo boxes 
         void fill_combo()
         {
-            dr_details = sess_Model.get_dr_list();
+            dr_details = sess_Model.get_dr_list("");
             dr_combo.Items.AddRange(dr_details[1].ToArray());
 
         }
@@ -34,7 +34,6 @@ namespace MyClinic
             old_time = time;
             fill_combo();
             dr_combo.SelectedIndex = dr_details[1].IndexOf(dr_name);
-            time_combo.SelectedIndex = time_combo.Items.IndexOf(time.ToString());
         }
 
         private void cansel_but_Click(object sender, EventArgs e)
@@ -44,9 +43,41 @@ namespace MyClinic
 
         private void done_but_Click(object sender, EventArgs e)
         {
-            sess_Model.edit_sess(old_date, old_time, Convert.ToInt32(dr_details[0][dr_combo.SelectedIndex]), start_date_bick.Value, time_combo.SelectedItem.ToString());
-            MessageBox.Show("تم!");
-            this.Close();
+            if (chck_empty())
+            {
+                sess_Model.edit_sess(old_date, old_time, Convert.ToInt32(dr_details[0][dr_combo.SelectedIndex]), start_date_bick.Value, set_time());
+                MessageBox.Show("تم!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("برجاء استكمال باقي البيانات");
+            }
+        }
+        //method to set the time
+        string set_time()
+        {
+            string time = "", hr = "";
+         
+            hr= hr_num.Value.ToString();
+
+            if (hr.Length == 1)
+            {
+                hr = "0" + hr;
+            }
+            time = hr + ":" + "00" + " " + am_pm_combo.Items[am_pm_combo.SelectedIndex];
+            return time;
+        }
+
+      //method to check for empty fields
+      bool chck_empty()
+        {
+            bool stat = true;
+            if (dr_combo.SelectedIndex<0||am_pm_combo.SelectedIndex<0)
+            {
+                stat = false;
+            }
+            return stat;
         }
     }
 }

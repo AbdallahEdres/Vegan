@@ -35,19 +35,13 @@ namespace MyClinic
                 min = "0" + min;
             }
 
-            if (am_pm_combo.SelectedIndex == 0)
-            {
-                hr = (12 + hr_num.Value).ToString();
-            }
-            else if (am_pm_combo.SelectedIndex == 1)
-            {
-                hr = hr_num.Value.ToString();
-            }
+            hr = hr_num.Value.ToString();
+
             if (hr.Length == 1)
             {
                 hr = "0" + hr;
             }
-            time = hr + ":" + min + ":00";
+            time = hr + ":" + min + " " + am_pm_combo.Items[am_pm_combo.SelectedIndex];
             if (exam_Model.check_date_time(date, time))
             {
                 exam_Model.edit_time(time, date, old_time);
@@ -58,6 +52,11 @@ namespace MyClinic
             {
                 MessageBox.Show("الموعد محجوز مسبقاً");
             }
+        }
+
+        private void cansel_but_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

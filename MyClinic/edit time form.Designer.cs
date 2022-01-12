@@ -58,6 +58,7 @@ namespace MyClinic
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
             this.cansel_but.TabIndex = 46;
             this.cansel_but.Text = "الغاء";
+            this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
             // done_but
             // 

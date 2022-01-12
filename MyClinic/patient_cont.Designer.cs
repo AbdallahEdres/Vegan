@@ -50,8 +50,6 @@ namespace MyClinic
             this.date_val_label = new System.Windows.Forms.Label();
             this.date_label = new System.Windows.Forms.Label();
             this.info_label = new System.Windows.Forms.Label();
-            this.pay_val_label = new System.Windows.Forms.Label();
-            this.pay_label = new System.Windows.Forms.Label();
             this.type_label = new System.Windows.Forms.Label();
             this.type_val_label = new System.Windows.Forms.Label();
             this.age_val_label = new System.Windows.Forms.Label();
@@ -358,8 +356,6 @@ namespace MyClinic
             this.guna2ShadowPanel1.Controls.Add(this.date_val_label);
             this.guna2ShadowPanel1.Controls.Add(this.date_label);
             this.guna2ShadowPanel1.Controls.Add(this.info_label);
-            this.guna2ShadowPanel1.Controls.Add(this.pay_val_label);
-            this.guna2ShadowPanel1.Controls.Add(this.pay_label);
             this.guna2ShadowPanel1.Controls.Add(this.type_label);
             this.guna2ShadowPanel1.Controls.Add(this.type_val_label);
             this.guna2ShadowPanel1.Controls.Add(this.age_val_label);
@@ -387,7 +383,7 @@ namespace MyClinic
             this.date_val_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_val_label.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_val_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.date_val_label.Location = new System.Drawing.Point(388, 220);
+            this.date_val_label.Location = new System.Drawing.Point(388, 180);
             this.date_val_label.Name = "date_val_label";
             this.date_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.date_val_label.Size = new System.Drawing.Size(247, 29);
@@ -399,7 +395,7 @@ namespace MyClinic
             this.date_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.date_label.Location = new System.Drawing.Point(652, 224);
+            this.date_label.Location = new System.Drawing.Point(652, 184);
             this.date_label.Name = "date_label";
             this.date_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.date_label.Size = new System.Drawing.Size(144, 31);
@@ -417,30 +413,6 @@ namespace MyClinic
             this.info_label.Size = new System.Drawing.Size(241, 47);
             this.info_label.TabIndex = 15;
             this.info_label.Text = "بيانات المريض :";
-            // 
-            // pay_val_label
-            // 
-            this.pay_val_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pay_val_label.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_val_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pay_val_label.Location = new System.Drawing.Point(388, 179);
-            this.pay_val_label.Name = "pay_val_label";
-            this.pay_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_val_label.Size = new System.Drawing.Size(247, 29);
-            this.pay_val_label.TabIndex = 14;
-            this.pay_val_label.Text = "بالجلسه";
-            // 
-            // pay_label
-            // 
-            this.pay_label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pay_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_label.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pay_label.Location = new System.Drawing.Point(652, 180);
-            this.pay_label.Name = "pay_label";
-            this.pay_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_label.Size = new System.Drawing.Size(136, 31);
-            this.pay_label.TabIndex = 13;
-            this.pay_label.Text = "طريقة الدفع :";
             // 
             // type_label
             // 
@@ -595,8 +567,6 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2Panel dr_details_panel;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private System.Windows.Forms.Label info_label;
-        private System.Windows.Forms.Label pay_val_label;
-        private System.Windows.Forms.Label pay_label;
         private System.Windows.Forms.Label type_label;
         private System.Windows.Forms.Label type_val_label;
         private System.Windows.Forms.Label age_val_label;

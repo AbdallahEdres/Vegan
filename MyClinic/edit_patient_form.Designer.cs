@@ -29,8 +29,7 @@ namespace MyClinic
         /// </summary>
         private void InitializeComponent()
         {
-            this.pay_label = new System.Windows.Forms.Label();
-            this.pay_combo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.components = new System.ComponentModel.Container();
             this.age_num = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.age_label = new System.Windows.Forms.Label();
             this.adress_label = new System.Windows.Forms.Label();
@@ -44,42 +43,9 @@ namespace MyClinic
             this.type_combo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.name_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.cansel_but = new Guna.UI2.WinForms.Guna2Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.age_num)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pay_label
-            // 
-            this.pay_label.AutoSize = true;
-            this.pay_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_label.Location = new System.Drawing.Point(465, 429);
-            this.pay_label.Name = "pay_label";
-            this.pay_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_label.Size = new System.Drawing.Size(136, 31);
-            this.pay_label.TabIndex = 51;
-            this.pay_label.Text = "طريقة الدفع :";
-            // 
-            // pay_combo
-            // 
-            this.pay_combo.BackColor = System.Drawing.Color.Transparent;
-            this.pay_combo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(195)))), ((int)(((byte)(74)))));
-            this.pay_combo.BorderRadius = 15;
-            this.pay_combo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.pay_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.pay_combo.FocusedColor = System.Drawing.Color.Empty;
-            this.pay_combo.FocusedState.Parent = this.pay_combo;
-            this.pay_combo.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pay_combo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_combo.FormattingEnabled = true;
-            this.pay_combo.HoverState.Parent = this.pay_combo;
-            this.pay_combo.ItemHeight = 30;
-            this.pay_combo.ItemsAppearance.Parent = this.pay_combo;
-            this.pay_combo.Location = new System.Drawing.Point(61, 426);
-            this.pay_combo.Name = "pay_combo";
-            this.pay_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_combo.ShadowDecoration.Parent = this.pay_combo;
-            this.pay_combo.Size = new System.Drawing.Size(282, 36);
-            this.pay_combo.TabIndex = 50;
             // 
             // age_num
             // 
@@ -97,7 +63,7 @@ namespace MyClinic
             this.age_num.FocusedState.Parent = this.age_num;
             this.age_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.age_num.Location = new System.Drawing.Point(61, 292);
+            this.age_num.Location = new System.Drawing.Point(61, 334);
             this.age_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.age_num.Name = "age_num";
             this.age_num.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -112,7 +78,7 @@ namespace MyClinic
             this.age_label.AutoSize = true;
             this.age_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.age_label.Location = new System.Drawing.Point(465, 295);
+            this.age_label.Location = new System.Drawing.Point(465, 340);
             this.age_label.Name = "age_label";
             this.age_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.age_label.Size = new System.Drawing.Size(77, 31);
@@ -124,7 +90,7 @@ namespace MyClinic
             this.adress_label.AutoSize = true;
             this.adress_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adress_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.adress_label.Location = new System.Drawing.Point(465, 228);
+            this.adress_label.Location = new System.Drawing.Point(465, 258);
             this.adress_label.Name = "adress_label";
             this.adress_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.adress_label.Size = new System.Drawing.Size(93, 31);
@@ -148,7 +114,7 @@ namespace MyClinic
             this.adress_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.adress_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.adress_txt.HoverState.Parent = this.adress_txt;
-            this.adress_txt.Location = new System.Drawing.Point(61, 225);
+            this.adress_txt.Location = new System.Drawing.Point(61, 253);
             this.adress_txt.Margin = new System.Windows.Forms.Padding(6);
             this.adress_txt.Name = "adress_txt";
             this.adress_txt.PasswordChar = '\0';
@@ -194,7 +160,7 @@ namespace MyClinic
             this.type_label.AutoSize = true;
             this.type_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.type_label.Location = new System.Drawing.Point(465, 362);
+            this.type_label.Location = new System.Drawing.Point(465, 422);
             this.type_label.Name = "type_label";
             this.type_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_label.Size = new System.Drawing.Size(112, 31);
@@ -206,7 +172,7 @@ namespace MyClinic
             this.phone_label.AutoSize = true;
             this.phone_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.phone_label.Location = new System.Drawing.Point(465, 161);
+            this.phone_label.Location = new System.Drawing.Point(465, 176);
             this.phone_label.Name = "phone_label";
             this.phone_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone_label.Size = new System.Drawing.Size(88, 31);
@@ -242,7 +208,7 @@ namespace MyClinic
             this.phone_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.phone_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_txt.HoverState.Parent = this.phone_txt;
-            this.phone_txt.Location = new System.Drawing.Point(61, 158);
+            this.phone_txt.Location = new System.Drawing.Point(61, 172);
             this.phone_txt.Margin = new System.Windows.Forms.Padding(6);
             this.phone_txt.Name = "phone_txt";
             this.phone_txt.PasswordChar = '\0';
@@ -252,6 +218,7 @@ namespace MyClinic
             this.phone_txt.ShadowDecoration.Parent = this.phone_txt;
             this.phone_txt.Size = new System.Drawing.Size(282, 36);
             this.phone_txt.TabIndex = 40;
+            this.phone_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_txt_KeyPress);
             // 
             // type_combo
             // 
@@ -268,7 +235,7 @@ namespace MyClinic
             this.type_combo.HoverState.Parent = this.type_combo;
             this.type_combo.ItemHeight = 30;
             this.type_combo.ItemsAppearance.Parent = this.type_combo;
-            this.type_combo.Location = new System.Drawing.Point(61, 359);
+            this.type_combo.Location = new System.Drawing.Point(61, 425);
             this.type_combo.Name = "type_combo";
             this.type_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_combo.ShadowDecoration.Parent = this.type_combo;
@@ -322,13 +289,18 @@ namespace MyClinic
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 0;
+            this.toolTip1.ReshowDelay = 0;
+            this.toolTip1.ShowAlways = true;
+            // 
             // edit_patient_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 589);
-            this.Controls.Add(this.pay_label);
-            this.Controls.Add(this.pay_combo);
             this.Controls.Add(this.age_num);
             this.Controls.Add(this.age_label);
             this.Controls.Add(this.adress_label);
@@ -355,9 +327,6 @@ namespace MyClinic
         }
 
         #endregion
-
-        private System.Windows.Forms.Label pay_label;
-        private Guna.UI2.WinForms.Guna2ComboBox pay_combo;
         private Guna.UI2.WinForms.Guna2NumericUpDown age_num;
         private System.Windows.Forms.Label age_label;
         private System.Windows.Forms.Label adress_label;
@@ -371,5 +340,6 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2ComboBox type_combo;
         private Guna.UI2.WinForms.Guna2TextBox name_txt;
         private Guna.UI2.WinForms.Guna2Button cansel_but;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

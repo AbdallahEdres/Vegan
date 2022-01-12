@@ -31,13 +31,13 @@ namespace MyClinic
         }
 
         //method to get docotr's names & id
-        public List<List<string>> get_dr_list()
+        public List<List<string>> get_dr_list(string cond)
         {
             List< List<string>> dr_details = new List<List<string>> ();
             List<string> dr_names = new List<string>();
             List<string> dr_id = new List<string>();
             cn.Open();
-            cmd = new SqlCommand("select dr_id , dr_name from dr_info where dr_speciality =N'علاج طبيعي'", cn);
+            cmd = new SqlCommand("select dr_id , dr_name from dr_info where dr_speciality =N'علاج طبيعي'" +cond, cn);
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -59,106 +59,20 @@ namespace MyClinic
             return dr_appoint;
         }
         // method to set sessions 
-        public int set_sessions(int ptnt_id, int dr_id, DateTime date, string session_time,int payment,int payment_method ,int num_sessions,int weekly_sess)
+        public int set_sessions(int ptnt_id, int dr_id, string date, string session_time,int payment)
         {
-            if (check_free_appoint(date, session_time, dr_id) != -1)
-            {
-                return check_free_appoint(date, session_time, dr_id);
-            }
             cn.Open();
-
-            switch (payment_method)
-            {
-                case 0:
-                    payment = 0;
-                    break;
-                case 1:
-                    payment = payment / 6;
-                    break;
-            }
-            if (weekly_sess == 1)
-            {
-                for(int i = 0; i < num_sessions; i++)
-                {
-                    if (i > 5)
-                    {
-                        payment = 0;
-                    }
-                    cmd = new SqlCommand("insert into sessions_details values (" + ptnt_id + "," + dr_id + ",'" + date.ToString("yyyy-MM-dd") + "','0" + session_time + ":00:00',0," + payment + ")", cn) ;
-                    cmd.ExecuteNonQuery();
-                    date = date.AddDays(7);
-                }
-            } else if (weekly_sess == 2)
-            {
-                if(date.DayOfWeek == DayOfWeek.Saturday || date.DayOfWeek == DayOfWeek.Sunday)
-                {
-                    DateTime sec_date = date.AddDays(4);
-                    for (int i = 0; i < num_sessions; i+=2)
-                    {
-                        if (i > 5)
-                        {
-                            payment = 0;
-                        }
-                        cmd = new SqlCommand("insert into sessions_details values (" + ptnt_id + "," + dr_id + ",'" + date.ToString("yyyy-MM-dd") + "','0" + session_time + ":00:00',0," + payment + ")", cn);
-                        cmd.ExecuteNonQuery();
-                        date = date.AddDays(7);
-                        cmd = new SqlCommand("insert into sessions_details values (" + ptnt_id + "," + dr_id + ",'" + sec_date.ToString("yyyy-MM-dd") + "','0" + session_time + ":00:00',0," + payment + ")", cn);
-                        cmd.ExecuteNonQuery();
-                        sec_date = sec_date.AddDays(7);
-                    }
-                }else if(date.DayOfWeek == DayOfWeek.Wednesday || date.DayOfWeek == DayOfWeek.Thursday)
-                {
-                    DateTime sec_date = date.AddDays(3);
-                    for (int i = 0; i < num_sessions; i += 2)
-                    {
-                        if (i > 5)
-                        {
-                            payment = 0;
-                        }
-                        cmd = new SqlCommand("insert into sessions_details values (" + ptnt_id + "," + dr_id + ",'" + date.ToString("yyyy-MM-dd") + "','0" + session_time + ":00:00',0," + payment + ")", cn);
-                        cmd.ExecuteNonQuery();
-                        date = date.AddDays(7);
-                        cmd = new SqlCommand("insert into sessions_details values (" + ptnt_id + "," + dr_id + ",'" + sec_date.ToString("yyyy-MM-dd") + "','0" + session_time + ":00:00',0," + payment + ")", cn);
-                        cmd.ExecuteNonQuery();
-                        sec_date = sec_date.AddDays(7);
-                    }
-                }
-                else
-                {
-                    System.Windows.Forms.MessageBox.Show("اختر يوم السبت/الاحد/الربعاء/الخميس");
-                }
-               
-               
-            }
-            else if (weekly_sess == 3)
-            {
-
-                for (int i = 0; i < num_sessions; i++)
-                {
-                    if (i > 5)
-                    {
-                        payment = 0;
-                    }
-                    cmd = new SqlCommand("insert into sessions_details values (" + ptnt_id + "," + dr_id + ",'" + date.ToString("yyyy-MM-dd") + "','0" + session_time + ":00:00',0," + payment + ")", cn);
-                    cmd.ExecuteNonQuery();
-                    if (date.DayOfWeek == DayOfWeek.Wednesday || date.DayOfWeek == DayOfWeek.Thursday)
-                    {
-                        date = date.AddDays(3);
-                    }else
-                    {
-                        date = date.AddDays(2);
-                    }
-                }
-            }
+            cmd = new SqlCommand("insert into sessions_details values("+ptnt_id+","+dr_id+",'"+date+"','"+session_time+"',0,"+payment+")", cn);
+            cmd.ExecuteNonQuery();
             cn.Close();
             return -1;
         }
         // method to check for free appointments 
-        public int check_free_appoint(DateTime date,string time,int dr_id)
+        public int check_free_appoint(string date,string time,int dr_id)
         {
             int stat = -1;
             cn.Open();
-            cmd = new SqlCommand("select  COUNT (*) from sessions_details where sess_date = '" + date.ToString("yyyy-MM-dd")+ "' and sess_time ='0" + time + ":00:00'", cn);
+            cmd = new SqlCommand("select  COUNT (*) from sessions_details where sess_date = '" + date+ "' and sess_time ='" + time + "'", cn);
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
@@ -170,7 +84,7 @@ namespace MyClinic
                 else
                 {
                     dr.Close();
-                    cmd = new SqlCommand("select * from sessions_details where sess_date = '" + date.ToString("yyyy-MM-dd") + "' and sess_time ='0" + time + ":00:00' and dr_id="+dr_id+"", cn);
+                    cmd = new SqlCommand("select * from sessions_details where sess_date = '" + date+ "' and sess_time ='" + time + "' and dr_id="+dr_id+"", cn);
                     dr = cmd.ExecuteReader();
                     if (dr.Read())
                     {
@@ -187,7 +101,7 @@ namespace MyClinic
         public DataTable get_comming(int ptnt_id)
         {
             DataTable comming = new DataTable();
-            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= "+ptnt_id+" and stat=0", cn);
+            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= "+ptnt_id+ " and sess_date>='"+DateTime.Now.ToString("yyyy-MM-dd")+"' and stat=0", cn);
             da = new SqlDataAdapter(cmd);
             da.Fill(comming);
             return comming;
@@ -196,7 +110,7 @@ namespace MyClinic
         public void edit_sess(DateTime old_date ,string old_time ,int dr_id,DateTime new_date,string new_time)
         {
             cn.Open();
-            cmd =new SqlCommand("update sessions_details set sess_date='"+new_date.ToString("yyyy-MM-dd")+"' , sess_time ='0"+new_time+":00:00' , dr_id ="+dr_id+" where sess_date='"+old_date.ToString("yyyy-MM-dd")+"' and sess_time ='0"+old_time+":00:00'", cn);
+            cmd =new SqlCommand("update sessions_details set sess_date='"+new_date.ToString("yyyy-MM-dd")+"' , sess_time ='"+new_time+"' , dr_id ="+dr_id+" where sess_date='"+old_date.ToString("yyyy-MM-dd")+"' and sess_time ='"+old_time+"'", cn);
             cmd.ExecuteNonQuery();
             cn.Close();
         }
@@ -212,7 +126,7 @@ namespace MyClinic
         public DataTable get_prev(int ptnt_id)
         {
             DataTable comming = new DataTable();
-            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= " + ptnt_id + " and stat=1", cn);
+            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= " + ptnt_id + " and  (sess_date<'" + DateTime.Now.ToString("yyyy-MM-dd") + "' or stat=1)", cn);
             da = new SqlDataAdapter(cmd);
             da.Fill(comming);
             return comming;

@@ -20,10 +20,10 @@ namespace MyClinic
 
 
         // method to add patient 
-        public void add_patient(string name , string phone, string adress , int age , string type ,string payment)
+        public void add_patient(string name , string phone, string adress , int age , string type )
         {
             cn.Open();
-            cmd = new SqlCommand("insert into ptnt_info values (N'"+name+ "',N'" + adress + "',N'" + phone+"',"+age+",N'"+type+"',N'"+payment+"')", cn);
+            cmd = new SqlCommand("insert into ptnt_info values (N'"+name+ "',N'" + adress + "',N'" + phone+"',"+age+",N'"+type+"')", cn);
             cmd.ExecuteNonQuery();
             cn.Close();
         }
@@ -37,7 +37,7 @@ namespace MyClinic
             return patients_list;
         }
         // method to get patients details
-        public void get_ptnt_details(int ptnt_id , ref string name , ref string phone, ref string adress, ref string type,ref string payment ,ref int age , ref DateTime date)
+        public void get_ptnt_details(int ptnt_id , ref string name , ref string phone, ref string adress, ref string type,ref int age , ref DateTime date)
         {
             cn.Open();
             cmd = new SqlCommand("select * from ptnt_info where ptnt_id ="+ptnt_id+"", cn);
@@ -49,17 +49,31 @@ namespace MyClinic
                 phone = dr[3].ToString();
                 age = Convert.ToInt32(dr[4]);
                 type = dr[5].ToString();
-                payment = dr[6].ToString();
+               
             }
             cn.Close();
         }
         // method to edit patient info 
-        public void edit_ptnt_info (int ptnt_id,   string name,   string phone,   string adress,   string type,   string payment,   int age,   DateTime date)
+        public void edit_ptnt_info (int ptnt_id,   string name,   string phone,   string adress,   string type,   int age,   DateTime date)
         {
             cn.Open();
-            cmd = new SqlCommand("update ptnt_info set ptnt_name=N'"+name+"',ptnt_adress=N'"+adress+"',ptnt_phone=N'"+phone+"',ptnt_age="+age+",ptnt_type=N'"+type+"',payment=N'"+payment+"' where ptnt_id="+ptnt_id+"", cn);
+            cmd = new SqlCommand("update ptnt_info set ptnt_name=N'"+name+"',ptnt_adress=N'"+adress+"',ptnt_phone=N'"+phone+"',ptnt_age="+age+",ptnt_type=N'"+type+"' where ptnt_id="+ptnt_id+"", cn);
             cmd.ExecuteNonQuery();
             cn.Close();
+        }
+        public int get_new_ptnt_id(string name ,string phone)
+        {
+            int id = -1;
+            cn.Open();
+            cmd = new SqlCommand("select ptnt_id from ptnt_info where ptnt_name=N'"+name+"'and ptnt_phone='"+phone+"'", cn);
+            dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                id = Convert.ToInt32(dr[0]);
+            }
+            dr.Close();
+            cn.Close();
+            return id;
         }
     }
 }

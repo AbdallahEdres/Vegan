@@ -69,6 +69,12 @@
     <Compile Include="add_patient_form.Designer.cs">
       <DependentUpon>add_patient_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_sessions_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_sessions_form.Designer.cs">
+      <DependentUpon>add_sessions_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="attendance_cont.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,12 @@
       <DependentUpon>exam_cont.cs</DependentUpon>
     </Compile>
     <Compile Include="exam_model_class.cs" />
+    <Compile Include="exam_pay_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exam_pay_form.Designer.cs">
+      <DependentUpon>exam_pay_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="home_cont.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,11 +135,11 @@
       <DependentUpon>month_sced_cont.cs</DependentUpon>
     </Compile>
     <Compile Include="month_sced_model_class.cs" />
-    <Compile Include="new_session_form.cs">
+    <Compile Include="navegation_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="new_session_form.Designer.cs">
-      <DependentUpon>new_session_form.cs</DependentUpon>
+    <Compile Include="navegation_form.Designer.cs">
+      <DependentUpon>navegation_form.cs</DependentUpon>
     </Compile>
     <Compile Include="patient_cont.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +181,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ptnt_model.cs" />
+    <Compile Include="report model class.cs" />
+    <Compile Include="report_cont.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="report_cont.Designer.cs">
+      <DependentUpon>report_cont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report_dr_factory_class.cs" />
     <Compile Include="sessions_cont.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -191,6 +211,9 @@
     <EmbeddedResource Include="add_patient_form.resx">
       <DependentUpon>add_patient_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="add_sessions_form.resx">
+      <DependentUpon>add_sessions_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="attendance_cont.resx">
       <DependentUpon>attendance_cont.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,14 +232,17 @@
     <EmbeddedResource Include="exam_cont.resx">
       <DependentUpon>exam_cont.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="exam_pay_form.resx">
+      <DependentUpon>exam_pay_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="home_cont.resx">
       <DependentUpon>home_cont.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="month_sced_cont.resx">
       <DependentUpon>month_sced_cont.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="new_session_form.resx">
-      <DependentUpon>new_session_form.cs</DependentUpon>
+    <EmbeddedResource Include="navegation_form.resx">
+      <DependentUpon>navegation_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="patient_cont.resx">
       <DependentUpon>patient_cont.cs</DependentUpon>
@@ -245,6 +271,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="report_cont.resx">
+      <DependentUpon>report_cont.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="sessions_cont.resx">
       <DependentUpon>sessions_cont.cs</DependentUpon>
     </EmbeddedResource>

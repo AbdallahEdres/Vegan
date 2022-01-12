@@ -11,7 +11,7 @@ namespace MyClinic
     {
         //implement of hom model
         home_model_class home_Model = new home_model_class();
-        string[] hrs = { "2", "3", "4", "5", "6", "7", "8", "9" };
+        string[] hrs;
         
         // method that create data grid veiw with patients and time of sessions
         Guna2DataGridView create_grid(int i)
@@ -102,7 +102,7 @@ namespace MyClinic
             day_panel.ShadowColor = System.Drawing.Color.Black;
             day_panel.Size = new System.Drawing.Size(290, 400);
             day_panel.TabIndex = 1;
-            day_panel.Margin = new System.Windows.Forms.Padding(35);
+            day_panel.Margin = new System.Windows.Forms.Padding(25);
             return day_panel;
         }
         // method that create a label woth the day name
@@ -112,16 +112,17 @@ namespace MyClinic
             day_name.Text = "الساعة : " + hrs[i];
             day_name.AutoSize = true;
             day_name.ForeColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            day_name.Location = new System.Drawing.Point(70, 11);
+            day_name.Location = new System.Drawing.Point(10, 11);
             day_name.Name = "day_name";
-            day_name.Size = new System.Drawing.Size(117, 47);
             day_name.TabIndex = 0;
+            day_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
             return day_name;
         }
         // method to create every hour panel
         public List<Guna2ShadowPanel> create_panels()
         {
+            hrs = home_Model.get_hrs(DateTime.Now).ToArray();
             Guna2ShadowPanel panel;
             List<Guna2ShadowPanel> panels = new List<Guna2ShadowPanel>();
             for(int i = 0; i < hrs.Length; i++)

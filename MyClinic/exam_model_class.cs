@@ -26,7 +26,7 @@ namespace MyClinic
         public void add_exam(int ptnt_id,DateTime date,string time,int pay,string type)
         {
             cn.Open();
-            cmd = new SqlCommand("insert into exam values ("+ptnt_id+",'"+date.ToString("yyyy-MM-dd")+"','"+time+"',0,"+pay+",N'"+type+"')", cn);
+            cmd = new SqlCommand("insert into exam values ("+ptnt_id+",'"+date.ToString("yyyy-MM-dd")+"',N'"+time+"',0,"+pay+",N'"+type+"')", cn);
             cmd.ExecuteNonQuery();
             cn.Close();
         }
@@ -97,6 +97,14 @@ namespace MyClinic
             cmd.ExecuteNonQuery();
             cn.Close();
 
+        }
+        //method to edit exam payment 
+        public void pay_exam(int id , DateTime date,int valu)
+        {
+            cn.Open();
+            cmd = new SqlCommand("update exam set payment = "+valu+" where ptnt_id="+id+" and sess_date='"+date.ToString("yyyy-MM-dd")+"'", cn);
+            cmd.ExecuteNonQuery();
+            cn.Close();
         }
     }
 }

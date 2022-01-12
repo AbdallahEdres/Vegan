@@ -29,6 +29,7 @@ namespace MyClinic
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_dr_form));
             this.cansel_but = new Guna.UI2.WinForms.Guna2Button();
             this.name_txt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -41,6 +42,7 @@ namespace MyClinic
             this.speciality_label = new System.Windows.Forms.Label();
             this.add_dr_but = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // cansel_but
@@ -161,6 +163,7 @@ namespace MyClinic
             this.phone_txt.ShadowDecoration.Parent = this.phone_txt;
             this.phone_txt.Size = new System.Drawing.Size(282, 36);
             this.phone_txt.TabIndex = 11;
+            this.phone_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_txt_KeyPress);
             // 
             // name_label
             // 
@@ -241,6 +244,13 @@ namespace MyClinic
             this.label1.TabIndex = 17;
             this.label1.Text = "إضافة طبيب";
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 0;
+            this.toolTip1.ReshowDelay = 0;
+            this.toolTip1.ShowAlways = true;
+            // 
             // add_dr_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,5 +292,6 @@ namespace MyClinic
         private System.Windows.Forms.Label speciality_label;
         private Guna.UI2.WinForms.Guna2Button add_dr_but;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -12,10 +12,97 @@ namespace MyClinic
 {
     public partial class sessions_cont : UserControl
     {
-        //var decleartion
-        int selected_ptnt_id = -1;
         //sessions model implment
-        sess_model_class sess_Model =new sess_model_class();
+        sess_model_class sess_Model = new sess_model_class();
+        //var decleartion
+        int selected_ptnt_id = 1;
+
+
+        public sessions_cont()
+        {
+            InitializeComponent();
+            fill_ptnt_list();
+        }
+        #region buttons
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            pre_panel.Height =( dr_details_panel.Height / 2)-6;
+            comming_panel.Location = new Point(0, (dr_details_panel.Height / 2) + 3);
+            comming_panel.Height= (dr_details_panel.Height / 2) - 6;
+        }
+
+        private void add_dr_but_Click(object sender, EventArgs e)
+        {
+            if (selected_ptnt_id != -1)
+            {
+                add_sessions_form add_Sessions = new add_sessions_form(selected_ptnt_id);
+                add_Sessions.ShowDialog();
+                fill_comming();
+                selected_ptnt_id = -1;
+            }
+            else
+            {
+                MessageBox.Show("اختر اسم الحاله");
+            }
+            
+        }
+
+        private void ptnt_list_grid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >-1)
+            {
+                selected_ptnt_id = Convert.ToInt32(ptnt_list_grid.Rows[e.RowIndex].Cells[0].Value);
+                fill_comming();
+                fill_prev();
+            }
+        }
+
+        private void next_sess_grid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex < 4)
+            {
+                DialogResult d = MessageBox.Show("هل ترغب في التعديل على هذه الجلسه؟", "رسالة تاكيد", MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
+                {
+                    DateTime date = Convert.ToDateTime(next_sess_grid.Rows[e.RowIndex].Cells[1].Value);
+                    string t = next_sess_grid.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    edit_session_form edit_Session = new edit_session_form(date, t.ToString(), next_sess_grid.Rows[e.RowIndex].Cells[3].Value.ToString());
+                    edit_Session.ShowDialog();
+                    fill_comming();
+                    fill_prev();
+                }
+            }
+            else if (e.ColumnIndex == 5)
+            {
+                sess_pay_form pay_Form = new sess_pay_form(next_sess_grid.Rows[e.RowIndex].Cells[1].Value.ToString(), next_sess_grid.Rows[e.RowIndex].Cells[2].Value.ToString(), Convert.ToInt32(next_sess_grid.Rows[e.RowIndex].Cells[6].Value));
+                pay_Form.ShowDialog();
+                fill_comming();
+                fill_prev();
+            }
+
+        }        
+
+        private void next_sess_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 4)
+            {
+                DialogResult d = MessageBox.Show("هل انت متأكد؟", "رسالة تأكيد", MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
+                {
+                    if (e.ColumnIndex == 4)
+                    {
+                        sess_Model.change_stat(next_sess_grid.Rows[e.RowIndex].Cells[1].Value.ToString(), next_sess_grid.Rows[e.RowIndex].Cells[2].Value.ToString(), Convert.ToInt32(next_sess_grid.Rows[e.RowIndex].Cells[6].Value));
+                    }
+
+                }
+                fill_prev();
+                fill_comming();
+            }
+                      
+        }
+        #endregion
+        #region methods 
+
         //method to fill patients list 
         void fill_ptnt_list()
         {
@@ -27,13 +114,17 @@ namespace MyClinic
         //method to fill patient's comming sessions
         void fill_comming()
         {
-            if (next_sess_grid.ColumnCount <6)
+            if (next_sess_grid.ColumnCount < 6)
             {
                 next_sess_grid.Columns.Add("day", "اليوم");
             }
             next_sess_grid.DataSource = sess_Model.get_comming(selected_ptnt_id);
             next_sess_grid.Columns[1].HeaderText = "التاريخ";
             next_sess_grid.Columns[1].ReadOnly = true;
+            next_sess_grid.Columns[0].ReadOnly = true;
+            next_sess_grid.Columns[1].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+            next_sess_grid.Sort(next_sess_grid.Columns[1], ListSortDirection.Ascending);
 
             next_sess_grid.Columns[2].HeaderText = "الساعه";
             next_sess_grid.Columns[2].ReadOnly = true;
@@ -64,6 +155,9 @@ namespace MyClinic
             prev_sessions_grid.DataSource = sess_Model.get_prev(selected_ptnt_id);
             prev_sessions_grid.Columns[1].HeaderText = "التاريخ";
             prev_sessions_grid.Columns[1].ReadOnly = true;
+            prev_sessions_grid.Columns[1].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+            prev_sessions_grid.Sort(prev_sessions_grid.Columns[1], ListSortDirection.Descending);
 
             prev_sessions_grid.Columns[2].HeaderText = "الساعه";
             prev_sessions_grid.Columns[2].ReadOnly = true;
@@ -76,6 +170,7 @@ namespace MyClinic
 
             prev_sessions_grid.Columns[5].HeaderText = "المدفوع";
             prev_sessions_grid.Columns[6].Visible = false;
+            prev_sessions_grid.Columns[7].Visible = false;
 
             for (int i = 0; i < prev_sessions_grid.RowCount; i++)
             {
@@ -113,92 +208,13 @@ namespace MyClinic
             }
             return day;
         }
-        public sessions_cont()
+        public void refresh_sess()
         {
-            InitializeComponent();
             fill_ptnt_list();
+            selected_ptnt_id = 1;
+            fill_prev();
+            fill_comming();
         }
-
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
-            pre_panel.Height =( dr_details_panel.Height / 2)-6;
-            comming_panel.Location = new Point(0, (dr_details_panel.Height / 2) + 3);
-            comming_panel.Height= (dr_details_panel.Height / 2) - 6;
-        }
-
-        private void add_dr_but_Click(object sender, EventArgs e)
-        {
-            if (selected_ptnt_id != -1)
-            {
-                new_session_form new_Session = new new_session_form(selected_ptnt_id);
-                new_Session.ShowDialog();
-                fill_comming();
-                selected_ptnt_id = -1;
-            }
-            else
-            {
-                MessageBox.Show("اختر اسم الحاله");
-            }
-            
-        }
-
-        private void ptnt_list_grid_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >-1)
-            {
-                selected_ptnt_id = Convert.ToInt32(ptnt_list_grid.Rows[e.RowIndex].Cells[0].Value);
-                fill_comming();
-                fill_prev();
-            }
-        }
-
-        private void next_sess_grid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex < 4)
-            {
-                DialogResult d = MessageBox.Show("هل ترغب في التعديل على هذه الجلسه؟", "رسالة تاكيد", MessageBoxButtons.YesNo);
-                if (d == DialogResult.Yes)
-                {
-                    DateTime date = Convert.ToDateTime(next_sess_grid.Rows[e.RowIndex].Cells[1].Value);
-                    string t = next_sess_grid.Rows[e.RowIndex].Cells[2].Value.ToString();
-                    edit_session_form edit_Session = new edit_session_form(date, t[1].ToString(), next_sess_grid.Rows[e.RowIndex].Cells[3].Value.ToString());
-                    edit_Session.ShowDialog();
-                    fill_comming();
-                    fill_prev();
-                }
-            }
-            else if (e.ColumnIndex == 5)
-            {
-                sess_pay_form pay_Form = new sess_pay_form(next_sess_grid.Rows[e.RowIndex].Cells[1].Value.ToString(), next_sess_grid.Rows[e.RowIndex].Cells[2].Value.ToString(), Convert.ToInt32(next_sess_grid.Rows[e.RowIndex].Cells[6].Value));
-                pay_Form.ShowDialog();
-                fill_comming();
-                fill_prev();
-            }
-
-        }
-
-        
-
-        private void next_sess_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == 4)
-            {
-                DialogResult d = MessageBox.Show("هل انت متأكد؟", "رسالة تأكيد", MessageBoxButtons.YesNo);
-                if (d == DialogResult.Yes)
-                {
-                    if (e.ColumnIndex == 4)
-                    {
-                        sess_Model.change_stat(next_sess_grid.Rows[e.RowIndex].Cells[1].Value.ToString(), next_sess_grid.Rows[e.RowIndex].Cells[2].Value.ToString(), Convert.ToInt32(next_sess_grid.Rows[e.RowIndex].Cells[6].Value));
-                    }
-
-                }
-                fill_prev();
-                fill_comming();
-            }
-            
-           
-        }
-
-       
+        #endregion
     }
 }

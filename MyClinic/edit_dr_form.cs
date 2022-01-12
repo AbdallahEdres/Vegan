@@ -28,9 +28,17 @@ namespace MyClinic
 
         private void add_dr_but_Click(object sender, EventArgs e)
         {
-            dr_Model.edit_dr(dr_id,name_txt.Text, phone_txt.Text, group_combo.SelectedIndex, specialitys[spciality_combo.SelectedIndex]);
-            MessageBox.Show("تم !");
-            this.Close();
+           
+            if (check_empty())
+            {
+                dr_Model.edit_dr(dr_id, name_txt.Text, phone_txt.Text, group_combo.SelectedIndex, specialitys[spciality_combo.SelectedIndex]);
+                MessageBox.Show("تم !");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("برجاء استكمال البيانات");
+            }
         }
 
         // method to fill fields
@@ -62,6 +70,20 @@ namespace MyClinic
                 spciality_combo.SelectedIndex = 1;
             }
         }
+
+        private void phone_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+                toolTip1.Show("رقم الهاتف يجب ان يكون ارقام فقط", phone_txt);
+            }
+            else
+            {
+                toolTip1.Hide(phone_txt);
+            }
+        }
+
         public edit_dr_form(int id)
         {
             InitializeComponent();
@@ -74,6 +96,16 @@ namespace MyClinic
         private void cansel_but_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        // method to check for empty fields 
+        bool check_empty()
+        {
+            bool stat = true;
+            if (name_txt.Text == "" || phone_txt.Text == "" || spciality_combo.SelectedIndex < 0 || group_combo.SelectedIndex < 0)
+            {
+                stat = false;
+            }
+            return stat;
         }
     }
 }

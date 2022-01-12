@@ -167,7 +167,7 @@ namespace MyClinic
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
             this.add_dr_but.Size = new System.Drawing.Size(343, 65);
             this.add_dr_but.TabIndex = 28;
-            this.add_dr_but.Text = "إضافة";
+            this.add_dr_but.Text = " اضافة";
             this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 
             // search_pic

@@ -29,6 +29,7 @@ namespace MyClinic
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(edit_dr_form));
             this.label1 = new System.Windows.Forms.Label();
             this.add_dr_but = new Guna.UI2.WinForms.Guna2Button();
@@ -41,6 +42,7 @@ namespace MyClinic
             this.spciality_combo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.name_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.cansel_but = new Guna.UI2.WinForms.Guna2Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -149,6 +151,7 @@ namespace MyClinic
             this.phone_txt.ShadowDecoration.Parent = this.phone_txt;
             this.phone_txt.Size = new System.Drawing.Size(282, 36);
             this.phone_txt.TabIndex = 22;
+            this.phone_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_txt_KeyPress);
             // 
             // group_combo
             // 
@@ -241,6 +244,13 @@ namespace MyClinic
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.AutoPopDelay = 5000;
+            this.toolTip1.InitialDelay = 0;
+            this.toolTip1.ReshowDelay = 0;
+            this.toolTip1.ShowAlways = true;
+            // 
             // edit_dr_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,5 +291,6 @@ namespace MyClinic
         private Guna.UI2.WinForms.Guna2ComboBox spciality_combo;
         private Guna.UI2.WinForms.Guna2TextBox name_txt;
         private Guna.UI2.WinForms.Guna2Button cansel_but;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -18,52 +18,7 @@ namespace MyClinic
 
         // var declearation
         int selected_row_index = -1;
-        // method to define the filter condetion
-        string define_cond()
-        {
-            string condetion = "";
-
-            if (days_switch.Checked )
-            {
-                condetion += "and sess_date='" + DateTime.Now.ToString("yyyy-MM-dd")+"' ";
-            }
-            if (nutrition_radio.Checked)
-            {
-                condetion += "and exam_type=N'تغذية' ";
-            }else if (physical_raadio.Checked)
-            {
-                condetion += "and exam_type=N'علاج طبيعي' ";
-            }
-            return condetion;
-        }
-
-        // method to fill examinations list 
-        void fill_exam_list()
-        {
-            exam_grid.DataSource = exam_Model.get_exam(search_txt.Text, define_cond(),0);
-            exam_grid.Columns[0].HeaderText = "الإسم";
-            exam_grid.Columns[0].ReadOnly = true;
-
-            exam_grid.Columns[1].HeaderText = "الهاتف";
-            exam_grid.Columns[1].ReadOnly = true;
-
-            exam_grid.Columns[2].HeaderText = "تاريخ الجلسة";
-            exam_grid.Columns[2].ReadOnly = true;
-
-            exam_grid.Columns[3].HeaderText = "الساعة";
-            exam_grid.Columns[3].ReadOnly = true;
-
-            exam_grid.Columns[4].HeaderText = "نوع الكشف";
-            exam_grid.Columns[4].ReadOnly = true;
-
-            exam_grid.Columns[5].HeaderText = "المدفوع";
-            exam_grid.Columns[5].ReadOnly = true;
-
-            exam_grid.Columns[6].HeaderText = "حضر";
-
-            exam_grid.Columns[7].Visible = false;
-
-        }
+        #region buttons
         public exam_cont()
         {
             InitializeComponent();
@@ -142,6 +97,15 @@ namespace MyClinic
                     edit_Time.ShowDialog();
                     fill_exam_list();
                 }
+            }else if (e.ColumnIndex == 5 && e.RowIndex > -1)
+            {
+                DialogResult d = MessageBox.Show("هل تريد تغير المبلغ؟", "تحذير! ", MessageBoxButtons.YesNo);
+                if (d == DialogResult.Yes)
+                {
+                    exam_pay_form exam_Pay = new exam_pay_form(Convert.ToInt32(exam_grid.Rows[e.RowIndex].Cells[7].Value),Convert.ToDateTime(exam_grid.Rows[e.RowIndex].Cells[2].Value));
+                    exam_Pay.ShowDialog();
+                    fill_exam_list();
+                }
             }
         }
 
@@ -165,10 +129,67 @@ namespace MyClinic
             }
           
         }
-
+        #endregion
+        #region methods
         private void exam_grid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             selected_row_index = e.RowIndex;
         }
+        // method to define the filter condetion
+        string define_cond()
+        {
+            string condetion = "";
+
+            if (days_switch.Checked)
+            {
+                condetion += "and sess_date='" + DateTime.Now.ToString("yyyy-MM-dd") + "' ";
+            }
+            if (nutrition_radio.Checked)
+            {
+                condetion += "and exam_type=N'تغذية' ";
+            }
+            else if (physical_raadio.Checked)
+            {
+                condetion += "and exam_type=N'علاج طبيعي' ";
+            }
+            return condetion;
+        }
+
+        // method to fill examinations list 
+        void fill_exam_list()
+        {
+            exam_grid.DataSource = exam_Model.get_exam(search_txt.Text, define_cond(), 0);
+            exam_grid.Columns[0].HeaderText = "الإسم";
+            exam_grid.Columns[0].ReadOnly = true;
+
+            exam_grid.Columns[1].HeaderText = "الهاتف";
+            exam_grid.Columns[1].ReadOnly = true;
+
+            exam_grid.Columns[2].HeaderText = "تاريخ الكشف";
+            exam_grid.Columns[2].ReadOnly = true;
+            exam_grid.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+            exam_grid.Sort(exam_grid.Columns[2], ListSortDirection.Ascending);
+
+            exam_grid.Columns[3].HeaderText = "الساعة";
+            exam_grid.Columns[3].ReadOnly = true;
+
+            exam_grid.Columns[4].HeaderText = "نوع الكشف";
+            exam_grid.Columns[4].ReadOnly = true;
+
+            exam_grid.Columns[5].HeaderText = "المدفوع";
+            exam_grid.Columns[5].ReadOnly = true;
+
+            exam_grid.Columns[6].HeaderText = "حضر";
+
+            exam_grid.Columns[7].Visible = false;
+
+        }
+
+        public void refresh_exam()
+        {
+            fill_exam_list();
+        }
+        #endregion
     }
 }
