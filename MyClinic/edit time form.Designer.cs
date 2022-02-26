@@ -56,7 +56,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 46;
+            this.cansel_but.TabIndex = 5;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -74,7 +74,7 @@ namespace MyClinic
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(102, 55);
-            this.done_but.TabIndex = 45;
+            this.done_but.TabIndex = 4;
             this.done_but.Text = " تم";
             this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
@@ -145,7 +145,7 @@ namespace MyClinic
             this.min_num.Name = "min_num";
             this.min_num.ShadowDecoration.Parent = this.min_num;
             this.min_num.Size = new System.Drawing.Size(73, 36);
-            this.min_num.TabIndex = 53;
+            this.min_num.TabIndex = 2;
             this.min_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.min_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 
@@ -180,7 +180,7 @@ namespace MyClinic
             this.hr_num.Name = "hr_num";
             this.hr_num.ShadowDecoration.Parent = this.hr_num;
             this.hr_num.Size = new System.Drawing.Size(76, 36);
-            this.hr_num.TabIndex = 52;
+            this.hr_num.TabIndex = 1;
             this.hr_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.hr_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.hr_num.Value = new decimal(new int[] {
@@ -212,7 +212,7 @@ namespace MyClinic
             this.am_pm_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.am_pm_combo.ShadowDecoration.Parent = this.am_pm_combo;
             this.am_pm_combo.Size = new System.Drawing.Size(71, 36);
-            this.am_pm_combo.TabIndex = 51;
+            this.am_pm_combo.TabIndex = 3;
             // 
             // edit_time_form
             // 

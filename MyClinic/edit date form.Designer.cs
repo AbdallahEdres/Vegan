@@ -51,7 +51,7 @@ namespace MyClinic
             this.exam_date.Name = "exam_date";
             this.exam_date.ShadowDecoration.Parent = this.exam_date;
             this.exam_date.Size = new System.Drawing.Size(355, 36);
-            this.exam_date.TabIndex = 40;
+            this.exam_date.TabIndex = 1;
             this.exam_date.Value = new System.DateTime(2021, 12, 11, 15, 38, 58, 789);
             // 
             // date_label
@@ -80,7 +80,7 @@ namespace MyClinic
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(102, 55);
-            this.done_but.TabIndex = 42;
+            this.done_but.TabIndex = 2;
             this.done_but.Text = " تم";
             this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
@@ -99,7 +99,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 43;
+            this.cansel_but.TabIndex = 3;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 

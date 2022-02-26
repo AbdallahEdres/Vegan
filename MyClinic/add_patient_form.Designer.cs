@@ -75,7 +75,7 @@ namespace MyClinic
             this.add_dr_but.Name = "add_dr_but";
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
-            this.add_dr_but.TabIndex = 27;
+            this.add_dr_but.TabIndex = 6;
             this.add_dr_but.Text = "إضافة";
             this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 
@@ -141,7 +141,7 @@ namespace MyClinic
             this.phone_txt.SelectedText = "";
             this.phone_txt.ShadowDecoration.Parent = this.phone_txt;
             this.phone_txt.Size = new System.Drawing.Size(282, 36);
-            this.phone_txt.TabIndex = 22;
+            this.phone_txt.TabIndex = 2;
             this.phone_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_txt_KeyPress);
             // 
             // type_combo
@@ -164,7 +164,7 @@ namespace MyClinic
             this.type_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_combo.ShadowDecoration.Parent = this.type_combo;
             this.type_combo.Size = new System.Drawing.Size(282, 36);
-            this.type_combo.TabIndex = 20;
+            this.type_combo.TabIndex = 5;
             // 
             // name_txt
             // 
@@ -192,7 +192,7 @@ namespace MyClinic
             this.name_txt.SelectedText = "";
             this.name_txt.ShadowDecoration.Parent = this.name_txt;
             this.name_txt.Size = new System.Drawing.Size(282, 36);
-            this.name_txt.TabIndex = 19;
+            this.name_txt.TabIndex = 1;
             // 
             // cansel_but
             // 
@@ -209,7 +209,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 18;
+            this.cansel_but.TabIndex = 7;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -263,7 +263,7 @@ namespace MyClinic
             this.adress_txt.SelectedText = "";
             this.adress_txt.ShadowDecoration.Parent = this.adress_txt;
             this.adress_txt.Size = new System.Drawing.Size(282, 36);
-            this.adress_txt.TabIndex = 29;
+            this.adress_txt.TabIndex = 3;
             // 
             // age_num
             // 
@@ -286,7 +286,7 @@ namespace MyClinic
             this.age_num.Name = "age_num";
             this.age_num.ShadowDecoration.Parent = this.age_num;
             this.age_num.Size = new System.Drawing.Size(282, 36);
-            this.age_num.TabIndex = 33;
+            this.age_num.TabIndex = 4;
             this.age_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.age_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 

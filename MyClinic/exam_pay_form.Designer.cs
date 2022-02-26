@@ -64,7 +64,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 51;
+            this.cansel_but.TabIndex = 3;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -82,7 +82,7 @@ namespace MyClinic
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(102, 55);
-            this.done_but.TabIndex = 50;
+            this.done_but.TabIndex = 2;
             this.done_but.Text = " تم";
             this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
@@ -107,7 +107,7 @@ namespace MyClinic
             this.pay_num.Name = "pay_num";
             this.pay_num.ShadowDecoration.Parent = this.pay_num;
             this.pay_num.Size = new System.Drawing.Size(174, 36);
-            this.pay_num.TabIndex = 49;
+            this.pay_num.TabIndex = 1;
             this.pay_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.pay_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 

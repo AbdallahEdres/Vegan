@@ -98,7 +98,7 @@ namespace MyClinic
             this.time_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.time_combo.ShadowDecoration.Parent = this.time_combo;
             this.time_combo.Size = new System.Drawing.Size(128, 36);
-            this.time_combo.TabIndex = 86;
+            this.time_combo.TabIndex = 2;
             this.time_combo.SelectedIndexChanged += new System.EventHandler(this.time_combo_SelectedIndexChanged);
             // 
             // dr_label
@@ -133,7 +133,7 @@ namespace MyClinic
             this.dr_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dr_combo.ShadowDecoration.Parent = this.dr_combo;
             this.dr_combo.Size = new System.Drawing.Size(122, 36);
-            this.dr_combo.TabIndex = 84;
+            this.dr_combo.TabIndex = 7;
             this.dr_combo.SelectedIndexChanged += new System.EventHandler(this.dr_combo_SelectedIndexChanged);
             // 
             // pay_val_num
@@ -167,7 +167,7 @@ namespace MyClinic
             this.pay_val_num.Name = "pay_val_num";
             this.pay_val_num.ShadowDecoration.Parent = this.pay_val_num;
             this.pay_val_num.Size = new System.Drawing.Size(130, 36);
-            this.pay_val_num.TabIndex = 83;
+            this.pay_val_num.TabIndex = 4;
             this.pay_val_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.pay_val_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.pay_val_num.Value = new decimal(new int[] {
@@ -212,7 +212,7 @@ namespace MyClinic
             this.wekly_sess_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.wekly_sess_combo.ShadowDecoration.Parent = this.wekly_sess_combo;
             this.wekly_sess_combo.Size = new System.Drawing.Size(126, 36);
-            this.wekly_sess_combo.TabIndex = 81;
+            this.wekly_sess_combo.TabIndex = 5;
             // 
             // num_sess_wekly_label
             // 
@@ -249,7 +249,7 @@ namespace MyClinic
             this.pay_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pay_combo.ShadowDecoration.Parent = this.pay_combo;
             this.pay_combo.Size = new System.Drawing.Size(130, 36);
-            this.pay_combo.TabIndex = 79;
+            this.pay_combo.TabIndex = 3;
             this.pay_combo.SelectedIndexChanged += new System.EventHandler(this.pay_combo_SelectedIndexChanged);
             // 
             // pay_label
@@ -400,7 +400,7 @@ namespace MyClinic
             this.sessions_num.Name = "sessions_num";
             this.sessions_num.ShadowDecoration.Parent = this.sessions_num;
             this.sessions_num.Size = new System.Drawing.Size(126, 36);
-            this.sessions_num.TabIndex = 76;
+            this.sessions_num.TabIndex = 6;
             this.sessions_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.sessions_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.sessions_num.Value = new decimal(new int[] {
@@ -432,11 +432,11 @@ namespace MyClinic
             this.done_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.done_but.ForeColor = System.Drawing.Color.White;
             this.done_but.HoverState.Parent = this.done_but;
-            this.done_but.Location = new System.Drawing.Point(299, 417);
+            this.done_but.Location = new System.Drawing.Point(324, 417);
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(153, 55);
-            this.done_but.TabIndex = 74;
+            this.done_but.TabIndex = 9;
             this.done_but.Text = "تم";
             this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
@@ -455,7 +455,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(153, 55);
-            this.cansel_but.TabIndex = 73;
+            this.cansel_but.TabIndex = 10;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -488,7 +488,7 @@ namespace MyClinic
             this.start_date_bick.Name = "start_date_bick";
             this.start_date_bick.ShadowDecoration.Parent = this.start_date_bick;
             this.start_date_bick.Size = new System.Drawing.Size(130, 36);
-            this.start_date_bick.TabIndex = 71;
+            this.start_date_bick.TabIndex = 1;
             this.start_date_bick.Value = new System.DateTime(2021, 12, 11, 15, 39, 0, 336);
             this.start_date_bick.ValueChanged += new System.EventHandler(this.start_date_bick_ValueChanged);
             // 
@@ -530,7 +530,7 @@ namespace MyClinic
             this.generate_but.Name = "generate_but";
             this.generate_but.ShadowDecoration.Parent = this.generate_but;
             this.generate_but.Size = new System.Drawing.Size(153, 55);
-            this.generate_but.TabIndex = 87;
+            this.generate_but.TabIndex = 8;
             this.generate_but.Text = "تكوين";
             this.generate_but.Click += new System.EventHandler(this.generate_but_Click);
             // 

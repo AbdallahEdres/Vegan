@@ -121,7 +121,7 @@ namespace MyClinic
             this.type_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_combo.ShadowDecoration.Parent = this.type_combo;
             this.type_combo.Size = new System.Drawing.Size(232, 36);
-            this.type_combo.TabIndex = 30;
+            this.type_combo.TabIndex = 3;
             // 
             // date_label
             // 
@@ -151,7 +151,7 @@ namespace MyClinic
             this.exam_date.Name = "exam_date";
             this.exam_date.ShadowDecoration.Parent = this.exam_date;
             this.exam_date.Size = new System.Drawing.Size(232, 36);
-            this.exam_date.TabIndex = 38;
+            this.exam_date.TabIndex = 4;
             this.exam_date.Value = new System.DateTime(2021, 12, 11, 15, 38, 58, 789);
             // 
             // time_label
@@ -181,7 +181,7 @@ namespace MyClinic
             this.add_dr_but.Name = "add_dr_but";
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
-            this.add_dr_but.TabIndex = 41;
+            this.add_dr_but.TabIndex = 9;
             this.add_dr_but.Text = "إضافة";
             this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 
@@ -200,7 +200,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 40;
+            this.cansel_but.TabIndex = 10;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -237,7 +237,7 @@ namespace MyClinic
             this.pay_num.Name = "pay_num";
             this.pay_num.ShadowDecoration.Parent = this.pay_num;
             this.pay_num.Size = new System.Drawing.Size(232, 36);
-            this.pay_num.TabIndex = 43;
+            this.pay_num.TabIndex = 8;
             this.pay_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.pay_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 
@@ -264,7 +264,7 @@ namespace MyClinic
             this.am_pm_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.am_pm_combo.ShadowDecoration.Parent = this.am_pm_combo;
             this.am_pm_combo.Size = new System.Drawing.Size(71, 36);
-            this.am_pm_combo.TabIndex = 46;
+            this.am_pm_combo.TabIndex = 5;
             // 
             // hr_num
             // 
@@ -297,7 +297,7 @@ namespace MyClinic
             this.hr_num.Name = "hr_num";
             this.hr_num.ShadowDecoration.Parent = this.hr_num;
             this.hr_num.Size = new System.Drawing.Size(76, 36);
-            this.hr_num.TabIndex = 47;
+            this.hr_num.TabIndex = 7;
             this.hr_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.hr_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.hr_num.Value = new decimal(new int[] {
@@ -337,7 +337,7 @@ namespace MyClinic
             this.min_num.Name = "min_num";
             this.min_num.ShadowDecoration.Parent = this.min_num;
             this.min_num.Size = new System.Drawing.Size(73, 36);
-            this.min_num.TabIndex = 48;
+            this.min_num.TabIndex = 6;
             this.min_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.min_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             // 
@@ -392,7 +392,7 @@ namespace MyClinic
             this.phone_txt.SelectedText = "";
             this.phone_txt.ShadowDecoration.Parent = this.phone_txt;
             this.phone_txt.Size = new System.Drawing.Size(232, 36);
-            this.phone_txt.TabIndex = 31;
+            this.phone_txt.TabIndex = 2;
             // 
             // phone_label
             // 
@@ -433,7 +433,7 @@ namespace MyClinic
             this.name_txt.SelectedText = "";
             this.name_txt.ShadowDecoration.Parent = this.name_txt;
             this.name_txt.Size = new System.Drawing.Size(232, 36);
-            this.name_txt.TabIndex = 51;
+            this.name_txt.TabIndex = 1;
             // 
             // dr_list_panel
             // 

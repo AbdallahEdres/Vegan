@@ -60,7 +60,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
-            this.cansel_but.TabIndex = 4;
+            this.cansel_but.TabIndex = 6;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -90,7 +90,7 @@ namespace MyClinic
             this.name_txt.SelectedText = "";
             this.name_txt.ShadowDecoration.Parent = this.name_txt;
             this.name_txt.Size = new System.Drawing.Size(237, 36);
-            this.name_txt.TabIndex = 5;
+            this.name_txt.TabIndex = 1;
             // 
             // spciality_combo
             // 
@@ -112,7 +112,7 @@ namespace MyClinic
             this.spciality_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.spciality_combo.ShadowDecoration.Parent = this.spciality_combo;
             this.spciality_combo.Size = new System.Drawing.Size(237, 36);
-            this.spciality_combo.TabIndex = 9;
+            this.spciality_combo.TabIndex = 4;
             // 
             // group_combo
             // 
@@ -134,7 +134,7 @@ namespace MyClinic
             this.group_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.group_combo.ShadowDecoration.Parent = this.group_combo;
             this.group_combo.Size = new System.Drawing.Size(237, 36);
-            this.group_combo.TabIndex = 10;
+            this.group_combo.TabIndex = 3;
             // 
             // phone_txt
             // 
@@ -162,7 +162,7 @@ namespace MyClinic
             this.phone_txt.SelectedText = "";
             this.phone_txt.ShadowDecoration.Parent = this.phone_txt;
             this.phone_txt.Size = new System.Drawing.Size(237, 36);
-            this.phone_txt.TabIndex = 11;
+            this.phone_txt.TabIndex = 2;
             this.phone_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_txt_KeyPress);
             // 
             // name_label
@@ -228,7 +228,7 @@ namespace MyClinic
             this.add_dr_but.Name = "add_dr_but";
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
-            this.add_dr_but.TabIndex = 16;
+            this.add_dr_but.TabIndex = 5;
             this.add_dr_but.Text = "إضافة";
             this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
             // 

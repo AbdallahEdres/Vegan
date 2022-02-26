@@ -71,7 +71,7 @@ namespace MyClinic
             this.start_date_bick.Name = "start_date_bick";
             this.start_date_bick.ShadowDecoration.Parent = this.start_date_bick;
             this.start_date_bick.Size = new System.Drawing.Size(282, 36);
-            this.start_date_bick.TabIndex = 40;
+            this.start_date_bick.TabIndex = 4;
             this.start_date_bick.Value = new System.DateTime(2021, 12, 11, 15, 39, 0, 336);
             // 
             // time_label
@@ -118,7 +118,7 @@ namespace MyClinic
             this.dr_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dr_combo.ShadowDecoration.Parent = this.dr_combo;
             this.dr_combo.Size = new System.Drawing.Size(282, 36);
-            this.dr_combo.TabIndex = 36;
+            this.dr_combo.TabIndex = 1;
             // 
             // done_but
             // 
@@ -134,7 +134,7 @@ namespace MyClinic
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(153, 55);
-            this.done_but.TabIndex = 43;
+            this.done_but.TabIndex = 5;
             this.done_but.Text = "تم";
             this.done_but.Click += new System.EventHandler(this.done_but_Click);
             // 
@@ -153,7 +153,7 @@ namespace MyClinic
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(153, 55);
-            this.cansel_but.TabIndex = 42;
+            this.cansel_but.TabIndex = 6;
             this.cansel_but.Text = "الغاء";
             this.cansel_but.Click += new System.EventHandler(this.cansel_but_Click);
             // 
@@ -211,7 +211,7 @@ namespace MyClinic
             this.hr_num.Name = "hr_num";
             this.hr_num.ShadowDecoration.Parent = this.hr_num;
             this.hr_num.Size = new System.Drawing.Size(76, 36);
-            this.hr_num.TabIndex = 72;
+            this.hr_num.TabIndex = 2;
             this.hr_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.hr_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.hr_num.Value = new decimal(new int[] {
@@ -243,7 +243,7 @@ namespace MyClinic
             this.am_pm_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.am_pm_combo.ShadowDecoration.Parent = this.am_pm_combo;
             this.am_pm_combo.Size = new System.Drawing.Size(71, 36);
-            this.am_pm_combo.TabIndex = 71;
+            this.am_pm_combo.TabIndex = 3;
             // 
             // edit_session_form
             // 
