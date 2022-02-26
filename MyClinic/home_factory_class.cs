@@ -102,7 +102,7 @@ namespace MyClinic
             day_panel.ShadowColor = System.Drawing.Color.Black;
             day_panel.Size = new System.Drawing.Size(200, 250);
             day_panel.TabIndex = 1;
-            day_panel.Margin = new System.Windows.Forms.Padding(25);
+            day_panel.Margin = new System.Windows.Forms.Padding(7);
             return day_panel;
         }
         // method that create a label woth the day name
