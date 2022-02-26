@@ -51,12 +51,12 @@ namespace MyClinic
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tajawal ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(231, 21);
+            this.label1.Location = new System.Drawing.Point(166, 9);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(207, 47);
+            this.label1.Size = new System.Drawing.Size(171, 40);
             this.label1.TabIndex = 28;
             this.label1.Text = "إضافة مريض";
             // 
@@ -71,7 +71,7 @@ namespace MyClinic
             this.add_dr_but.ForeColor = System.Drawing.Color.White;
             this.add_dr_but.HoverState.Parent = this.add_dr_but;
             this.add_dr_but.Image = ((System.Drawing.Image)(resources.GetObject("add_dr_but.Image")));
-            this.add_dr_but.Location = new System.Drawing.Point(402, 513);
+            this.add_dr_but.Location = new System.Drawing.Point(338, 382);
             this.add_dr_but.Name = "add_dr_but";
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
             this.add_dr_but.Size = new System.Drawing.Size(102, 55);
@@ -84,7 +84,7 @@ namespace MyClinic
             this.type_label.AutoSize = true;
             this.type_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.type_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.type_label.Location = new System.Drawing.Point(453, 440);
+            this.type_label.Location = new System.Drawing.Point(381, 324);
             this.type_label.Name = "type_label";
             this.type_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_label.Size = new System.Drawing.Size(112, 31);
@@ -96,7 +96,7 @@ namespace MyClinic
             this.phone_label.AutoSize = true;
             this.phone_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phone_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.phone_label.Location = new System.Drawing.Point(453, 209);
+            this.phone_label.Location = new System.Drawing.Point(381, 135);
             this.phone_label.Name = "phone_label";
             this.phone_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.phone_label.Size = new System.Drawing.Size(88, 31);
@@ -108,7 +108,7 @@ namespace MyClinic
             this.name_label.AutoSize = true;
             this.name_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.name_label.Location = new System.Drawing.Point(453, 132);
+            this.name_label.Location = new System.Drawing.Point(381, 70);
             this.name_label.Name = "name_label";
             this.name_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.name_label.Size = new System.Drawing.Size(81, 31);
@@ -132,7 +132,7 @@ namespace MyClinic
             this.phone_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.phone_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phone_txt.HoverState.Parent = this.phone_txt;
-            this.phone_txt.Location = new System.Drawing.Point(49, 206);
+            this.phone_txt.Location = new System.Drawing.Point(29, 129);
             this.phone_txt.Margin = new System.Windows.Forms.Padding(6);
             this.phone_txt.Name = "phone_txt";
             this.phone_txt.PasswordChar = '\0';
@@ -159,7 +159,7 @@ namespace MyClinic
             this.type_combo.HoverState.Parent = this.type_combo;
             this.type_combo.ItemHeight = 30;
             this.type_combo.ItemsAppearance.Parent = this.type_combo;
-            this.type_combo.Location = new System.Drawing.Point(49, 437);
+            this.type_combo.Location = new System.Drawing.Point(29, 321);
             this.type_combo.Name = "type_combo";
             this.type_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.type_combo.ShadowDecoration.Parent = this.type_combo;
@@ -183,7 +183,7 @@ namespace MyClinic
             this.name_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.name_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.name_txt.HoverState.Parent = this.name_txt;
-            this.name_txt.Location = new System.Drawing.Point(49, 129);
+            this.name_txt.Location = new System.Drawing.Point(29, 65);
             this.name_txt.Margin = new System.Windows.Forms.Padding(6);
             this.name_txt.Name = "name_txt";
             this.name_txt.PasswordChar = '\0';
@@ -205,7 +205,7 @@ namespace MyClinic
             this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.cansel_but.HoverState.Parent = this.cansel_but;
             this.cansel_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.cansel_but.Location = new System.Drawing.Point(145, 513);
+            this.cansel_but.Location = new System.Drawing.Point(81, 382);
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
@@ -218,7 +218,7 @@ namespace MyClinic
             this.age_label.AutoSize = true;
             this.age_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.age_label.Location = new System.Drawing.Point(453, 363);
+            this.age_label.Location = new System.Drawing.Point(381, 260);
             this.age_label.Name = "age_label";
             this.age_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.age_label.Size = new System.Drawing.Size(77, 31);
@@ -230,7 +230,7 @@ namespace MyClinic
             this.adress_label.AutoSize = true;
             this.adress_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adress_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.adress_label.Location = new System.Drawing.Point(453, 286);
+            this.adress_label.Location = new System.Drawing.Point(381, 200);
             this.adress_label.Name = "adress_label";
             this.adress_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.adress_label.Size = new System.Drawing.Size(93, 31);
@@ -254,7 +254,7 @@ namespace MyClinic
             this.adress_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.adress_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.adress_txt.HoverState.Parent = this.adress_txt;
-            this.adress_txt.Location = new System.Drawing.Point(49, 283);
+            this.adress_txt.Location = new System.Drawing.Point(29, 193);
             this.adress_txt.Margin = new System.Windows.Forms.Padding(6);
             this.adress_txt.Name = "adress_txt";
             this.adress_txt.PasswordChar = '\0';
@@ -281,7 +281,7 @@ namespace MyClinic
             this.age_num.FocusedState.Parent = this.age_num;
             this.age_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.age_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.age_num.Location = new System.Drawing.Point(49, 360);
+            this.age_num.Location = new System.Drawing.Point(29, 257);
             this.age_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.age_num.Name = "age_num";
             this.age_num.ShadowDecoration.Parent = this.age_num;
@@ -301,7 +301,7 @@ namespace MyClinic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 589);
+            this.ClientSize = new System.Drawing.Size(535, 458);
             this.Controls.Add(this.age_num);
             this.Controls.Add(this.age_label);
             this.Controls.Add(this.adress_label);

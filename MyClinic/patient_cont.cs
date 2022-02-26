@@ -57,6 +57,9 @@ namespace MyClinic
             edit_Patient.ShowDialog();
             refresh_patient();
         }
+
+      
+
         #endregion
 
         #region methods
