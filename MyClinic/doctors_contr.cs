@@ -24,6 +24,10 @@ namespace MyClinic
         public doctors_contr()
         {
             InitializeComponent();
+            start_date_bic.Format = DateTimePickerFormat.Custom;
+            end_date_bic.Format = DateTimePickerFormat.Custom;
+            start_date_bic.CustomFormat = "dd/MM/yyyy";
+            end_date_bic.CustomFormat = "dd/MM/yyyy";
             refresh_doctors();
         }
         #region buttons

@@ -103,7 +103,7 @@ namespace MyClinic
         {
             System.Windows.Forms.Label day_name = new System.Windows.Forms.Label();
             day_name.Text = convert_day_ar(date)+"  "+date.ToString("dd/MM/yyyy");
-            day_name.Font = new System.Drawing.Font("Tajawal", 14f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            day_name.Font = new System.Drawing.Font("Tajawal", 12f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             day_name.AutoSize = true;
             day_name.ForeColor = System.Drawing.Color.FromArgb(250,250,250);
             day_name.Location = new System.Drawing.Point(30, 11);

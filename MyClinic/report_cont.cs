@@ -69,5 +69,7 @@ namespace MyClinic
             fill_detais_panel();
             fill_dr_layout();
         }
+
+       
     }
 }

@@ -56,9 +56,9 @@ namespace MyClinic
             this.dr_report_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.general_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.m_income_label = new System.Windows.Forms.Label();
             this.m_income_value = new System.Windows.Forms.Label();
             this.m_ptnt_num_value = new System.Windows.Forms.Label();
-            this.m_income_label = new System.Windows.Forms.Label();
             this.m_ptnt_num_label = new System.Windows.Forms.Label();
             this.top_panel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.month_combo = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -83,9 +83,9 @@ namespace MyClinic
             // dr_list_panel
             // 
             this.dr_list_panel.BackColor = System.Drawing.Color.Transparent;
+            this.dr_list_panel.Controls.Add(this.general_panel);
             this.dr_list_panel.Controls.Add(this.detail_report_panel);
             this.dr_list_panel.Controls.Add(this.dr_report_panel);
-            this.dr_list_panel.Controls.Add(this.general_panel);
             this.dr_list_panel.Controls.Add(this.top_panel);
             this.dr_list_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dr_list_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
@@ -96,7 +96,7 @@ namespace MyClinic
             this.dr_list_panel.ShadowColor = System.Drawing.Color.Black;
             this.dr_list_panel.ShadowDepth = 200;
             this.dr_list_panel.ShadowShift = 10;
-            this.dr_list_panel.Size = new System.Drawing.Size(1265, 565);
+            this.dr_list_panel.Size = new System.Drawing.Size(785, 483);
             this.dr_list_panel.TabIndex = 3;
             // 
             // detail_report_panel
@@ -106,13 +106,13 @@ namespace MyClinic
             this.detail_report_panel.BackColor = System.Drawing.Color.Transparent;
             this.detail_report_panel.Controls.Add(this.flowLayoutPanel1);
             this.detail_report_panel.FillColor = System.Drawing.Color.White;
-            this.detail_report_panel.Location = new System.Drawing.Point(24, 125);
+            this.detail_report_panel.Location = new System.Drawing.Point(21, 107);
             this.detail_report_panel.Name = "detail_report_panel";
-            this.detail_report_panel.Radius = 20;
+            this.detail_report_panel.Radius = 10;
             this.detail_report_panel.ShadowColor = System.Drawing.Color.Black;
             this.detail_report_panel.ShadowDepth = 200;
             this.detail_report_panel.ShadowShift = 8;
-            this.detail_report_panel.Size = new System.Drawing.Size(854, 280);
+            this.detail_report_panel.Size = new System.Drawing.Size(745, 181);
             this.detail_report_panel.TabIndex = 5;
             // 
             // flowLayoutPanel1
@@ -124,9 +124,9 @@ namespace MyClinic
             this.flowLayoutPanel1.Controls.Add(this.guna2ShadowPanel1);
             this.flowLayoutPanel1.Controls.Add(this.guna2ShadowPanel6);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(28, 17);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(25, 14);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(798, 245);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(647, 149);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // guna2ShadowPanel4
@@ -134,11 +134,11 @@ namespace MyClinic
             this.guna2ShadowPanel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel4.Controls.Add(this.guna2ShadowPanel5);
             this.guna2ShadowPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.guna2ShadowPanel4.Location = new System.Drawing.Point(536, 3);
+            this.guna2ShadowPanel4.Location = new System.Drawing.Point(462, 3);
             this.guna2ShadowPanel4.Name = "guna2ShadowPanel4";
-            this.guna2ShadowPanel4.Radius = 25;
+            this.guna2ShadowPanel4.Radius = 5;
             this.guna2ShadowPanel4.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel4.Size = new System.Drawing.Size(259, 242);
+            this.guna2ShadowPanel4.Size = new System.Drawing.Size(182, 136);
             this.guna2ShadowPanel4.TabIndex = 1;
             // 
             // guna2ShadowPanel5
@@ -150,22 +150,22 @@ namespace MyClinic
             this.guna2ShadowPanel5.Controls.Add(this.phys_num_label);
             this.guna2ShadowPanel5.Controls.Add(this.phys_top_label);
             this.guna2ShadowPanel5.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel5.Location = new System.Drawing.Point(11, 8);
+            this.guna2ShadowPanel5.Location = new System.Drawing.Point(6, 12);
             this.guna2ShadowPanel5.Name = "guna2ShadowPanel5";
-            this.guna2ShadowPanel5.Radius = 25;
+            this.guna2ShadowPanel5.Radius = 5;
             this.guna2ShadowPanel5.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel5.Size = new System.Drawing.Size(238, 225);
+            this.guna2ShadowPanel5.Size = new System.Drawing.Size(173, 111);
             this.guna2ShadowPanel5.TabIndex = 1;
             // 
             // phys_income_val
             // 
             this.phys_income_val.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.phys_income_val.AutoSize = true;
-            this.phys_income_val.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phys_income_val.Location = new System.Drawing.Point(55, 137);
+            this.phys_income_val.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.phys_income_val.Location = new System.Drawing.Point(31, 77);
             this.phys_income_val.Name = "phys_income_val";
             this.phys_income_val.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phys_income_val.Size = new System.Drawing.Size(19, 24);
+            this.phys_income_val.Size = new System.Drawing.Size(18, 21);
             this.phys_income_val.TabIndex = 5;
             this.phys_income_val.Text = "0";
             // 
@@ -173,11 +173,11 @@ namespace MyClinic
             // 
             this.phys_num_val.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.phys_num_val.AutoSize = true;
-            this.phys_num_val.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phys_num_val.Location = new System.Drawing.Point(62, 86);
+            this.phys_num_val.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.phys_num_val.Location = new System.Drawing.Point(31, 54);
             this.phys_num_val.Name = "phys_num_val";
             this.phys_num_val.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phys_num_val.Size = new System.Drawing.Size(19, 24);
+            this.phys_num_val.Size = new System.Drawing.Size(18, 21);
             this.phys_num_val.TabIndex = 4;
             this.phys_num_val.Text = "0";
             // 
@@ -185,11 +185,11 @@ namespace MyClinic
             // 
             this.phys_income_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.phys_income_label.AutoSize = true;
-            this.phys_income_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phys_income_label.Location = new System.Drawing.Point(100, 137);
+            this.phys_income_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.phys_income_label.Location = new System.Drawing.Point(55, 77);
             this.phys_income_label.Name = "phys_income_label";
             this.phys_income_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phys_income_label.Size = new System.Drawing.Size(110, 24);
+            this.phys_income_label.Size = new System.Drawing.Size(96, 21);
             this.phys_income_label.TabIndex = 3;
             this.phys_income_label.Text = "اجمالي الدخل :";
             // 
@@ -197,22 +197,22 @@ namespace MyClinic
             // 
             this.phys_num_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.phys_num_label.AutoSize = true;
-            this.phys_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phys_num_label.Location = new System.Drawing.Point(100, 86);
+            this.phys_num_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.phys_num_label.Location = new System.Drawing.Point(83, 56);
             this.phys_num_label.Name = "phys_num_label";
             this.phys_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phys_num_label.Size = new System.Drawing.Size(57, 24);
+            this.phys_num_label.Size = new System.Drawing.Size(51, 21);
             this.phys_num_label.TabIndex = 2;
             this.phys_num_label.Text = "العدد :";
             // 
             // phys_top_label
             // 
             this.phys_top_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.phys_top_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phys_top_label.Location = new System.Drawing.Point(35, 12);
+            this.phys_top_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.phys_top_label.Location = new System.Drawing.Point(15, 2);
             this.phys_top_label.Name = "phys_top_label";
             this.phys_top_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phys_top_label.Size = new System.Drawing.Size(166, 75);
+            this.phys_top_label.Size = new System.Drawing.Size(136, 52);
             this.phys_top_label.TabIndex = 1;
             this.phys_top_label.Text = "كشوفات العلاج الطبيعي";
             // 
@@ -221,11 +221,11 @@ namespace MyClinic
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.guna2ShadowPanel3);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(271, 3);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(261, 3);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
-            this.guna2ShadowPanel1.Radius = 25;
+            this.guna2ShadowPanel1.Radius = 5;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(259, 242);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(195, 136);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
             // guna2ShadowPanel3
@@ -237,22 +237,22 @@ namespace MyClinic
             this.guna2ShadowPanel3.Controls.Add(this.nut_num_label);
             this.guna2ShadowPanel3.Controls.Add(this.nutrtion_top_label);
             this.guna2ShadowPanel3.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel3.Location = new System.Drawing.Point(11, 8);
+            this.guna2ShadowPanel3.Location = new System.Drawing.Point(6, 10);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
-            this.guna2ShadowPanel3.Radius = 25;
+            this.guna2ShadowPanel3.Radius = 5;
             this.guna2ShadowPanel3.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel3.Size = new System.Drawing.Size(238, 225);
+            this.guna2ShadowPanel3.Size = new System.Drawing.Size(184, 116);
             this.guna2ShadowPanel3.TabIndex = 1;
             // 
             // nut_income_val
             // 
             this.nut_income_val.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nut_income_val.AutoSize = true;
-            this.nut_income_val.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nut_income_val.Location = new System.Drawing.Point(55, 137);
+            this.nut_income_val.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.nut_income_val.Location = new System.Drawing.Point(39, 60);
             this.nut_income_val.Name = "nut_income_val";
             this.nut_income_val.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nut_income_val.Size = new System.Drawing.Size(19, 24);
+            this.nut_income_val.Size = new System.Drawing.Size(18, 21);
             this.nut_income_val.TabIndex = 5;
             this.nut_income_val.Text = "0";
             // 
@@ -260,11 +260,11 @@ namespace MyClinic
             // 
             this.nut_num_val.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nut_num_val.AutoSize = true;
-            this.nut_num_val.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nut_num_val.Location = new System.Drawing.Point(62, 86);
+            this.nut_num_val.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.nut_num_val.Location = new System.Drawing.Point(39, 39);
             this.nut_num_val.Name = "nut_num_val";
             this.nut_num_val.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nut_num_val.Size = new System.Drawing.Size(19, 24);
+            this.nut_num_val.Size = new System.Drawing.Size(18, 21);
             this.nut_num_val.TabIndex = 4;
             this.nut_num_val.Text = "0";
             // 
@@ -272,11 +272,11 @@ namespace MyClinic
             // 
             this.nut_income_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nut_income_label.AutoSize = true;
-            this.nut_income_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nut_income_label.Location = new System.Drawing.Point(100, 137);
+            this.nut_income_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.nut_income_label.Location = new System.Drawing.Point(60, 60);
             this.nut_income_label.Name = "nut_income_label";
             this.nut_income_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nut_income_label.Size = new System.Drawing.Size(110, 24);
+            this.nut_income_label.Size = new System.Drawing.Size(96, 21);
             this.nut_income_label.TabIndex = 3;
             this.nut_income_label.Text = "اجمالي الدخل :";
             // 
@@ -284,11 +284,11 @@ namespace MyClinic
             // 
             this.nut_num_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nut_num_label.AutoSize = true;
-            this.nut_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nut_num_label.Location = new System.Drawing.Point(100, 86);
+            this.nut_num_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.nut_num_label.Location = new System.Drawing.Point(74, 37);
             this.nut_num_label.Name = "nut_num_label";
             this.nut_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nut_num_label.Size = new System.Drawing.Size(57, 24);
+            this.nut_num_label.Size = new System.Drawing.Size(51, 21);
             this.nut_num_label.TabIndex = 2;
             this.nut_num_label.Text = "العدد :";
             // 
@@ -296,11 +296,11 @@ namespace MyClinic
             // 
             this.nutrtion_top_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.nutrtion_top_label.AutoSize = true;
-            this.nutrtion_top_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nutrtion_top_label.Location = new System.Drawing.Point(36, 11);
+            this.nutrtion_top_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
+            this.nutrtion_top_label.Location = new System.Drawing.Point(32, 13);
             this.nutrtion_top_label.Name = "nutrtion_top_label";
             this.nutrtion_top_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nutrtion_top_label.Size = new System.Drawing.Size(166, 31);
+            this.nutrtion_top_label.Size = new System.Drawing.Size(128, 24);
             this.nutrtion_top_label.TabIndex = 1;
             this.nutrtion_top_label.Text = "كشوفات التغذية";
             // 
@@ -309,11 +309,11 @@ namespace MyClinic
             this.guna2ShadowPanel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel6.Controls.Add(this.guna2ShadowPanel7);
             this.guna2ShadowPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.guna2ShadowPanel6.Location = new System.Drawing.Point(6, 3);
+            this.guna2ShadowPanel6.Location = new System.Drawing.Point(58, 3);
             this.guna2ShadowPanel6.Name = "guna2ShadowPanel6";
-            this.guna2ShadowPanel6.Radius = 25;
+            this.guna2ShadowPanel6.Radius = 5;
             this.guna2ShadowPanel6.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel6.Size = new System.Drawing.Size(259, 242);
+            this.guna2ShadowPanel6.Size = new System.Drawing.Size(197, 137);
             this.guna2ShadowPanel6.TabIndex = 2;
             // 
             // guna2ShadowPanel7
@@ -325,22 +325,22 @@ namespace MyClinic
             this.guna2ShadowPanel7.Controls.Add(this.sess_num_label);
             this.guna2ShadowPanel7.Controls.Add(this.sess_top_label);
             this.guna2ShadowPanel7.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel7.Location = new System.Drawing.Point(11, 8);
+            this.guna2ShadowPanel7.Location = new System.Drawing.Point(15, 6);
             this.guna2ShadowPanel7.Name = "guna2ShadowPanel7";
-            this.guna2ShadowPanel7.Radius = 25;
+            this.guna2ShadowPanel7.Radius = 5;
             this.guna2ShadowPanel7.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel7.Size = new System.Drawing.Size(238, 225);
+            this.guna2ShadowPanel7.Size = new System.Drawing.Size(170, 120);
             this.guna2ShadowPanel7.TabIndex = 1;
             // 
             // sess_income_val
             // 
             this.sess_income_val.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.sess_income_val.AutoSize = true;
-            this.sess_income_val.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sess_income_val.Location = new System.Drawing.Point(55, 137);
+            this.sess_income_val.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.sess_income_val.Location = new System.Drawing.Point(39, 70);
             this.sess_income_val.Name = "sess_income_val";
             this.sess_income_val.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sess_income_val.Size = new System.Drawing.Size(19, 24);
+            this.sess_income_val.Size = new System.Drawing.Size(18, 21);
             this.sess_income_val.TabIndex = 5;
             this.sess_income_val.Text = "0";
             // 
@@ -348,11 +348,11 @@ namespace MyClinic
             // 
             this.sess_num_val.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.sess_num_val.AutoSize = true;
-            this.sess_num_val.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sess_num_val.Location = new System.Drawing.Point(62, 86);
+            this.sess_num_val.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.sess_num_val.Location = new System.Drawing.Point(39, 47);
             this.sess_num_val.Name = "sess_num_val";
             this.sess_num_val.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sess_num_val.Size = new System.Drawing.Size(19, 24);
+            this.sess_num_val.Size = new System.Drawing.Size(18, 21);
             this.sess_num_val.TabIndex = 4;
             this.sess_num_val.Text = "0";
             // 
@@ -360,11 +360,11 @@ namespace MyClinic
             // 
             this.sess_income_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.sess_income_label.AutoSize = true;
-            this.sess_income_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sess_income_label.Location = new System.Drawing.Point(100, 137);
+            this.sess_income_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.sess_income_label.Location = new System.Drawing.Point(59, 70);
             this.sess_income_label.Name = "sess_income_label";
             this.sess_income_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sess_income_label.Size = new System.Drawing.Size(110, 24);
+            this.sess_income_label.Size = new System.Drawing.Size(96, 21);
             this.sess_income_label.TabIndex = 3;
             this.sess_income_label.Text = "اجمالي الدخل :";
             // 
@@ -372,22 +372,22 @@ namespace MyClinic
             // 
             this.sess_num_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.sess_num_label.AutoSize = true;
-            this.sess_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sess_num_label.Location = new System.Drawing.Point(100, 86);
+            this.sess_num_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.sess_num_label.Location = new System.Drawing.Point(85, 47);
             this.sess_num_label.Name = "sess_num_label";
             this.sess_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sess_num_label.Size = new System.Drawing.Size(57, 24);
+            this.sess_num_label.Size = new System.Drawing.Size(51, 21);
             this.sess_num_label.TabIndex = 2;
             this.sess_num_label.Text = "العدد :";
             // 
             // sess_top_label
             // 
             this.sess_top_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.sess_top_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sess_top_label.Location = new System.Drawing.Point(33, 11);
+            this.sess_top_label.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
+            this.sess_top_label.Location = new System.Drawing.Point(10, 3);
             this.sess_top_label.Name = "sess_top_label";
             this.sess_top_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sess_top_label.Size = new System.Drawing.Size(166, 75);
+            this.sess_top_label.Size = new System.Drawing.Size(136, 52);
             this.sess_top_label.TabIndex = 1;
             this.sess_top_label.Text = "جلسات العلاج الطبيعي";
             // 
@@ -399,13 +399,13 @@ namespace MyClinic
             this.dr_report_panel.BackColor = System.Drawing.Color.Transparent;
             this.dr_report_panel.Controls.Add(this.flowLayoutPanel2);
             this.dr_report_panel.FillColor = System.Drawing.Color.White;
-            this.dr_report_panel.Location = new System.Drawing.Point(18, 411);
+            this.dr_report_panel.Location = new System.Drawing.Point(18, 284);
             this.dr_report_panel.Name = "dr_report_panel";
-            this.dr_report_panel.Radius = 20;
+            this.dr_report_panel.Radius = 10;
             this.dr_report_panel.ShadowColor = System.Drawing.Color.Black;
             this.dr_report_panel.ShadowDepth = 200;
             this.dr_report_panel.ShadowShift = 8;
-            this.dr_report_panel.Size = new System.Drawing.Size(1235, 140);
+            this.dr_report_panel.Size = new System.Drawing.Size(748, 185);
             this.dr_report_panel.TabIndex = 5;
             // 
             // flowLayoutPanel2
@@ -418,32 +418,43 @@ namespace MyClinic
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(21, 23);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1196, 97);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(708, 142);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // general_panel
             // 
             this.general_panel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.general_panel.BackColor = System.Drawing.Color.Transparent;
+            this.general_panel.Controls.Add(this.m_income_label);
             this.general_panel.Controls.Add(this.m_income_value);
             this.general_panel.Controls.Add(this.m_ptnt_num_value);
-            this.general_panel.Controls.Add(this.m_income_label);
             this.general_panel.Controls.Add(this.m_ptnt_num_label);
             this.general_panel.FillColor = System.Drawing.Color.White;
-            this.general_panel.Location = new System.Drawing.Point(884, 142);
+            this.general_panel.Location = new System.Drawing.Point(21, 19);
             this.general_panel.Name = "general_panel";
-            this.general_panel.Radius = 20;
+            this.general_panel.Radius = 10;
             this.general_panel.ShadowColor = System.Drawing.Color.Black;
-            this.general_panel.ShadowDepth = 200;
             this.general_panel.ShadowShift = 8;
-            this.general_panel.Size = new System.Drawing.Size(357, 236);
+            this.general_panel.Size = new System.Drawing.Size(224, 82);
             this.general_panel.TabIndex = 4;
+            // 
+            // m_income_label
+            // 
+            this.m_income_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.m_income_label.AutoSize = true;
+            this.m_income_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_income_label.Location = new System.Drawing.Point(86, 15);
+            this.m_income_label.Name = "m_income_label";
+            this.m_income_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.m_income_label.Size = new System.Drawing.Size(120, 19);
+            this.m_income_label.TabIndex = 1;
+            this.m_income_label.Text = "اجمالي دخل الشهر :";
             // 
             // m_income_value
             // 
             this.m_income_value.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.m_income_value.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_income_value.Location = new System.Drawing.Point(37, 150);
+            this.m_income_value.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_income_value.Location = new System.Drawing.Point(-14, 15);
             this.m_income_value.Name = "m_income_value";
             this.m_income_value.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_income_value.Size = new System.Drawing.Size(94, 29);
@@ -453,35 +464,23 @@ namespace MyClinic
             // m_ptnt_num_value
             // 
             this.m_ptnt_num_value.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.m_ptnt_num_value.Font = new System.Drawing.Font("Tajawal Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_ptnt_num_value.Location = new System.Drawing.Point(36, 69);
+            this.m_ptnt_num_value.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_ptnt_num_value.Location = new System.Drawing.Point(-21, 44);
             this.m_ptnt_num_value.Name = "m_ptnt_num_value";
             this.m_ptnt_num_value.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m_ptnt_num_value.Size = new System.Drawing.Size(96, 29);
             this.m_ptnt_num_value.TabIndex = 2;
             this.m_ptnt_num_value.Text = " 0";
             // 
-            // m_income_label
-            // 
-            this.m_income_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.m_income_label.AutoSize = true;
-            this.m_income_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_income_label.Location = new System.Drawing.Point(133, 148);
-            this.m_income_label.Name = "m_income_label";
-            this.m_income_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.m_income_label.Size = new System.Drawing.Size(192, 31);
-            this.m_income_label.TabIndex = 1;
-            this.m_income_label.Text = "اجمالي دخل الشهر :";
-            // 
             // m_ptnt_num_label
             // 
             this.m_ptnt_num_label.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.m_ptnt_num_label.AutoSize = true;
-            this.m_ptnt_num_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_ptnt_num_label.Location = new System.Drawing.Point(133, 67);
+            this.m_ptnt_num_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_ptnt_num_label.Location = new System.Drawing.Point(86, 44);
             this.m_ptnt_num_label.Name = "m_ptnt_num_label";
             this.m_ptnt_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.m_ptnt_num_label.Size = new System.Drawing.Size(179, 31);
+            this.m_ptnt_num_label.Size = new System.Drawing.Size(111, 19);
             this.m_ptnt_num_label.TabIndex = 0;
             this.m_ptnt_num_label.Text = "عدد حالات الشهر :";
             // 
@@ -495,11 +494,11 @@ namespace MyClinic
             this.top_panel.Controls.Add(this.month_label);
             this.top_panel.Controls.Add(this.year_label);
             this.top_panel.FillColor = System.Drawing.Color.White;
-            this.top_panel.Location = new System.Drawing.Point(18, 23);
+            this.top_panel.Location = new System.Drawing.Point(269, 19);
             this.top_panel.Name = "top_panel";
-            this.top_panel.Radius = 18;
+            this.top_panel.Radius = 10;
             this.top_panel.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.top_panel.Size = new System.Drawing.Size(1217, 81);
+            this.top_panel.Size = new System.Drawing.Size(497, 82);
             this.top_panel.TabIndex = 3;
             // 
             // month_combo
@@ -531,11 +530,11 @@ namespace MyClinic
             "نوفمبر",
             "ديسمبر"});
             this.month_combo.ItemsAppearance.Parent = this.month_combo;
-            this.month_combo.Location = new System.Drawing.Point(606, 19);
+            this.month_combo.Location = new System.Drawing.Point(206, 28);
             this.month_combo.Name = "month_combo";
             this.month_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.month_combo.ShadowDecoration.Parent = this.month_combo;
-            this.month_combo.Size = new System.Drawing.Size(282, 36);
+            this.month_combo.Size = new System.Drawing.Size(167, 36);
             this.month_combo.TabIndex = 34;
             this.month_combo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.month_combo.SelectedIndexChanged += new System.EventHandler(this.month_combo_SelectedIndexChanged);
@@ -557,7 +556,7 @@ namespace MyClinic
             this.year_num.FocusedState.Parent = this.year_num;
             this.year_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.year_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.year_num.Location = new System.Drawing.Point(329, 19);
+            this.year_num.Location = new System.Drawing.Point(45, 28);
             this.year_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.year_num.Maximum = new decimal(new int[] {
             2040,
@@ -574,9 +573,9 @@ namespace MyClinic
             this.year_num.ShadowDecoration.Depth = 200;
             this.year_num.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.year_num.ShadowDecoration.Parent = this.year_num;
-            this.year_num.Size = new System.Drawing.Size(148, 36);
+            this.year_num.Size = new System.Drawing.Size(104, 36);
             this.year_num.TabIndex = 35;
-            this.year_num.TextOffset = new System.Drawing.Point(65, 0);
+            this.year_num.TextOffset = new System.Drawing.Point(15, 0);
             this.year_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.year_num.UpDownButtonForeColor = System.Drawing.Color.Black;
             this.year_num.Value = new decimal(new int[] {
@@ -590,11 +589,11 @@ namespace MyClinic
             // 
             this.month_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.month_label.AutoSize = true;
-            this.month_label.Font = new System.Drawing.Font("Tajawal", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.month_label.Location = new System.Drawing.Point(922, 16);
+            this.month_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
+            this.month_label.Location = new System.Drawing.Point(379, 32);
             this.month_label.Name = "month_label";
             this.month_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.month_label.Size = new System.Drawing.Size(165, 43);
+            this.month_label.Size = new System.Drawing.Size(90, 24);
             this.month_label.TabIndex = 0;
             this.month_label.Text = "تقرير شهر :";
             // 
@@ -602,10 +601,11 @@ namespace MyClinic
             // 
             this.year_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.year_label.AutoSize = true;
-            this.year_label.Font = new System.Drawing.Font("Tajawal", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.year_label.Location = new System.Drawing.Point(486, 16);
+            this.year_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
+            this.year_label.Location = new System.Drawing.Point(156, 32);
             this.year_label.Name = "year_label";
-            this.year_label.Size = new System.Drawing.Size(79, 43);
+            this.year_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.year_label.Size = new System.Drawing.Size(44, 24);
             this.year_label.TabIndex = 2;
             this.year_label.Text = "عام :";
             // 
@@ -615,7 +615,7 @@ namespace MyClinic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dr_list_panel);
             this.Name = "report_cont";
-            this.Size = new System.Drawing.Size(1265, 565);
+            this.Size = new System.Drawing.Size(785, 483);
             this.dr_list_panel.ResumeLayout(false);
             this.detail_report_panel.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);

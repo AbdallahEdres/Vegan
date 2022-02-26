@@ -22,9 +22,9 @@ namespace MyClinic
             dr_name.Text = "د/ "+report_Model.get_dr_name(id);
             dr_name.AutoSize = true;
             dr_name.ForeColor = System.Drawing.Color.FromArgb(93, 110, 30);
-            dr_name.Location = new System.Drawing.Point(100, 11);
+            dr_name.Location = new System.Drawing.Point(60,5);
             dr_name.Size = new System.Drawing.Size(117, 47);
-            dr_name.Font= new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dr_name.Font= new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dr_name.TabIndex = 0;
 
             return dr_name;
@@ -36,9 +36,9 @@ namespace MyClinic
             sess_num_label.Text = "عدد الجلسات :";
             sess_num_label.AutoSize = true;
             sess_num_label.ForeColor = System.Drawing.Color.FromArgb(0,0,0);
-            sess_num_label.Location = new System.Drawing.Point(180, 100);
+            sess_num_label.Location = new System.Drawing.Point(90, 50);
             sess_num_label.Size = new System.Drawing.Size(117, 47);
-            sess_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sess_num_label.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             sess_num_label.TabIndex = 0;
             sess_num_label.RightToLeft=System.Windows.Forms.RightToLeft.Yes;
 
@@ -51,9 +51,9 @@ namespace MyClinic
             sess_num_label.Text = report_Model.get_dr_sess_num(id,date);
             sess_num_label.AutoSize = true;
             sess_num_label.ForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            sess_num_label.Location = new System.Drawing.Point(130, 100);
+            sess_num_label.Location = new System.Drawing.Point(60, 50);
             sess_num_label.Size = new System.Drawing.Size(117, 47);
-            sess_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sess_num_label.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             sess_num_label.TabIndex = 0;
             sess_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
@@ -67,9 +67,9 @@ namespace MyClinic
             ptnt_num_label.Text = "عدد الحالات :";
             ptnt_num_label.AutoSize = true;
             ptnt_num_label.ForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            ptnt_num_label.Location = new System.Drawing.Point(180, 150);
+            ptnt_num_label.Location = new System.Drawing.Point(90, 75);
             ptnt_num_label.Size = new System.Drawing.Size(117, 47);
-            ptnt_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ptnt_num_label.Font = new System.Drawing.Font("Tajawal",8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             ptnt_num_label.TabIndex = 0;
             ptnt_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
@@ -82,9 +82,9 @@ namespace MyClinic
             ptnt_num_label.Text = report_Model.get_ptnt_val(id, date);
             ptnt_num_label.AutoSize = true;
             ptnt_num_label.ForeColor = System.Drawing.Color.FromArgb(0, 0, 0);
-            ptnt_num_label.Location = new System.Drawing.Point(130, 150);
+            ptnt_num_label.Location = new System.Drawing.Point(60, 75);
             ptnt_num_label.Size = new System.Drawing.Size(117, 47);
-            ptnt_num_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ptnt_num_label.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             ptnt_num_label.TabIndex = 0;
             ptnt_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 
@@ -96,11 +96,11 @@ namespace MyClinic
             Guna2ShadowPanel dr_panel = new Guna2ShadowPanel();
             dr_panel.BackColor = System.Drawing.Color.Transparent;
             dr_panel.FillColor = System.Drawing.Color.FromArgb(250,250,250);
-            dr_panel.Location = new System.Drawing.Point(15, 15);
+            dr_panel.Location = new System.Drawing.Point(10, 10);
             dr_panel.Name = "dr_panel";
-            dr_panel.Radius = 20;
+            dr_panel.Radius = 10;
             dr_panel.ShadowColor = System.Drawing.Color.Black;
-            dr_panel.Size = new System.Drawing.Size(320, 220);
+            dr_panel.Size = new System.Drawing.Size(180,120);
             dr_panel.TabIndex = 1;
             return dr_panel;
         }
@@ -112,9 +112,9 @@ namespace MyClinic
             back_panel.FillColor = System.Drawing.Color.FromArgb(93, 110, 30);
             back_panel.Location = new System.Drawing.Point(3, 3);
             back_panel.Name = "back_panel";
-            back_panel.Radius = 20;
+            back_panel.Radius =10;
             back_panel.ShadowColor = System.Drawing.Color.Black;
-            back_panel.Size = new System.Drawing.Size(350, 250);
+            back_panel.Size = new System.Drawing.Size(200,140);
             back_panel.TabIndex = 1;
             return back_panel;
         }
