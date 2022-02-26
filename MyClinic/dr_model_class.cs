@@ -35,10 +35,10 @@ namespace MyClinic
         }
 
         // method to get dr_info 
-        public DataTable get_dr_list()
+        public DataTable get_dr_list(string cond)
         {
             DataTable dr_list = new DataTable();
-            cmd = new SqlCommand("select dr_id, dr_name ,dr_phone from dr_info ", cn);
+            cmd = new SqlCommand("select dr_id, dr_name ,dr_phone from dr_info where dr_name like N'"+cond+"%' ", cn);
             da = new SqlDataAdapter(cmd);
             da.Fill(dr_list);
 

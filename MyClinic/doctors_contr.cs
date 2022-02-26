@@ -73,10 +73,16 @@ namespace MyClinic
             days_val_label.Text = days;
             speciality_val_label.Text = speciality;
         }
+
+        private void search_txt_TextChanged(object sender, EventArgs e)
+        {
+            fill_dr_list();
+        }
+
         // method to fill dr_list 
         void fill_dr_list()
         {
-            dr_list_grid.DataSource = dr_Model.get_dr_list();
+            dr_list_grid.DataSource = dr_Model.get_dr_list(search_txt.Text);
             dr_list_grid.Columns[0].Visible = false;
             dr_list_grid.Columns[1].HeaderText = "الإسم";
             dr_list_grid.Columns[2].HeaderText = "الهاتف";

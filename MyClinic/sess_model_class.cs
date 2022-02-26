@@ -37,7 +37,7 @@ namespace MyClinic
             List<string> dr_names = new List<string>();
             List<string> dr_id = new List<string>();
             cn.Open();
-            cmd = new SqlCommand("select dr_id , dr_name from dr_info where dr_speciality =N'علاج طبيعي'" +cond, cn);
+            cmd = new SqlCommand("select dr_id , dr_name from dr_info where (dr_speciality =N'علاج طبيعي' or dr_speciality =N'تغذية/علاج طبيعي')" + cond, cn);
             dr = cmd.ExecuteReader();
             while (dr.Read())
             {
