@@ -26,7 +26,7 @@ namespace MyClinic
 
         private void new_sess_but_Click(object sender, EventArgs e)
         {
-            new_session_form new_Session = new new_session_form(id);
+            add_sessions_form new_Session = new add_sessions_form(id);
             new_Session.ShowDialog();
             this.Close();
         }

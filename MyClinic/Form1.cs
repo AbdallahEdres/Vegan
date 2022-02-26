@@ -40,5 +40,7 @@ namespace MyClinic
                 exit_but.PerformClick();
             }
         }
+
+
     }
 }
