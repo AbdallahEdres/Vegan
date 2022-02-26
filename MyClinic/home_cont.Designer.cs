@@ -58,7 +58,7 @@ namespace MyClinic
             this.dr_list_panel.ShadowColor = System.Drawing.Color.Black;
             this.dr_list_panel.ShadowDepth = 200;
             this.dr_list_panel.ShadowShift = 10;
-            this.dr_list_panel.Size = new System.Drawing.Size(1265, 565);
+            this.dr_list_panel.Size = new System.Drawing.Size(785, 483);
             this.dr_list_panel.TabIndex = 2;
             // 
             // no_sess_panel
@@ -75,53 +75,56 @@ namespace MyClinic
             this.no_sess_panel.ShadowColor = System.Drawing.Color.Black;
             this.no_sess_panel.ShadowDepth = 200;
             this.no_sess_panel.ShadowShift = 15;
-            this.no_sess_panel.Size = new System.Drawing.Size(1231, 426);
+            this.no_sess_panel.Size = new System.Drawing.Size(751, 344);
             this.no_sess_panel.TabIndex = 5;
             // 
             // pay_label
             // 
             this.pay_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pay_label.AutoSize = true;
-            this.pay_label.Font = new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_label.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_label.Location = new System.Drawing.Point(435, 185);
+            this.pay_label.Location = new System.Drawing.Point(243, 161);
             this.pay_label.Name = "pay_label";
-            this.pay_label.Size = new System.Drawing.Size(394, 47);
+            this.pay_label.Size = new System.Drawing.Size(295, 36);
             this.pay_label.TabIndex = 14;
             this.pay_label.Text = "لا يوجد جلسات قادمة اليوم";
             // 
             // guna2ShadowPanel1
             // 
-            this.guna2ShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2ShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.day_label);
             this.guna2ShadowPanel1.Controls.Add(this.ptnt_count_label);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
-            this.guna2ShadowPanel1.Location = new System.Drawing.Point(124, 23);
+            this.guna2ShadowPanel1.Location = new System.Drawing.Point(63, 23);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 20;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(997, 100);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(667, 100);
             this.guna2ShadowPanel1.TabIndex = 3;
             // 
             // day_label
             // 
             this.day_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.day_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.day_label.Location = new System.Drawing.Point(547, 25);
+            this.day_label.Location = new System.Drawing.Point(339, 25);
             this.day_label.Name = "day_label";
             this.day_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.day_label.Size = new System.Drawing.Size(378, 47);
+            this.day_label.Size = new System.Drawing.Size(293, 47);
             this.day_label.TabIndex = 0;
             // 
             // ptnt_count_label
             // 
             this.ptnt_count_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ptnt_count_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ptnt_count_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.ptnt_count_label.Location = new System.Drawing.Point(61, 25);
+            this.ptnt_count_label.Location = new System.Drawing.Point(25, 25);
             this.ptnt_count_label.Name = "ptnt_count_label";
             this.ptnt_count_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ptnt_count_label.Size = new System.Drawing.Size(378, 47);
+            this.ptnt_count_label.Size = new System.Drawing.Size(293, 47);
             this.ptnt_count_label.TabIndex = 1;
             // 
             // guna2ShadowPanel2
@@ -138,7 +141,7 @@ namespace MyClinic
             this.guna2ShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel2.ShadowDepth = 200;
             this.guna2ShadowPanel2.ShadowShift = 15;
-            this.guna2ShadowPanel2.Size = new System.Drawing.Size(1231, 426);
+            this.guna2ShadowPanel2.Size = new System.Drawing.Size(751, 344);
             this.guna2ShadowPanel2.TabIndex = 4;
             // 
             // flowLayoutPanel1
@@ -152,7 +155,7 @@ namespace MyClinic
             this.flowLayoutPanel1.Location = new System.Drawing.Point(43, 24);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1147, 379);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(667, 297);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // home_cont
@@ -162,7 +165,7 @@ namespace MyClinic
             this.Controls.Add(this.dr_list_panel);
             this.Location = new System.Drawing.Point(0, 117);
             this.Name = "home_cont";
-            this.Size = new System.Drawing.Size(1265, 565);
+            this.Size = new System.Drawing.Size(785, 483);
             this.Load += new System.EventHandler(this.home_cont_Load);
             this.dr_list_panel.ResumeLayout(false);
             this.no_sess_panel.ResumeLayout(false);

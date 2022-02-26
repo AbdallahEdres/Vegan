@@ -41,7 +41,7 @@ namespace MyClinic
             day_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(203, 229, 78);
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(203, 229, 78);
@@ -50,7 +50,7 @@ namespace MyClinic
             day_grid.ColumnHeadersHeight = 30;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tajawal Medium", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(203, 229, 78);
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
@@ -58,11 +58,11 @@ namespace MyClinic
             day_grid.DefaultCellStyle = dataGridViewCellStyle6;
             day_grid.EnableHeadersVisualStyles = false;
             day_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            day_grid.Location = new System.Drawing.Point(23, 70);
+            day_grid.Location = new System.Drawing.Point(23, 50);
             day_grid.ReadOnly = true;
             day_grid.RowHeadersVisible = false;
             day_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            day_grid.Size = new System.Drawing.Size(250, 300);
+            day_grid.Size = new System.Drawing.Size(150,180);
             day_grid.TabIndex = 1;
             day_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             day_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
@@ -74,14 +74,14 @@ namespace MyClinic
             day_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             day_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(203, 229, 78);
             day_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            day_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            day_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             day_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
             day_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             day_grid.ThemeStyle.HeaderStyle.Height = 30;
             day_grid.ThemeStyle.ReadOnly = true;
             day_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             day_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            day_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            day_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             day_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(93, 110, 30);
             day_grid.ThemeStyle.RowsStyle.Height = 22;
             day_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(93, 110, 30);
@@ -98,9 +98,9 @@ namespace MyClinic
             day_panel.FillColor = System.Drawing.Color.FromArgb(93, 110, 30);
             day_panel.Location = new System.Drawing.Point(3, 3);
             day_panel.Name = "day_panel";
-            day_panel.Radius = 20;
+            day_panel.Radius = 15;
             day_panel.ShadowColor = System.Drawing.Color.Black;
-            day_panel.Size = new System.Drawing.Size(290, 400);
+            day_panel.Size = new System.Drawing.Size(200, 250);
             day_panel.TabIndex = 1;
             day_panel.Margin = new System.Windows.Forms.Padding(25);
             return day_panel;
@@ -110,9 +110,10 @@ namespace MyClinic
         {
             System.Windows.Forms.Label day_name = new System.Windows.Forms.Label();
             day_name.Text = "الساعة : " + hrs[i];
+            day_name.Font = new System.Drawing.Font("Tajawal", 14f, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             day_name.AutoSize = true;
             day_name.ForeColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            day_name.Location = new System.Drawing.Point(10, 11);
+            day_name.Location = new System.Drawing.Point(16,15);
             day_name.Name = "day_name";
             day_name.TabIndex = 0;
             day_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
