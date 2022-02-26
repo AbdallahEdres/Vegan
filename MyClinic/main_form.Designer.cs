@@ -353,6 +353,7 @@ namespace MyClinic
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.top_panel);
             this.Controls.Add(this.back_panel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main_form";
             this.Text = "main_form";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_form_FormClosed);

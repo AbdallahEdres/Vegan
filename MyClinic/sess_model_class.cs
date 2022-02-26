@@ -68,7 +68,7 @@ namespace MyClinic
             return -1;
         }
         // method to check for free appointments 
-        public int check_free_appoint(string date,string time,int dr_id)
+        public int check_free_appoint(string date,string time,int dr_id, ref int ptnt_num)
         {
             int stat = -1;
             cn.Open();
@@ -78,6 +78,7 @@ namespace MyClinic
             {
                 if (Convert.ToInt32(dr[0]) >= 3)
                 {
+                    ptnt_num = Convert.ToInt32(dr[0]);
                     stat= 0;
                     dr.Close();
                 }

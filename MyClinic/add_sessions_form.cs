@@ -232,13 +232,14 @@ namespace MyClinic
             if (sessions_grid.Rows.Count > 0)
             {
                 string note;
-                for (int i = 0; i < sessions_grid.Rows.Count; i++)
+                int ptnt_num = 0;
+;                for (int i = 0; i < sessions_grid.Rows.Count; i++)
                 {
-                    int stat = sess_Model.check_free_appoint(sessions_grid.Rows[i].Cells[1].Value.ToString(), sessions_grid.Rows[i].Cells[2].Value.ToString(), Convert.ToInt32(dr_details[0][ dr_details[1].IndexOf(sessions_grid.Rows[i].Cells[3].Value.ToString())])) ;
+                    int stat = sess_Model.check_free_appoint(sessions_grid.Rows[i].Cells[1].Value.ToString(), sessions_grid.Rows[i].Cells[2].Value.ToString(), Convert.ToInt32(dr_details[0][ dr_details[1].IndexOf(sessions_grid.Rows[i].Cells[3].Value.ToString())]),ref ptnt_num) ;
                     if (stat == 0)
                     {
 
-                        note = "هذا الموعد ممتلئ";
+                        note = "يوجد "+ptnt_num.ToString()+" حالات في هذا الموعد";
                         sessions_grid.Rows[i].Cells[4].Value = note;
                         sessions_grid.Rows[i].DefaultCellStyle.BackColor = Color.Red;
                         sessions_grid.Rows[i].DefaultCellStyle.SelectionBackColor = Color.Red;
@@ -305,7 +306,16 @@ namespace MyClinic
             }
             else
             {
-                MessageBox.Show("هناك تعارض بالمواعيد");
+                DialogResult dialogResult = MessageBox.Show("هناك تعارض بالمواعيد", "هل انت متأكد؟!", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    for (int i = 0; i < sessions_grid.RowCount; i++)
+                    {
+                        sess_Model.set_sessions(ptnt_id, Convert.ToInt32(dr_details[0][dr_details[1].IndexOf(sessions_grid.Rows[i].Cells[3].Value.ToString())]), sessions_grid.Rows[i].Cells[1].Value.ToString(), sessions_grid.Rows[i].Cells[2].Value.ToString(), pay());
+                    }
+                    MessageBox.Show("تم !");
+                    this.Close();
+                }
             }
         }
 
