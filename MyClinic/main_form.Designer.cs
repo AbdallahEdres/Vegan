@@ -116,7 +116,7 @@ namespace MyClinic
             this.reports_but.Size = new System.Drawing.Size(94, 75);
             this.reports_but.TabIndex = 7;
             this.reports_but.Text = "تقارير";
-            this.reports_but.TextOffset = new System.Drawing.Point(-11, 20);
+            this.reports_but.TextOffset = new System.Drawing.Point(-13, 20);
             this.reports_but.Click += new System.EventHandler(this.reports_but_Click);
             // 
             // doctors_but

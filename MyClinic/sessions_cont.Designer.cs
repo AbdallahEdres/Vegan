@@ -74,13 +74,13 @@ namespace MyClinic
             this.dr_list_panel.EdgeWidth = -10;
             this.dr_list_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.dr_list_panel.Font = new System.Drawing.Font("Tajawal", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dr_list_panel.Location = new System.Drawing.Point(891, 0);
+            this.dr_list_panel.Location = new System.Drawing.Point(537, 0);
             this.dr_list_panel.Name = "dr_list_panel";
             this.dr_list_panel.Radius = 20;
             this.dr_list_panel.ShadowColor = System.Drawing.Color.Black;
             this.dr_list_panel.ShadowDepth = 150;
             this.dr_list_panel.ShadowShift = 8;
-            this.dr_list_panel.Size = new System.Drawing.Size(374, 565);
+            this.dr_list_panel.Size = new System.Drawing.Size(248, 483);
             this.dr_list_panel.TabIndex = 2;
             // 
             // ptnt_list_grid
@@ -88,7 +88,7 @@ namespace MyClinic
             this.ptnt_list_grid.AllowUserToAddRows = false;
             this.ptnt_list_grid.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tajawal Medium", 10F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -102,7 +102,7 @@ namespace MyClinic
             this.ptnt_list_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 14F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -111,7 +111,7 @@ namespace MyClinic
             this.ptnt_list_grid.ColumnHeadersHeight = 50;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
@@ -119,17 +119,17 @@ namespace MyClinic
             this.ptnt_list_grid.DefaultCellStyle = dataGridViewCellStyle3;
             this.ptnt_list_grid.EnableHeadersVisualStyles = false;
             this.ptnt_list_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.ptnt_list_grid.Location = new System.Drawing.Point(32, 203);
+            this.ptnt_list_grid.Location = new System.Drawing.Point(25, 158);
             this.ptnt_list_grid.Name = "ptnt_list_grid";
             this.ptnt_list_grid.ReadOnly = true;
             this.ptnt_list_grid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ptnt_list_grid.RowHeadersVisible = false;
             this.ptnt_list_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ptnt_list_grid.Size = new System.Drawing.Size(312, 323);
+            this.ptnt_list_grid.Size = new System.Drawing.Size(191, 294);
             this.ptnt_list_grid.TabIndex = 29;
             this.ptnt_list_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.ptnt_list_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            this.ptnt_list_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptnt_list_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 10F, System.Drawing.FontStyle.Bold);
             this.ptnt_list_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.ptnt_list_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.ptnt_list_grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
@@ -137,14 +137,14 @@ namespace MyClinic
             this.ptnt_list_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ptnt_list_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.ptnt_list_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.ptnt_list_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptnt_list_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 14F, System.Drawing.FontStyle.Bold);
             this.ptnt_list_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.ptnt_list_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.ptnt_list_grid.ThemeStyle.HeaderStyle.Height = 50;
             this.ptnt_list_grid.ThemeStyle.ReadOnly = true;
             this.ptnt_list_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.ptnt_list_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.ptnt_list_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ptnt_list_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal", 10F, System.Drawing.FontStyle.Bold);
             this.ptnt_list_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.ptnt_list_grid.ThemeStyle.RowsStyle.Height = 22;
             this.ptnt_list_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
@@ -154,7 +154,7 @@ namespace MyClinic
             // add_dr_but
             // 
             this.add_dr_but.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.add_dr_but.BorderRadius = 25;
+            this.add_dr_but.BorderRadius = 10;
             this.add_dr_but.CheckedState.Parent = this.add_dr_but;
             this.add_dr_but.CustomImages.Parent = this.add_dr_but;
             this.add_dr_but.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
@@ -162,10 +162,10 @@ namespace MyClinic
             this.add_dr_but.ForeColor = System.Drawing.Color.White;
             this.add_dr_but.HoverState.Parent = this.add_dr_but;
             this.add_dr_but.Image = ((System.Drawing.Image)(resources.GetObject("add_dr_but.Image")));
-            this.add_dr_but.Location = new System.Drawing.Point(14, 19);
+            this.add_dr_but.Location = new System.Drawing.Point(25, 19);
             this.add_dr_but.Name = "add_dr_but";
             this.add_dr_but.ShadowDecoration.Parent = this.add_dr_but;
-            this.add_dr_but.Size = new System.Drawing.Size(343, 65);
+            this.add_dr_but.Size = new System.Drawing.Size(191, 38);
             this.add_dr_but.TabIndex = 28;
             this.add_dr_but.Text = " اضافة";
             this.add_dr_but.Click += new System.EventHandler(this.add_dr_but_Click);
@@ -173,7 +173,7 @@ namespace MyClinic
             // search_pic
             // 
             this.search_pic.Image = ((System.Drawing.Image)(resources.GetObject("search_pic.Image")));
-            this.search_pic.Location = new System.Drawing.Point(37, 167);
+            this.search_pic.Location = new System.Drawing.Point(25, 114);
             this.search_pic.Name = "search_pic";
             this.search_pic.Size = new System.Drawing.Size(23, 22);
             this.search_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -196,23 +196,24 @@ namespace MyClinic
             this.search_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.search_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.search_txt.HoverState.Parent = this.search_txt;
-            this.search_txt.Location = new System.Drawing.Point(69, 160);
+            this.search_txt.Location = new System.Drawing.Point(50, 108);
             this.search_txt.Margin = new System.Windows.Forms.Padding(8, 11, 8, 11);
             this.search_txt.Name = "search_txt";
             this.search_txt.PasswordChar = '\0';
             this.search_txt.PlaceholderText = "";
             this.search_txt.SelectedText = "";
             this.search_txt.ShadowDecoration.Parent = this.search_txt;
-            this.search_txt.Size = new System.Drawing.Size(275, 36);
+            this.search_txt.Size = new System.Drawing.Size(177, 36);
             this.search_txt.TabIndex = 4;
             // 
             // ptnt_list_label
             // 
             this.ptnt_list_label.AutoSize = true;
+            this.ptnt_list_label.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold);
             this.ptnt_list_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.ptnt_list_label.Location = new System.Drawing.Point(90, 102);
+            this.ptnt_list_label.Location = new System.Drawing.Point(55, 61);
             this.ptnt_list_label.Name = "ptnt_list_label";
-            this.ptnt_list_label.Size = new System.Drawing.Size(215, 47);
+            this.ptnt_list_label.Size = new System.Drawing.Size(161, 36);
             this.ptnt_list_label.TabIndex = 0;
             this.ptnt_list_label.Text = "قائمة المرضى";
             // 
@@ -229,7 +230,7 @@ namespace MyClinic
             this.dr_details_panel.Location = new System.Drawing.Point(0, 0);
             this.dr_details_panel.Name = "dr_details_panel";
             this.dr_details_panel.ShadowDecoration.Parent = this.dr_details_panel;
-            this.dr_details_panel.Size = new System.Drawing.Size(885, 565);
+            this.dr_details_panel.Size = new System.Drawing.Size(531, 483);
             this.dr_details_panel.TabIndex = 3;
             // 
             // comming_panel
@@ -243,13 +244,13 @@ namespace MyClinic
             this.comming_panel.EdgeWidth = 2;
             this.comming_panel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.comming_panel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.comming_panel.Location = new System.Drawing.Point(0, 274);
+            this.comming_panel.Location = new System.Drawing.Point(0, 237);
             this.comming_panel.Name = "comming_panel";
             this.comming_panel.Radius = 25;
             this.comming_panel.ShadowColor = System.Drawing.Color.Black;
             this.comming_panel.ShadowDepth = 150;
             this.comming_panel.ShadowShift = 7;
-            this.comming_panel.Size = new System.Drawing.Size(885, 271);
+            this.comming_panel.Size = new System.Drawing.Size(531, 226);
             this.comming_panel.TabIndex = 1;
             // 
             // next_sess_grid
@@ -258,7 +259,7 @@ namespace MyClinic
             this.next_sess_grid.AllowUserToDeleteRows = false;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
@@ -274,7 +275,7 @@ namespace MyClinic
             this.next_sess_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tajawal", 14F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -283,7 +284,7 @@ namespace MyClinic
             this.next_sess_grid.ColumnHeadersHeight = 50;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
@@ -297,11 +298,11 @@ namespace MyClinic
             this.next_sess_grid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.next_sess_grid.RowHeadersVisible = false;
             this.next_sess_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.next_sess_grid.Size = new System.Drawing.Size(821, 188);
+            this.next_sess_grid.Size = new System.Drawing.Size(467, 143);
             this.next_sess_grid.TabIndex = 6;
             this.next_sess_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.next_sess_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            this.next_sess_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next_sess_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.next_sess_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.next_sess_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.next_sess_grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
@@ -309,14 +310,14 @@ namespace MyClinic
             this.next_sess_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.next_sess_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.next_sess_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.next_sess_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next_sess_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 14F, System.Drawing.FontStyle.Bold);
             this.next_sess_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.next_sess_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.next_sess_grid.ThemeStyle.HeaderStyle.Height = 50;
             this.next_sess_grid.ThemeStyle.ReadOnly = false;
             this.next_sess_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.next_sess_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.next_sess_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next_sess_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold);
             this.next_sess_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.next_sess_grid.ThemeStyle.RowsStyle.Height = 22;
             this.next_sess_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
@@ -330,7 +331,7 @@ namespace MyClinic
             this.comming_sessions_label.AutoSize = true;
             this.comming_sessions_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comming_sessions_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.comming_sessions_label.Location = new System.Drawing.Point(358, 20);
+            this.comming_sessions_label.Location = new System.Drawing.Point(181, 20);
             this.comming_sessions_label.Name = "comming_sessions_label";
             this.comming_sessions_label.Size = new System.Drawing.Size(168, 31);
             this.comming_sessions_label.TabIndex = 3;
@@ -352,7 +353,7 @@ namespace MyClinic
             this.pre_panel.ShadowColor = System.Drawing.Color.Black;
             this.pre_panel.ShadowDepth = 150;
             this.pre_panel.ShadowShift = 7;
-            this.pre_panel.Size = new System.Drawing.Size(879, 265);
+            this.pre_panel.Size = new System.Drawing.Size(525, 228);
             this.pre_panel.TabIndex = 0;
             this.pre_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
@@ -362,7 +363,7 @@ namespace MyClinic
             this.prev_sessions_grid.AllowUserToDeleteRows = false;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
@@ -378,7 +379,7 @@ namespace MyClinic
             this.prev_sessions_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tajawal", 14F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -387,7 +388,7 @@ namespace MyClinic
             this.prev_sessions_grid.ColumnHeadersHeight = 50;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
@@ -401,11 +402,11 @@ namespace MyClinic
             this.prev_sessions_grid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.prev_sessions_grid.RowHeadersVisible = false;
             this.prev_sessions_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.prev_sessions_grid.Size = new System.Drawing.Size(794, 184);
+            this.prev_sessions_grid.Size = new System.Drawing.Size(440, 147);
             this.prev_sessions_grid.TabIndex = 5;
             this.prev_sessions_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.prev_sessions_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            this.prev_sessions_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.prev_sessions_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prev_sessions_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.prev_sessions_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.prev_sessions_grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
@@ -413,14 +414,14 @@ namespace MyClinic
             this.prev_sessions_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.prev_sessions_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.prev_sessions_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.prev_sessions_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prev_sessions_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 14F, System.Drawing.FontStyle.Bold);
             this.prev_sessions_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.prev_sessions_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.prev_sessions_grid.ThemeStyle.HeaderStyle.Height = 50;
             this.prev_sessions_grid.ThemeStyle.ReadOnly = true;
             this.prev_sessions_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.prev_sessions_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.prev_sessions_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.prev_sessions_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal Medium", 9.749999F, System.Drawing.FontStyle.Bold);
             this.prev_sessions_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.prev_sessions_grid.ThemeStyle.RowsStyle.Height = 22;
             this.prev_sessions_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
@@ -432,7 +433,7 @@ namespace MyClinic
             this.pre_sessions_label.AutoSize = true;
             this.pre_sessions_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pre_sessions_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pre_sessions_label.Location = new System.Drawing.Point(354, 16);
+            this.pre_sessions_label.Location = new System.Drawing.Point(177, 16);
             this.pre_sessions_label.Name = "pre_sessions_label";
             this.pre_sessions_label.Size = new System.Drawing.Size(176, 31);
             this.pre_sessions_label.TabIndex = 4;
@@ -446,7 +447,7 @@ namespace MyClinic
             this.Controls.Add(this.dr_details_panel);
             this.Controls.Add(this.dr_list_panel);
             this.Name = "sessions_cont";
-            this.Size = new System.Drawing.Size(1265, 565);
+            this.Size = new System.Drawing.Size(785, 483);
             this.dr_list_panel.ResumeLayout(false);
             this.dr_list_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptnt_list_grid)).EndInit();

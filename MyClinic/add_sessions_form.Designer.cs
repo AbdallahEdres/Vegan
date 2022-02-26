@@ -29,9 +29,9 @@ namespace MyClinic
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.time_combo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dr_label = new System.Windows.Forms.Label();
             this.dr_combo = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -93,7 +93,7 @@ namespace MyClinic
             "09:00 PM",
             "10:00 PM"});
             this.time_combo.ItemsAppearance.Parent = this.time_combo;
-            this.time_combo.Location = new System.Drawing.Point(895, 110);
+            this.time_combo.Location = new System.Drawing.Point(564, 134);
             this.time_combo.Name = "time_combo";
             this.time_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.time_combo.ShadowDecoration.Parent = this.time_combo;
@@ -104,12 +104,12 @@ namespace MyClinic
             // dr_label
             // 
             this.dr_label.AutoSize = true;
-            this.dr_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dr_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dr_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.dr_label.Location = new System.Drawing.Point(360, 75);
+            this.dr_label.Location = new System.Drawing.Point(158, 49);
             this.dr_label.Name = "dr_label";
             this.dr_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.dr_label.Size = new System.Drawing.Size(131, 31);
+            this.dr_label.Size = new System.Drawing.Size(83, 19);
             this.dr_label.TabIndex = 85;
             this.dr_label.Text = "اختر الطبيب :";
             // 
@@ -128,7 +128,7 @@ namespace MyClinic
             this.dr_combo.HoverState.Parent = this.dr_combo;
             this.dr_combo.ItemHeight = 30;
             this.dr_combo.ItemsAppearance.Parent = this.dr_combo;
-            this.dr_combo.Location = new System.Drawing.Point(363, 110);
+            this.dr_combo.Location = new System.Drawing.Point(143, 71);
             this.dr_combo.Name = "dr_combo";
             this.dr_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dr_combo.ShadowDecoration.Parent = this.dr_combo;
@@ -152,7 +152,7 @@ namespace MyClinic
             this.pay_val_num.FocusedState.Parent = this.pay_val_num;
             this.pay_val_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_val_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_val_num.Location = new System.Drawing.Point(224, 110);
+            this.pay_val_num.Location = new System.Drawing.Point(420, 134);
             this.pay_val_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pay_val_num.Maximum = new decimal(new int[] {
             999,
@@ -166,7 +166,7 @@ namespace MyClinic
             0});
             this.pay_val_num.Name = "pay_val_num";
             this.pay_val_num.ShadowDecoration.Parent = this.pay_val_num;
-            this.pay_val_num.Size = new System.Drawing.Size(83, 36);
+            this.pay_val_num.Size = new System.Drawing.Size(130, 36);
             this.pay_val_num.TabIndex = 83;
             this.pay_val_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.pay_val_num.UpDownButtonForeColor = System.Drawing.Color.Black;
@@ -179,12 +179,12 @@ namespace MyClinic
             // pay_val_label
             // 
             this.pay_val_label.AutoSize = true;
-            this.pay_val_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_val_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_val_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_val_label.Location = new System.Drawing.Point(189, 75);
+            this.pay_val_label.Location = new System.Drawing.Point(436, 112);
             this.pay_val_label.Name = "pay_val_label";
             this.pay_val_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_val_label.Size = new System.Drawing.Size(160, 31);
+            this.pay_val_label.Size = new System.Drawing.Size(101, 19);
             this.pay_val_label.TabIndex = 82;
             this.pay_val_label.Text = "المبلغ المدفوع :";
             // 
@@ -207,22 +207,22 @@ namespace MyClinic
             "2",
             "3"});
             this.wekly_sess_combo.ItemsAppearance.Parent = this.wekly_sess_combo;
-            this.wekly_sess_combo.Location = new System.Drawing.Point(48, 110);
+            this.wekly_sess_combo.Location = new System.Drawing.Point(279, 71);
             this.wekly_sess_combo.Name = "wekly_sess_combo";
             this.wekly_sess_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.wekly_sess_combo.ShadowDecoration.Parent = this.wekly_sess_combo;
-            this.wekly_sess_combo.Size = new System.Drawing.Size(95, 36);
+            this.wekly_sess_combo.Size = new System.Drawing.Size(126, 36);
             this.wekly_sess_combo.TabIndex = 81;
             // 
             // num_sess_wekly_label
             // 
             this.num_sess_wekly_label.AutoSize = true;
-            this.num_sess_wekly_label.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_sess_wekly_label.Font = new System.Drawing.Font("Tajawal", 8.249999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num_sess_wekly_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.num_sess_wekly_label.Location = new System.Drawing.Point(8, 80);
+            this.num_sess_wekly_label.Location = new System.Drawing.Point(282, 54);
             this.num_sess_wekly_label.Name = "num_sess_wekly_label";
             this.num_sess_wekly_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.num_sess_wekly_label.Size = new System.Drawing.Size(175, 24);
+            this.num_sess_wekly_label.Size = new System.Drawing.Size(119, 17);
             this.num_sess_wekly_label.TabIndex = 80;
             this.num_sess_wekly_label.Text = "عدد الجلسات اسبوعيا ً:";
             // 
@@ -244,7 +244,7 @@ namespace MyClinic
             "بالجلسة ",
             "6 جلسات"});
             this.pay_combo.ItemsAppearance.Parent = this.pay_combo;
-            this.pay_combo.Location = new System.Drawing.Point(717, 110);
+            this.pay_combo.Location = new System.Drawing.Point(419, 71);
             this.pay_combo.Name = "pay_combo";
             this.pay_combo.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pay_combo.ShadowDecoration.Parent = this.pay_combo;
@@ -255,12 +255,12 @@ namespace MyClinic
             // pay_label
             // 
             this.pay_label.AutoSize = true;
-            this.pay_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_label.Location = new System.Drawing.Point(717, 75);
+            this.pay_label.Location = new System.Drawing.Point(448, 48);
             this.pay_label.Name = "pay_label";
             this.pay_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.pay_label.Size = new System.Drawing.Size(136, 31);
+            this.pay_label.Size = new System.Drawing.Size(84, 19);
             this.pay_label.TabIndex = 78;
             this.pay_label.Text = "طريقة الدفع :";
             // 
@@ -268,13 +268,13 @@ namespace MyClinic
             // 
             this.sessions_grid.AllowUserToAddRows = false;
             this.sessions_grid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            this.sessions_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.sessions_grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.sessions_grid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.sessions_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.sessions_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
@@ -282,14 +282,14 @@ namespace MyClinic
             this.sessions_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sessions_grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.sessions_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sessions_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sessions_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.sessions_grid.ColumnHeadersHeight = 50;
             this.sessions_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.day,
@@ -297,27 +297,27 @@ namespace MyClinic
             this.time,
             this.dr,
             this.note});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.sessions_grid.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sessions_grid.DefaultCellStyle = dataGridViewCellStyle3;
             this.sessions_grid.EnableHeadersVisualStyles = false;
             this.sessions_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.sessions_grid.Location = new System.Drawing.Point(14, 206);
+            this.sessions_grid.Location = new System.Drawing.Point(5, 178);
             this.sessions_grid.Name = "sessions_grid";
             this.sessions_grid.ReadOnly = true;
             this.sessions_grid.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.sessions_grid.RowHeadersVisible = false;
             this.sessions_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.sessions_grid.Size = new System.Drawing.Size(1242, 341);
+            this.sessions_grid.Size = new System.Drawing.Size(777, 233);
             this.sessions_grid.TabIndex = 77;
             this.sessions_grid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.sessions_grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(223)))));
-            this.sessions_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessions_grid.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold);
             this.sessions_grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.sessions_grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.sessions_grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.White;
@@ -325,14 +325,14 @@ namespace MyClinic
             this.sessions_grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.sessions_grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.sessions_grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            this.sessions_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sessions_grid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
             this.sessions_grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.sessions_grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.sessions_grid.ThemeStyle.HeaderStyle.Height = 50;
             this.sessions_grid.ThemeStyle.ReadOnly = true;
             this.sessions_grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.sessions_grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.sessions_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold);
+            this.sessions_grid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Tajawal", 8F, System.Drawing.FontStyle.Bold);
             this.sessions_grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.sessions_grid.ThemeStyle.RowsStyle.Height = 22;
             this.sessions_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
@@ -385,7 +385,7 @@ namespace MyClinic
             this.sessions_num.FocusedState.Parent = this.sessions_num;
             this.sessions_num.Font = new System.Drawing.Font("Tajawal Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sessions_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.sessions_num.Location = new System.Drawing.Point(539, 110);
+            this.sessions_num.Location = new System.Drawing.Point(282, 135);
             this.sessions_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sessions_num.Maximum = new decimal(new int[] {
             6,
@@ -412,12 +412,12 @@ namespace MyClinic
             // sess_num_label
             // 
             this.sess_num_label.AutoSize = true;
-            this.sess_num_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sess_num_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sess_num_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.sess_num_label.Location = new System.Drawing.Point(524, 75);
+            this.sess_num_label.Location = new System.Drawing.Point(301, 112);
             this.sess_num_label.Name = "sess_num_label";
             this.sess_num_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.sess_num_label.Size = new System.Drawing.Size(147, 31);
+            this.sess_num_label.Size = new System.Drawing.Size(91, 19);
             this.sess_num_label.TabIndex = 75;
             this.sess_num_label.Text = "عدد الجلسات :";
             // 
@@ -432,7 +432,7 @@ namespace MyClinic
             this.done_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.done_but.ForeColor = System.Drawing.Color.White;
             this.done_but.HoverState.Parent = this.done_but;
-            this.done_but.Location = new System.Drawing.Point(539, 579);
+            this.done_but.Location = new System.Drawing.Point(299, 417);
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(153, 55);
@@ -451,7 +451,7 @@ namespace MyClinic
             this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.cansel_but.HoverState.Parent = this.cansel_but;
             this.cansel_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.cansel_but.Location = new System.Drawing.Point(215, 579);
+            this.cansel_but.Location = new System.Drawing.Point(84, 416);
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(153, 55);
@@ -462,18 +462,18 @@ namespace MyClinic
             // start_Date_label
             // 
             this.start_Date_label.AutoSize = true;
-            this.start_Date_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_Date_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_Date_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.start_Date_label.Location = new System.Drawing.Point(1091, 75);
+            this.start_Date_label.Location = new System.Drawing.Point(591, 52);
             this.start_Date_label.Name = "start_Date_label";
             this.start_Date_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.start_Date_label.Size = new System.Drawing.Size(113, 31);
+            this.start_Date_label.Size = new System.Drawing.Size(70, 19);
             this.start_Date_label.TabIndex = 72;
             this.start_Date_label.Text = "تاريخ البدأ :";
             // 
             // start_date_bick
             // 
-            this.start_date_bick.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.start_date_bick.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.start_date_bick.BorderRadius = 15;
             this.start_date_bick.CheckedState.Parent = this.start_date_bick;
             this.start_date_bick.CustomFormat = "";
@@ -482,7 +482,7 @@ namespace MyClinic
             this.start_date_bick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
             this.start_date_bick.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.start_date_bick.HoverState.Parent = this.start_date_bick;
-            this.start_date_bick.Location = new System.Drawing.Point(1081, 110);
+            this.start_date_bick.Location = new System.Drawing.Point(564, 74);
             this.start_date_bick.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.start_date_bick.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.start_date_bick.Name = "start_date_bick";
@@ -495,24 +495,24 @@ namespace MyClinic
             // time_label
             // 
             this.time_label.AutoSize = true;
-            this.time_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.time_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.time_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.time_label.Location = new System.Drawing.Point(895, 75);
+            this.time_label.Location = new System.Drawing.Point(591, 110);
             this.time_label.Name = "time_label";
             this.time_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.time_label.Size = new System.Drawing.Size(130, 31);
+            this.time_label.Size = new System.Drawing.Size(81, 19);
             this.time_label.TabIndex = 70;
             this.time_label.Text = "اختر الساعه :";
             // 
             // new_sessions_label
             // 
             this.new_sessions_label.AutoSize = true;
-            this.new_sessions_label.Font = new System.Drawing.Font("Tajawal ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_sessions_label.Font = new System.Drawing.Font("Tajawal ExtraBold", 18F, System.Drawing.FontStyle.Bold);
             this.new_sessions_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.new_sessions_label.Location = new System.Drawing.Point(507, 10);
+            this.new_sessions_label.Location = new System.Drawing.Point(299, 9);
             this.new_sessions_label.Name = "new_sessions_label";
             this.new_sessions_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.new_sessions_label.Size = new System.Drawing.Size(239, 47);
+            this.new_sessions_label.Size = new System.Drawing.Size(180, 36);
             this.new_sessions_label.TabIndex = 69;
             this.new_sessions_label.Text = "تحديد الجلسات";
             // 
@@ -526,7 +526,7 @@ namespace MyClinic
             this.generate_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generate_but.ForeColor = System.Drawing.Color.White;
             this.generate_but.HoverState.Parent = this.generate_but;
-            this.generate_but.Location = new System.Drawing.Point(918, 579);
+            this.generate_but.Location = new System.Drawing.Point(564, 417);
             this.generate_but.Name = "generate_but";
             this.generate_but.ShadowDecoration.Parent = this.generate_but;
             this.generate_but.Size = new System.Drawing.Size(153, 55);
@@ -538,11 +538,11 @@ namespace MyClinic
             // 
             this.everyday_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.everyday_label.AutoSize = true;
-            this.everyday_label.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.everyday_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.everyday_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.everyday_label.Location = new System.Drawing.Point(671, 176);
+            this.everyday_label.Location = new System.Drawing.Point(204, 142);
             this.everyday_label.Name = "everyday_label";
-            this.everyday_label.Size = new System.Drawing.Size(107, 28);
+            this.everyday_label.Size = new System.Drawing.Size(71, 19);
             this.everyday_label.TabIndex = 90;
             this.everyday_label.Text = "تعديل الكل";
             // 
@@ -550,11 +550,11 @@ namespace MyClinic
             // 
             this.today_label.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.today_label.AutoSize = true;
-            this.today_label.Font = new System.Drawing.Font("Tajawal", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.today_label.Font = new System.Drawing.Font("Tajawal", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.today_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.today_label.Location = new System.Drawing.Point(473, 176);
+            this.today_label.Location = new System.Drawing.Point(57, 146);
             this.today_label.Name = "today_label";
-            this.today_label.Size = new System.Drawing.Size(118, 28);
+            this.today_label.Size = new System.Drawing.Size(80, 19);
             this.today_label.TabIndex = 89;
             this.today_label.Text = "تعديل جلسه";
             // 
@@ -568,10 +568,10 @@ namespace MyClinic
             this.edit_switch.CheckedState.InnerBorderRadius = 8;
             this.edit_switch.CheckedState.InnerColor = System.Drawing.Color.White;
             this.edit_switch.CheckedState.Parent = this.edit_switch;
-            this.edit_switch.Location = new System.Drawing.Point(597, 176);
+            this.edit_switch.Location = new System.Drawing.Point(143, 142);
             this.edit_switch.Name = "edit_switch";
             this.edit_switch.ShadowDecoration.Parent = this.edit_switch;
-            this.edit_switch.Size = new System.Drawing.Size(57, 24);
+            this.edit_switch.Size = new System.Drawing.Size(57, 23);
             this.edit_switch.TabIndex = 88;
             this.edit_switch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.edit_switch.UncheckedState.BorderRadius = 10;
@@ -585,7 +585,7 @@ namespace MyClinic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1265, 645);
+            this.ClientSize = new System.Drawing.Size(785, 483);
             this.Controls.Add(this.everyday_label);
             this.Controls.Add(this.today_label);
             this.Controls.Add(this.edit_switch);

@@ -57,7 +57,7 @@ namespace MyClinic
             this.pay_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pay_num.Name = "pay_num";
             this.pay_num.ShadowDecoration.Parent = this.pay_num;
-            this.pay_num.Size = new System.Drawing.Size(261, 36);
+            this.pay_num.Size = new System.Drawing.Size(196, 36);
             this.pay_num.TabIndex = 45;
             this.pay_num.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.pay_num.UpDownButtonForeColor = System.Drawing.Color.Black;
@@ -67,7 +67,7 @@ namespace MyClinic
             this.pay_label.AutoSize = true;
             this.pay_label.Font = new System.Drawing.Font("Tajawal", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pay_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.pay_label.Location = new System.Drawing.Point(401, 58);
+            this.pay_label.Location = new System.Drawing.Point(281, 58);
             this.pay_label.Name = "pay_label";
             this.pay_label.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.pay_label.Size = new System.Drawing.Size(135, 31);
@@ -85,7 +85,7 @@ namespace MyClinic
             this.cansel_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.cansel_but.HoverState.Parent = this.cansel_but;
             this.cansel_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.cansel_but.Location = new System.Drawing.Point(159, 137);
+            this.cansel_but.Location = new System.Drawing.Point(97, 119);
             this.cansel_but.Name = "cansel_but";
             this.cansel_but.ShadowDecoration.Parent = this.cansel_but;
             this.cansel_but.Size = new System.Drawing.Size(102, 55);
@@ -103,7 +103,7 @@ namespace MyClinic
             this.done_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.done_but.ForeColor = System.Drawing.Color.White;
             this.done_but.HoverState.Parent = this.done_but;
-            this.done_but.Location = new System.Drawing.Point(314, 137);
+            this.done_but.Location = new System.Drawing.Point(252, 119);
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(102, 55);
@@ -117,7 +117,7 @@ namespace MyClinic
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tajawal", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(235, -1);
+            this.label1.Location = new System.Drawing.Point(173, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 36);
             this.label1.TabIndex = 48;
@@ -127,7 +127,7 @@ namespace MyClinic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(548, 204);
+            this.ClientSize = new System.Drawing.Size(425, 186);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cansel_but);
             this.Controls.Add(this.done_but);

@@ -40,7 +40,7 @@ namespace MyClinic
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tajawal", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(251, 9);
+            this.label1.Location = new System.Drawing.Point(177, 9);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(159, 40);
@@ -57,7 +57,7 @@ namespace MyClinic
             this.new_exam_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.new_exam_but.ForeColor = System.Drawing.Color.White;
             this.new_exam_but.HoverState.Parent = this.new_exam_but;
-            this.new_exam_but.Location = new System.Drawing.Point(518, 122);
+            this.new_exam_but.Location = new System.Drawing.Point(331, 82);
             this.new_exam_but.Name = "new_exam_but";
             this.new_exam_but.ShadowDecoration.Parent = this.new_exam_but;
             this.new_exam_but.Size = new System.Drawing.Size(148, 55);
@@ -76,7 +76,7 @@ namespace MyClinic
             this.done_but.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.done_but.HoverState.Parent = this.done_but;
             this.done_but.ImageSize = new System.Drawing.Size(30, 30);
-            this.done_but.Location = new System.Drawing.Point(10, 122);
+            this.done_but.Location = new System.Drawing.Point(8, 82);
             this.done_but.Name = "done_but";
             this.done_but.ShadowDecoration.Parent = this.done_but;
             this.done_but.Size = new System.Drawing.Size(148, 55);
@@ -94,7 +94,7 @@ namespace MyClinic
             this.new_sess_but.Font = new System.Drawing.Font("Tajawal", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.new_sess_but.ForeColor = System.Drawing.Color.White;
             this.new_sess_but.HoverState.Parent = this.new_sess_but;
-            this.new_sess_but.Location = new System.Drawing.Point(264, 122);
+            this.new_sess_but.Location = new System.Drawing.Point(177, 82);
             this.new_sess_but.Name = "new_sess_but";
             this.new_sess_but.ShadowDecoration.Parent = this.new_sess_but;
             this.new_sess_but.Size = new System.Drawing.Size(148, 55);
@@ -107,7 +107,7 @@ namespace MyClinic
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(249)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(682, 189);
+            this.ClientSize = new System.Drawing.Size(480, 161);
             this.Controls.Add(this.new_sess_but);
             this.Controls.Add(this.new_exam_but);
             this.Controls.Add(this.done_but);
