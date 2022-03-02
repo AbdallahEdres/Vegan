@@ -324,6 +324,7 @@ namespace MyClinic
             this.next_sess_grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.next_sess_grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.next_sess_grid_CellContentClick);
             this.next_sess_grid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.next_sess_grid_CellDoubleClick);
+            this.next_sess_grid.Sorted += new System.EventHandler(this.next_sess_grid_Sorted);
             // 
             // comming_sessions_label
             // 
@@ -426,6 +427,7 @@ namespace MyClinic
             this.prev_sessions_grid.ThemeStyle.RowsStyle.Height = 22;
             this.prev_sessions_grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(110)))), ((int)(((byte)(30)))));
             this.prev_sessions_grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.prev_sessions_grid.Sorted += new System.EventHandler(this.prev_sessions_grid_Sorted);
             // 
             // pre_sessions_label
             // 

@@ -80,6 +80,16 @@ namespace MyClinic
             ptnt_list_grid.Columns[1].HeaderText = "الإسم";
             ptnt_list_grid.Columns[2].HeaderText = "الهاتف";
         }
+
+        private void sessions_grid_Sorted(object sender, EventArgs e)
+        {
+            for (int i = 0; i < sessions_grid.RowCount; i++)
+            {
+
+                sessions_grid.Rows[i].Cells[0].Value = convert_day_ar(Convert.ToDateTime(sessions_grid.Rows[i].Cells[1].Value));
+            }
+        }
+
         //method to fill patient details
         void fill_details()
         {

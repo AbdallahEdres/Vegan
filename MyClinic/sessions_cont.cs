@@ -59,7 +59,7 @@ namespace MyClinic
 
         private void next_sess_grid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex < 4)
+            if (e.ColumnIndex < 4&&e.RowIndex>-1)
             {
                 DialogResult d = MessageBox.Show("هل ترغب في التعديل على هذه الجلسه؟", "رسالة تاكيد", MessageBoxButtons.YesNo);
                 if (d == DialogResult.Yes)
@@ -216,5 +216,23 @@ namespace MyClinic
             fill_comming();
         }
         #endregion
+
+        private void prev_sessions_grid_Sorted(object sender, EventArgs e)
+        {
+            for (int i = 0; i < prev_sessions_grid.RowCount; i++)
+            {
+
+                prev_sessions_grid.Rows[i].Cells[0].Value = convert_day_ar(Convert.ToDateTime(prev_sessions_grid.Rows[i].Cells[1].Value));
+            }
+        }
+
+        private void next_sess_grid_Sorted(object sender, EventArgs e)
+        {
+            for (int i = 0; i < next_sess_grid.RowCount; i++)
+            {
+
+                next_sess_grid.Rows[i].Cells[0].Value = convert_day_ar(Convert.ToDateTime(next_sess_grid.Rows[i].Cells[1].Value));
+            }
+        }
     }
 }
