@@ -80,4 +80,5 @@ C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\bin\Debug\MyClinic.exe
 C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\bin\Debug\MyClinic.pdb
 C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\bin\Debug\Guna.UI2.dll
 C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\obj\Debug\Vegan.csproj.CopyComplete
-C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\obj\Debug\Vegan.csproj.SuggestedBindingRedirects.cache
+C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\bin\Debug\my_clinic_log.ldf
+C:\Users\DoDa\Desktop\New folder\Vegan\MyClinic\bin\Debug\my_clinic.mdf

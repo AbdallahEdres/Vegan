@@ -18,7 +18,7 @@ namespace MyClinic
         // var declearation 
         string name = "", phone = "", adress = "", type = "";
         int age = 0, patient_id = 1;
-        DateTime date = new DateTime();
+        string date = "";
 
         #region buttons
         public patient_cont()
@@ -33,6 +33,7 @@ namespace MyClinic
             {
                 patient_id = Convert.ToInt32(ptnt_list_grid.Rows[e.RowIndex].Cells[0].Value );
                 get_details();
+                fill_sess_grid();
             }
            
         }
@@ -67,7 +68,8 @@ namespace MyClinic
         //method to get patient details 
         void get_details()
         {
-            ptnt_Model.get_ptnt_details(patient_id, ref name, ref phone, ref adress, ref type, ref age, ref date);
+            ptnt_Model.get_ptnt_details(patient_id, ref name, ref phone, ref adress, ref type, ref age);
+            date = ptnt_Model.get_date(patient_id);
             fill_details();
         }
         // method to fill patients list
@@ -86,13 +88,77 @@ namespace MyClinic
             address_val_label.Text = adress;
             type_val_label.Text = type;
             age_val_label.Text = age.ToString();
-            date_val_label.Text = date.ToString("yyyy/MM/dd");
+            date_val_label.Text = date;
         }
         public void refresh_patient()
         {
             get_details();
             fill_details();
             fill_patietns_list();
+            fill_sess_grid();
+        }
+        void fill_sess_grid()
+        {
+            if (sessions_grid.ColumnCount < 6)
+            {
+                sessions_grid.Columns.Add("day", "اليوم");
+            }
+            sessions_grid.DataSource = ptnt_Model.get_sess(patient_id);
+            sessions_grid.Columns[1].HeaderText = "التاريخ";
+            sessions_grid.Columns[1].ReadOnly = true;
+            sessions_grid.Columns[0].ReadOnly = true;
+            sessions_grid.Columns[1].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+            sessions_grid.Sort(sessions_grid.Columns[1], ListSortDirection.Ascending);
+
+            sessions_grid.Columns[2].HeaderText = "الساعه";
+            sessions_grid.Columns[2].ReadOnly = true;
+
+            sessions_grid.Columns[3].HeaderText = "الطبيب";
+            sessions_grid.Columns[3].ReadOnly = true;
+
+            sessions_grid.Columns[4].HeaderText = "حضر";
+            sessions_grid.Columns[4].ReadOnly = false;
+
+            sessions_grid.Columns[5].HeaderText = "المدفوع";
+            sessions_grid.Columns[6].Visible = false;
+            sessions_grid.Columns[7].Visible = false;
+
+            for (int i = 0; i < sessions_grid.RowCount; i++)
+            {
+
+                sessions_grid.Rows[i].Cells[0].Value = convert_day_ar(Convert.ToDateTime(sessions_grid.Rows[i].Cells[1].Value));
+            }
+        }
+        // method to convert days to arabic
+        string convert_day_ar(DateTime date)
+        {
+            string day = "";
+            switch (date.DayOfWeek)
+            {
+                case DayOfWeek.Saturday:
+                    day = "السبت";
+                    break;
+                case DayOfWeek.Sunday:
+                    day = "الأحد";
+                    break;
+                case DayOfWeek.Monday:
+                    day = "الإثنين";
+                    break;
+                case DayOfWeek.Tuesday:
+                    day = "الثلاثاء";
+                    break;
+                case DayOfWeek.Wednesday:
+                    day = "اللأربعاء";
+                    break;
+                case DayOfWeek.Thursday:
+                    day = "الخميس";
+                    break;
+                case DayOfWeek.Friday:
+                    day = "الجمعة";
+                    break;
+            }
+            return day;
         }
         #endregion
     }

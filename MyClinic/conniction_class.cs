@@ -10,6 +10,6 @@ namespace MyClinic
     // conniction to the data base 
     public static class conniction_class
     {
-        public static SqlConnection cn = new SqlConnection("server = DESKTOP-2ROJPSN ; database=my_clinic ;integrated security = true");
+        public static SqlConnection cn = new SqlConnection("server = . ; DataBase=my_clinic;integrated security = true");
     }
 }

@@ -37,7 +37,7 @@ namespace MyClinic
             return patients_list;
         }
         // method to get patients details
-        public void get_ptnt_details(int ptnt_id , ref string name , ref string phone, ref string adress, ref string type,ref int age , ref DateTime date)
+        public void get_ptnt_details(int ptnt_id , ref string name , ref string phone, ref string adress, ref string type,ref int age )
         {
             cn.Open();
             cmd = new SqlCommand("select * from ptnt_info where ptnt_id ="+ptnt_id+"", cn);
@@ -74,6 +74,30 @@ namespace MyClinic
             dr.Close();
             cn.Close();
             return id;
+        }
+        public string get_date(int ptnt_id)
+        {
+            string date = "";
+            cn.Open();
+            cmd = new SqlCommand("select max (sess_date) from exam where ptnt_id="+ptnt_id+"", cn);
+            dr = cmd.ExecuteReader();
+            if (dr.Read()&&dr[0].ToString()!="")
+            {
+                date = Convert.ToDateTime(dr[0]).ToString("dd-MM-yyyy");
+
+            }
+            dr.Close();
+            cn.Close();
+            return date;
+        }
+        //method to get patients list of  sessions
+        public DataTable get_sess(int ptnt_id)
+        {
+            DataTable comming = new DataTable();
+            cmd = new SqlCommand("select * from sessions_veiw where ptnt_id= " + ptnt_id, cn);
+            da = new SqlDataAdapter(cmd);
+            da.Fill(comming);
+            return comming;
         }
     }
 }

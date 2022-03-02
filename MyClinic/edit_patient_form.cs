@@ -82,7 +82,7 @@ namespace MyClinic
         //method to get patient details 
         void get_details()
         {
-            ptnt_Model.get_ptnt_details(patient_id, ref name, ref phone, ref adress, ref type, ref age, ref date);
+            ptnt_Model.get_ptnt_details(patient_id, ref name, ref phone, ref adress, ref type, ref age);
             fill_fields();
         }
 

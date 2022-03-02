@@ -15,7 +15,8 @@ namespace MyClinic
         public Form1()
         {
             InitializeComponent();
-        }
+/*            db_backup_class.restore();
+*/        }
 
         private void exit_but_Click(object sender, EventArgs e)
         {
@@ -25,6 +26,7 @@ namespace MyClinic
         private void start_but_Click(object sender, EventArgs e)
         {
             this.Hide();
+            /*MessageBox.Show(System.IO.Directory.GetCurrentDirectory().ToString());*/
             main_form Main = new main_form();
             Main.Show();
 
@@ -41,6 +43,10 @@ namespace MyClinic
             }
         }
 
-
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+/*            db_backup_class.back_up();
+*/            
+        }
     }
 }
